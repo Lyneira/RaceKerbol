@@ -367,7 +367,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 25869.9597783259
+		UT = 25877.4710640348
 		activeVessel = 7
 		mapViewFiltering = 1023
 		VESSEL
@@ -954,31 +954,31 @@ GAME
 			landedAt = 
 			splashed = False
 			met = 0.0
-			lct = 25869.9597783259
+			lct = 25877.4710640348
 			root = 0
-			lat = 22.0691233009488
-			lon = 249.609979710126
-			alt = 87.0864233778557
-			hgt = 141.821
-			nrm = 0.07105358,0.03675039,-0.9967956
-			rot = 0.1996478,-0.1677887,0.9282055,0.2653721
-			CoM = -0.0003022515,-2.050246,-0.002970336
+			lat = 22.0678243758111
+			lon = 249.615510139066
+			alt = 149.052040706505
+			hgt = 204.2355
+			nrm = -0.04793888,-0.03944286,-0.9980712
+			rot = 0.2195798,-0.1530155,0.91899,0.2895313
+			CoM = -7.457777E-05,-2.050139,-0.002946148
 			stg = 0
 			prst = False
 			ref = 1746263274
 			ctrl = True
-			cPch = 0.1000001
-			cHdg = -8.964005
+			cPch = 0.1539998
+			cHdg = -8.935979
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300622.191140678
-				ECC = 0.99615490403466
-				INC = 50.8820270226524
-				LPE = 331.04264462223
-				LAN = 250.028294159381
-				MNA = 3.13551994792581
-				EPH = 25869.9597783259
+				SMA = 300591.547871924
+				ECC = 0.996560221662137
+				INC = 47.437474439446
+				LPE = 329.332016415545
+				LAN = 252.76621810523
+				MNA = 3.13988718851047
+				EPH = 25877.4710640348
 				REF = 1
 			}
 			PART
@@ -1003,8 +1003,8 @@ GAME
 				attN = top, 38
 				attN = bottom, 1
 				mass = 1
-				temp = 297.66503623238
-				tempExt = 298.617515250661
+				temp = 297.727411203547
+				tempExt = 298.33768305666
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1321,7 +1321,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 7.13287779974037
+					amount = 29.8051269145886
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -1361,8 +1361,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.1
-				temp = 298.795384925282
-				tempExt = 299.828826884669
+				temp = 298.732349689897
+				tempExt = 299.373974383834
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1439,8 +1439,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 0.1
-				temp = 300.206741619153
-				tempExt = 301.086743644754
+				temp = 299.939101830321
+				tempExt = 300.427982756891
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1480,8 +1480,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.1
-				temp = 303.356685917779
-				tempExt = 305.323870616232
+				temp = 302.714681906602
+				tempExt = 303.910089902669
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1521,8 +1521,8 @@ GAME
 				attN = bottom, 5
 				attN = top, 3
 				mass = 0.1
-				temp = 300.762525830475
-				tempExt = 302.259065658489
+				temp = 300.597035873642
+				tempExt = 301.468545684863
 				expt = 0
 				state = 1
 				connected = True
@@ -1646,7 +1646,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.0607525939122345
+					amount = 4.46426746011627
 					maxAmount = 15
 					flowState = True
 					isTweakable = True
@@ -1675,8 +1675,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 4
 				mass = 0.075
-				temp = 299.037490130894
-				tempExt = 300.802115450808
+				temp = 299.121092370413
+				tempExt = 300.303595418391
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1726,8 +1726,8 @@ GAME
 				sym = 7
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 297.749868620156
-				tempExt = 299.09807873767
+				temp = 297.82543888622
+				tempExt = 298.862097382804
 				expt = 0.1
 				state = 1
 				connected = True
@@ -1814,8 +1814,8 @@ GAME
 				sym = 6
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 297.748524705242
-				tempExt = 299.077381227881
+				temp = 297.824288942436
+				tempExt = 298.840628392729
 				expt = 0.1
 				state = 1
 				connected = True
@@ -1902,8 +1902,8 @@ GAME
 				sym = 9
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 297.752592400847
-				tempExt = 299.077204719025
+				temp = 297.826878724241
+				tempExt = 298.833604496922
 				expt = 0.1
 				state = 1
 				connected = True
@@ -1990,8 +1990,8 @@ GAME
 				sym = 8
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 297.753286472823
-				tempExt = 299.099310043968
+				temp = 297.827109971415
+				tempExt = 298.858339696459
 				expt = 0.1
 				state = 1
 				connected = True
@@ -2078,8 +2078,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = 311.997424583799
-				tempExt = 314.065414064824
+				temp = 310.081250336814
+				tempExt = 310.82457915775
 				expt = 0.1
 				state = 1
 				connected = True
@@ -2129,8 +2129,8 @@ GAME
 				sym = 16
 				srfN = srfAttach, 10
 				mass = 0.02
-				temp = 311.430968140436
-				tempExt = 312.913346533157
+				temp = 309.691685869354
+				tempExt = 310.018749199054
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2219,8 +2219,8 @@ GAME
 				srfN = srfAttach, 10
 				attN = 001, -1
 				mass = 0.1
-				temp = 304.065780280006
-				tempExt = 312.553739535349
+				temp = 304.186596562789
+				tempExt = 309.741630144701
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2327,8 +2327,8 @@ GAME
 				attN = top, 14
 				attN = bottom, -1
 				mass = 0.3
-				temp = 341.666818283346
-				tempExt = 325.801178429485
+				temp = 330.716574297351
+				tempExt = 319.312485864246
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2478,7 +2478,7 @@ GAME
 				RESOURCE
 				{
 					name = IntakeAir
-					amount = 0.0839064050465822
+					amount = 0.0828801807016134
 					maxAmount = 0.1
 					flowState = True
 					isTweakable = False
@@ -2508,8 +2508,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 13
 				mass = 0.01
-				temp = 330.564788835218
-				tempExt = 324.612563842813
+				temp = 323.871547489575
+				tempExt = 318.497954487789
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2559,8 +2559,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = 312.01131602259
-				tempExt = 314.138459392077
+				temp = 310.104948354697
+				tempExt = 310.885049872161
 				expt = 0.1
 				state = 1
 				connected = True
@@ -2610,8 +2610,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 15
 				mass = 0.02
-				temp = 311.449496959751
-				tempExt = 312.971160762619
+				temp = 309.718300623729
+				tempExt = 310.067578968377
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2700,8 +2700,8 @@ GAME
 				srfN = srfAttach, 15
 				attN = 001, -1
 				mass = 0.1
-				temp = 304.086669137384
-				tempExt = 312.623140369622
+				temp = 304.210782736879
+				tempExt = 309.799327112254
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2808,8 +2808,8 @@ GAME
 				attN = top, 19
 				attN = bottom, -1
 				mass = 0.3
-				temp = 341.671419788164
-				tempExt = 325.85779393041
+				temp = 330.73094533075
+				tempExt = 319.358541058987
 				expt = 0.5
 				state = 1
 				connected = True
@@ -2989,8 +2989,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 18
 				mass = 0.01
-				temp = 330.633370178329
-				tempExt = 324.502105933352
+				temp = 323.868333862132
+				tempExt = 318.442013996633
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3040,8 +3040,8 @@ GAME
 				sym = 29
 				srfN = srfAttach, 2
 				mass = 0.2
-				temp = 297.560623709949
-				tempExt = 298.440644961775
+				temp = 297.578353731955
+				tempExt = 298.140954430729
 				expt = 0.1
 				state = 1
 				connected = True
@@ -3091,8 +3091,8 @@ GAME
 				sym = 30
 				srfN = srfAttach, 20
 				mass = 0.05
-				temp = 297.432141352247
-				tempExt = 298.006467995323
+				temp = 297.427127866922
+				tempExt = 297.767108062465
 				expt = 0.1
 				state = 1
 				connected = True
@@ -3142,8 +3142,8 @@ GAME
 				sym = 31
 				srfN = srfAttach, 21
 				mass = 0.05
-				temp = 297.389607165489
-				tempExt = 297.797494641421
+				temp = 297.477602854674
+				tempExt = 297.468927614302
 				expt = 0.1
 				state = 1
 				connected = True
@@ -3230,8 +3230,8 @@ GAME
 				sym = 32
 				srfN = srfAttach, 21
 				mass = 0.02
-				temp = 297.447290489412
-				tempExt = 297.704505102847
+				temp = 297.428633489521
+				tempExt = 297.562765251975
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3319,8 +3319,8 @@ GAME
 				sym = 33
 				srfN = srfAttach, 20
 				mass = 0.08
-				temp = 297.561983529096
-				tempExt = 297.820649903002
+				temp = 297.578918047488
+				tempExt = 297.740902854102
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3408,8 +3408,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 20
 				mass = 0.08
-				temp = 297.562494070236
-				tempExt = 297.933044949133
+				temp = 297.578422281779
+				tempExt = 297.719621268754
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3497,8 +3497,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 20
 				mass = 0.02
-				temp = 297.561685647686
-				tempExt = 298.112724248177
+				temp = 297.579965222779
+				tempExt = 297.749859011306
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3586,8 +3586,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 20
 				mass = 0.02
-				temp = 297.562645532265
-				tempExt = 298.086550991988
+				temp = 297.580014245045
+				tempExt = 297.756266198435
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3676,8 +3676,8 @@ GAME
 				srfN = srfAttach, 20
 				attN = 001, -1
 				mass = 0.1
-				temp = 297.383687643413
-				tempExt = 298.355536746565
+				temp = 297.451353219272
+				tempExt = 298.067919700295
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3782,8 +3782,8 @@ GAME
 				sym = 20
 				srfN = srfAttach, 2
 				mass = 0.2
-				temp = 297.557286180237
-				tempExt = 298.436430570186
+				temp = 297.574769295268
+				tempExt = 298.131617185798
 				expt = 0.1
 				state = 1
 				connected = True
@@ -3833,8 +3833,8 @@ GAME
 				sym = 21
 				srfN = srfAttach, 29
 				mass = 0.05
-				temp = 297.428731069207
-				tempExt = 298.00184910004
+				temp = 297.423715711008
+				tempExt = 297.762682394921
 				expt = 0.1
 				state = 1
 				connected = True
@@ -3884,8 +3884,8 @@ GAME
 				sym = 22
 				srfN = srfAttach, 30
 				mass = 0.05
-				temp = 297.386067840487
-				tempExt = 297.793360340907
+				temp = 297.47452825313
+				tempExt = 297.465809528636
 				expt = 0.1
 				state = 1
 				connected = True
@@ -3972,8 +3972,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 30
 				mass = 0.02
-				temp = 297.444089397918
-				tempExt = 297.702597304134
+				temp = 297.425090891074
+				tempExt = 297.577366907125
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4061,8 +4061,8 @@ GAME
 				sym = 24
 				srfN = srfAttach, 29
 				mass = 0.08
-				temp = 297.557922510343
-				tempExt = 297.801169980118
+				temp = 297.575365779132
+				tempExt = 297.879801220574
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4150,8 +4150,8 @@ GAME
 				sym = 25
 				srfN = srfAttach, 29
 				mass = 0.08
-				temp = 297.557365418333
-				tempExt = 297.916541142029
+				temp = 297.575481426209
+				tempExt = 297.75241326409
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4239,8 +4239,8 @@ GAME
 				sym = 26
 				srfN = srfAttach, 29
 				mass = 0.02
-				temp = 297.557597867631
-				tempExt = 298.043237275873
+				temp = 297.576711924449
+				tempExt = 297.768228298525
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4328,8 +4328,8 @@ GAME
 				sym = 27
 				srfN = srfAttach, 29
 				mass = 0.02
-				temp = 297.557584842047
-				tempExt = 298.043107335517
+				temp = 297.576526691175
+				tempExt = 297.760323298342
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4418,8 +4418,8 @@ GAME
 				srfN = srfAttach, 29
 				attN = 001, -1
 				mass = 0.1
-				temp = 297.380424275318
-				tempExt = 298.354044540745
+				temp = 297.447926909189
+				tempExt = 298.060158326494
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4525,8 +4525,8 @@ GAME
 				attN = top, 39
 				attN = bottom, 0
 				mass = 0.05
-				temp = 297.558306829867
-				tempExt = 298.42944662164
+				temp = 297.608842581754
+				tempExt = 298.174390170203
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4546,7 +4546,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 957.132877799217
+					amount = 979.805126913982
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -4575,8 +4575,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 38
 				mass = 0.075
-				temp = 297.434325926884
-				tempExt = 297.89517309496
+				temp = 297.475072023168
+				tempExt = 297.68256047243
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4626,8 +4626,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 0
 				mass = 0.1
-				temp = 297.441093047732
-				tempExt = 297.979510742464
+				temp = 297.444692724176
+				tempExt = 297.748114762428
 				expt = 0.1
 				state = 1
 				connected = True
@@ -4677,8 +4677,8 @@ GAME
 				sym = 46
 				srfN = srfAttach, 40
 				mass = 0.02
-				temp = 297.458806631216
-				tempExt = 297.712143536735
+				temp = 297.445602902807
+				tempExt = 297.520442275521
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4766,8 +4766,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 40
 				mass = 0.02
-				temp = 297.45871027975
-				tempExt = 297.712054616431
+				temp = 297.44572336638
+				tempExt = 297.599164512424
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4855,8 +4855,8 @@ GAME
 				sym = 48
 				srfN = srfAttach, 40
 				mass = 0.02
-				temp = 297.455323628507
-				tempExt = 297.686926759303
+				temp = 297.445578547473
+				tempExt = 297.523665555774
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4945,8 +4945,8 @@ GAME
 				srfN = srfAttach, 40
 				attN = 001, -1
 				mass = 0.1
-				temp = 297.359085843903
-				tempExt = 297.945934657714
+				temp = 297.419692518749
+				tempExt = 297.717847107196
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5051,8 +5051,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 0
 				mass = 0.1
-				temp = 297.44027335813
-				tempExt = 297.977094622367
+				temp = 297.443443137616
+				tempExt = 297.746382297849
 				expt = 0.1
 				state = 1
 				connected = True
@@ -5102,8 +5102,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 45
 				mass = 0.02
-				temp = 297.458030715833
-				tempExt = 297.711667471883
+				temp = 297.443837617835
+				tempExt = 297.511438672879
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5191,8 +5191,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 45
 				mass = 0.02
-				temp = 297.458044400503
-				tempExt = 297.711678787692
+				temp = 297.444499511991
+				tempExt = 297.52277436009
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5280,8 +5280,8 @@ GAME
 				sym = 43
 				srfN = srfAttach, 45
 				mass = 0.02
-				temp = 297.454548600541
-				tempExt = 297.686735614451
+				temp = 297.444974462336
+				tempExt = 297.533686108668
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5370,8 +5370,8 @@ GAME
 				srfN = srfAttach, 45
 				attN = 001, -1
 				mass = 0.1
-				temp = 297.357798045688
-				tempExt = 297.942628617547
+				temp = 297.417981788389
+				tempExt = 297.715764996573
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5457,11 +5457,11 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = True, 25833.2397783251
+				Stage = True, 25835.7910640339
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 25856.8397783257
+				SAS = True, 25835.2710640338
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -5493,9 +5493,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.0489004
-				yaw = -0.06283462
-				roll = 0.003311137
+				pitch = 0.05411066
+				yaw = -0.0110894
+				roll = 0.001180365
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -5511,17 +5511,17 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 719.010014663836
+			met = 901.430014667723
 			lct = 21361.6688066282
 			root = 0
-			lat = 5.59989403967661
-			lon = 244.500040301794
-			alt = 650.74743648665
-			hgt = 0.3637584
-			nrm = -2.710905E-05,0.0149768,-0.9998881
-			rot = -0.2853642,0.02964279,-0.9579607,-0.0002701812
-			CoM = -0.1635605,-0.833315,-5.354285
-			stg = 3
+			lat = 5.59977387991093
+			lon = 244.49999347352
+			alt = 650.979168085614
+			hgt = 0.3848694
+			nrm = 0.001107352,0.01203951,-0.9999268
+			rot = -0.284471,0.03334508,-0.9579453,0.01747254
+			CoM = -0.4940787,-0.9416921,-5.469809
+			stg = 0
 			prst = False
 			ref = 164332028
 			ctrl = True
@@ -5533,10 +5533,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 75.4787018590878
-				LAN = 300.357260873506
+				LPE = 74.7839510544337
+				LAN = 240.351000493452
 				MNA = -8.40714670366795
-				EPH = 25826.879778325
+				EPH = 22268.4188212961
 				REF = 1
 			}
 			PART
@@ -5561,10 +5561,10 @@ GAME
 				attN = bottom, 1
 				attN = top, -1
 				mass = 0.04
-				temp = 290.593934515703
-				tempExt = 291.130537683899
+				temp = 290.600835939582
+				tempExt = 290.538745268774
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -5679,10 +5679,10 @@ GAME
 				attN = bottom, -1
 				attN = top, 0
 				mass = 0.125
-				temp = 290.593773985118
-				tempExt = 291.686222704659
+				temp = 290.478581606853
+				tempExt = 290.483508561309
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -5696,221 +5696,6 @@ GAME
 				}
 				PARTDATA
 				{
-				}
-			}
-			PART
-			{
-				name = radialDecoupler
-				cid = 4294467208
-				uid = 3002022598
-				mid = 4095855536
-				launchID = 15
-				parent = 1
-				position = 0,-1.10478281974792,-0.331740379333496
-				rotation = 0.270598,0.6532815,-0.270598,-0.6532815
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 1
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.025
-				temp = 291.113240980796
-				tempExt = 292.03075942443
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = radialDecoupler
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnchoredDecoupler
-					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = False
-					ejectionForcePercent_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = trussPiece1x
-				cid = 4294465150
-				uid = 640427453
-				mid = 4095855536
-				launchID = 15
-				parent = 2
-				position = 0,-1.64026975631714,-0.816249847412109
-				rotation = 1.490116E-08,0.3826833,-0.9238796,-1.043081E-07
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 2
-				attN = bottom, -1
-				attN = top, 4
-				mass = 0.125
-				temp = 292.101591458379
-				tempExt = 292.449890946793
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = trussPiece1x
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-			}
-			PART
-			{
-				name = asasmodule1-2
-				cid = 4294456688
-				uid = 1466978601
-				mid = 4095855536
-				launchID = 15
-				parent = 3
-				position = -1.07288360595703E-06,-2.21251201629639,-1.38848972320557
-				rotation = -0.9238796,1.490116E-08,1.490116E-08,0.3826835
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, -1
-				attN = bottom, 3
-				mass = 0.2
-				temp = 292.143944961953
-				tempExt = 292.468195226342
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = asasmodule1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
 				}
 			}
 			PART
@@ -5931,15 +5716,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 35
+				sym = 31
 				srfN = srfAttach, 1
 				attN = bottom, -1
-				attN = top, 6
+				attN = top, 3
 				mass = 0.375
-				temp = 289.817967976847
-				tempExt = 291.079154301505
+				temp = 290.023204266715
+				tempExt = 290.360240634239
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -5962,7 +5747,7 @@ GAME
 				uid = 146132222
 				mid = 4095855536
 				launchID = 15
-				parent = 5
+				parent = 2
 				position = 4.75029563903809,-0.846167087554932,0
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -5973,15 +5758,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 36
+				sym = 32
 				srfN = srfAttach, -1
-				attN = bottom, 7
-				attN = top, 5
+				attN = bottom, 4
+				attN = top, 2
 				mass = 0.375
-				temp = 289.292155046172
-				tempExt = 290.363716063457
+				temp = 289.495805351789
+				tempExt = 290.105514512932
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6004,7 +5789,7 @@ GAME
 				uid = 1685547200
 				mid = 4095855536
 				launchID = 15
-				parent = 6
+				parent = 3
 				position = 7.70077228546143,-0.8461674451828,-9.5367431640625E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6015,15 +5800,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 37
+				sym = 33
 				srfN = srfAttach, -1
-				attN = bottom, 8
-				attN = top, 6
+				attN = bottom, 5
+				attN = top, 3
 				mass = 0.375
-				temp = 288.986861762523
-				tempExt = 289.901696836967
+				temp = 289.162482643297
+				tempExt = 289.858625086879
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6046,7 +5831,7 @@ GAME
 				uid = 654414500
 				mid = 4095855536
 				launchID = 15
-				parent = 7
+				parent = 4
 				position = 10.6512641906738,-0.846166849136353,-9.5367431640625E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6057,15 +5842,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 38
+				sym = 34
 				srfN = srfAttach, -1
-				attN = bottom, 9
-				attN = top, 7
+				attN = bottom, 6
+				attN = top, 4
 				mass = 0.375
-				temp = 288.808209990873
-				tempExt = 289.613835404747
+				temp = 288.963253108803
+				tempExt = 289.667622930182
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6088,7 +5873,7 @@ GAME
 				uid = 2704588586
 				mid = 4095855536
 				launchID = 15
-				parent = 8
+				parent = 5
 				position = 13.6017446517944,-0.846166253089905,9.5367431640625E-07
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6099,15 +5884,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 39
+				sym = 35
 				srfN = srfAttach, -1
-				attN = bottom, 10
-				attN = top, 8
+				attN = bottom, 7
+				attN = top, 5
 				mass = 0.375
-				temp = 288.706653233345
-				tempExt = 289.445263653755
+				temp = 288.848479396518
+				tempExt = 289.539523226985
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6130,7 +5915,7 @@ GAME
 				uid = 2971900760
 				mid = 4095855536
 				launchID = 15
-				parent = 9
+				parent = 6
 				position = 16.5522270202637,-0.846164584159851,1.9073486328125E-06
 				rotation = -1.315538E-07,1.315538E-07,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6141,15 +5926,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 40
+				sym = 36
 				srfN = srfAttach, -1
-				attN = bottom, 11
-				attN = top, 9
+				attN = bottom, 8
+				attN = top, 6
 				mass = 0.375
-				temp = 288.657411442742
-				tempExt = 289.362113488286
+				temp = 288.792534105512
+				tempExt = 289.470491861236
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6172,7 +5957,7 @@ GAME
 				uid = 3383191587
 				mid = 4095855536
 				launchID = 15
-				parent = 10
+				parent = 7
 				position = 19.5026969909668,-0.846163868904114,1.9073486328125E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6183,15 +5968,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 41
+				sym = 37
 				srfN = srfAttach, -1
-				attN = bottom, 12
-				attN = top, 10
+				attN = bottom, 9
+				attN = top, 7
 				mass = 0.375
-				temp = 288.64964048761
-				tempExt = 289.347496189453
+				temp = 288.782103618435
+				tempExt = 289.451661256478
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6214,7 +5999,7 @@ GAME
 				uid = 1655778188
 				mid = 4095855536
 				launchID = 15
-				parent = 11
+				parent = 8
 				position = 22.4531707763672,-0.846164107322693,2.86102294921875E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6225,15 +6010,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 42
+				sym = 38
 				srfN = srfAttach, -1
-				attN = bottom, 13
-				attN = top, 11
+				attN = bottom, 10
+				attN = top, 8
 				mass = 0.375
-				temp = 288.682274048959
-				tempExt = 289.399261704267
+				temp = 288.816223575798
+				tempExt = 289.482460113475
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6256,7 +6041,7 @@ GAME
 				uid = 3570630539
 				mid = 4095855536
 				launchID = 15
-				parent = 12
+				parent = 9
 				position = 25.4036712646484,-0.846164464950562,2.86102294921875E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6267,15 +6052,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 43
+				sym = 39
 				srfN = srfAttach, -1
-				attN = bottom, 14
-				attN = top, 12
+				attN = bottom, 11
+				attN = top, 9
 				mass = 0.375
-				temp = 288.763849627598
-				tempExt = 289.528411304893
+				temp = 288.902126048763
+				tempExt = 289.561836069098
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6298,7 +6083,7 @@ GAME
 				uid = 2080153491
 				mid = 4095855536
 				launchID = 15
-				parent = 13
+				parent = 10
 				position = 28.3541831970215,-0.84616482257843,-7.62939453125E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6309,15 +6094,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 44
+				sym = 40
 				srfN = srfAttach, -1
-				attN = bottom, 15
-				attN = top, 13
+				attN = bottom, 12
+				attN = top, 10
 				mass = 0.375
-				temp = 288.915776551593
-				tempExt = 289.760921825331
+				temp = 289.056594741733
+				tempExt = 289.688089782017
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6340,7 +6125,7 @@ GAME
 				uid = 785185627
 				mid = 4095855536
 				launchID = 15
-				parent = 14
+				parent = 11
 				position = 31.3046531677246,-0.846163272857666,-6.67572021484375E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -6351,15 +6136,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 45
+				sym = 41
 				srfN = srfAttach, -1
 				attN = bottom, -1
-				attN = top, 14
+				attN = top, 11
 				mass = 0.375
-				temp = 289.177689264706
-				tempExt = 290.140731492294
+				temp = 289.294277735137
+				tempExt = 289.85429614186
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6382,7 +6167,7 @@ GAME
 				uid = 3678579081
 				mid = 4095855536
 				launchID = 15
-				parent = 15
+				parent = 12
 				position = 32.4313621520996,-0.846165657043457,-1.80044746398926
 				rotation = -0.5000001,0.5,-0.5000002,0.5000001
 				mirror = 1,1,1
@@ -6393,15 +6178,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 46
-				srfN = srfAttach, 15
-				attN = bottom, 34
-				attN = top, 17
+				sym = 42
+				srfN = srfAttach, 12
+				attN = bottom, -1
+				attN = top, 14
 				mass = 0.375
-				temp = 288.888580990375
-				tempExt = 289.845922856139
+				temp = 289.039047281873
+				tempExt = 289.730502163428
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6424,7 +6209,7 @@ GAME
 				uid = 1621862987
 				mid = 4095855536
 				launchID = 15
-				parent = 16
+				parent = 13
 				position = 32.4313583374023,-0.846169352531433,-4.75091743469238
 				rotation = -0.5000001,-0.5,0.5000002,0.5000001
 				mirror = 1,1,1
@@ -6435,15 +6220,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 47
+				sym = 43
 				srfN = srfAttach, -1
-				attN = bottom, 16
-				attN = top, 18
+				attN = bottom, 13
+				attN = top, 15
 				mass = 0.375
-				temp = 288.665684960375
-				tempExt = 289.542519348394
+				temp = 288.806891554503
+				tempExt = 289.6055343924
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6466,7 +6251,7 @@ GAME
 				uid = 1184728209
 				mid = 4095855536
 				launchID = 15
-				parent = 17
+				parent = 14
 				position = 32.4313812255859,-0.846174836158752,-7.70144748687744
 				rotation = -0.5000001,-0.5000002,0.5000001,0.5
 				mirror = 1,1,1
@@ -6477,15 +6262,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 48
+				sym = 44
 				srfN = srfAttach, -1
-				attN = bottom, 17
-				attN = top, 19
+				attN = bottom, 14
+				attN = top, 16
 				mass = 0.375
-				temp = 288.552669390063
-				tempExt = 289.413291455731
+				temp = 288.704536321808
+				tempExt = 289.604046698689
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6508,7 +6293,7 @@ GAME
 				uid = 2385420825
 				mid = 4095855536
 				launchID = 15
-				parent = 18
+				parent = 15
 				position = 32.4313850402832,-0.846178293228149,-10.651930809021
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -6519,15 +6304,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 49
+				sym = 45
 				srfN = srfAttach, -1
-				attN = bottom, 18
-				attN = top, 20
+				attN = bottom, 15
+				attN = top, 17
 				mass = 0.375
-				temp = 288.503573133366
-				tempExt = 289.481596614217
+				temp = 288.717821738194
+				tempExt = 289.733583381706
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6550,7 +6335,7 @@ GAME
 				uid = 2940251422
 				mid = 4095855536
 				launchID = 15
-				parent = 19
+				parent = 16
 				position = 32.431396484375,-0.846183896064758,-13.6024198532104
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -6561,15 +6346,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 50
+				sym = 46
 				srfN = srfAttach, -1
-				attN = bottom, 19
-				attN = top, 21
+				attN = bottom, 16
+				attN = top, 18
 				mass = 0.375
-				temp = 288.559811236464
-				tempExt = 289.646183022166
+				temp = 288.894909588842
+				tempExt = 290.015834700928
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6592,7 +6377,7 @@ GAME
 				uid = 4155788070
 				mid = 4095855536
 				launchID = 15
-				parent = 20
+				parent = 17
 				position = 32.4314346313477,-0.846188306808472,-16.5528907775879
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -6603,15 +6388,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 51
+				sym = 47
 				srfN = srfAttach, -1
-				attN = bottom, 20
-				attN = top, 22
+				attN = bottom, 17
+				attN = top, 19
 				mass = 0.375
-				temp = 288.425756344397
-				tempExt = 289.333279635825
+				temp = 288.630717471924
+				tempExt = 289.621687912061
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6634,7 +6419,7 @@ GAME
 				uid = 2441467969
 				mid = 4095855536
 				launchID = 15
-				parent = 21
+				parent = 18
 				position = 32.4314346313477,-0.846193909645081,-19.503360748291
 				rotation = -0.5000001,-0.5,0.5000001,0.5000002
 				mirror = 1,1,1
@@ -6645,15 +6430,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 52
+				sym = 48
 				srfN = srfAttach, -1
-				attN = bottom, 21
-				attN = top, 23
+				attN = bottom, 18
+				attN = top, 20
 				mass = 0.375
-				temp = 288.396364245539
-				tempExt = 289.194454898373
+				temp = 288.553253260104
+				tempExt = 289.436336942956
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6676,7 +6461,7 @@ GAME
 				uid = 445034783
 				mid = 4095855536
 				launchID = 15
-				parent = 22
+				parent = 19
 				position = 32.431453704834,-0.846198439598084,-22.4538497924805
 				rotation = -0.5000001,-0.5000002,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -6687,15 +6472,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 53
+				sym = 49
 				srfN = srfAttach, -1
-				attN = bottom, 22
-				attN = top, 24
+				attN = bottom, 19
+				attN = top, 21
 				mass = 0.375
-				temp = 288.396305774366
-				tempExt = 289.138791156324
+				temp = 288.54365842511
+				tempExt = 289.359334730444
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6718,7 +6503,7 @@ GAME
 				uid = 3010128890
 				mid = 4095855536
 				launchID = 15
-				parent = 23
+				parent = 20
 				position = 32.4314880371094,-0.846204042434692,-25.4043350219727
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -6729,15 +6514,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 54
+				sym = 50
 				srfN = srfAttach, -1
-				attN = bottom, 23
+				attN = bottom, 20
 				attN = top, -1
 				mass = 0.375
-				temp = 288.459520745779
-				tempExt = 289.069129276683
+				temp = 288.593582729343
+				tempExt = 289.197524781398
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6760,7 +6545,7 @@ GAME
 				uid = 82179240
 				mid = 4095855536
 				launchID = 15
-				parent = 24
+				parent = 21
 				position = 31.8938903808594,-0.846205115318298,-26.6879768371582
 				rotation = -0.4545192,0.4545192,-0.5416755,0.5416756
 				mirror = 1,1,1
@@ -6771,13 +6556,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 55
-				srfN = srfAttach, 24
+				sym = 51
+				srfN = srfAttach, 21
 				mass = 0.015
-				temp = 288.61845380387
-				tempExt = 289.085266101845
+				temp = 288.755074039975
+				tempExt = 289.214106454283
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6872,7 +6657,7 @@ GAME
 				uid = 852828450
 				mid = 4095855536
 				launchID = 15
-				parent = 20
+				parent = 17
 				position = 32.7584075927734,-0.846183896064758,-13.6473608016968
 				rotation = 3.15481E-07,0.7071071,-0.7071068,-4.214683E-08
 				mirror = 1,1,1
@@ -6883,13 +6668,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 56
-				srfN = srfAttach, 20
+				sym = 52
+				srfN = srfAttach, 17
 				mass = 0.3
-				temp = 289.241219705302
-				tempExt = 290.423669114344
+				temp = 289.973467159975
+				tempExt = 291.094333867851
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -6908,7 +6693,7 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.5114836, -0.5114844, -0.4882467, 0.4882453)
+					currentRotation = (-0.5144494, -0.5144456, -0.4851203, 0.4851246)
 					stateString = EXTENDED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -6961,7 +6746,7 @@ GAME
 				uid = 3561114448
 				mid = 4095855536
 				launchID = 15
-				parent = 18
+				parent = 15
 				position = 32.1067047119141,-0.846174836158752,-7.66845798492432
 				rotation = -0.7071068,-2.260741E-07,-3.452834E-07,0.707107
 				mirror = 1,1,1
@@ -6972,13 +6757,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 57
-				srfN = srfAttach, 18
+				sym = 53
+				srfN = srfAttach, 15
 				mass = 0.05
-				temp = 287.963229413497
-				tempExt = 289.389701724159
+				temp = 288.048311416315
+				tempExt = 289.575585641369
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7027,7 +6812,7 @@ GAME
 				uid = 3506330589
 				mid = 4095855536
 				launchID = 15
-				parent = 17
+				parent = 14
 				position = 32.4313812255859,-0.521353721618652,-6.11787700653076
 				rotation = -0.5000001,0.5,-0.5000001,0.5000002
 				mirror = 1,1,1
@@ -7038,13 +6823,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 58
-				srfN = srfAttach, 17
+				sym = 54
+				srfN = srfAttach, 14
 				mass = 0.05
-				temp = 288.020756478395
-				tempExt = 289.51829067119
+				temp = 288.111141659212
+				tempExt = 289.581952007037
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7093,7 +6878,7 @@ GAME
 				uid = 3853289084
 				mid = 4095855536
 				launchID = 15
-				parent = 17
+				parent = 14
 				position = 32.4313583374023,-1.1711118221283,-6.10387706756592
 				rotation = -0.5000001,-0.5000002,0.5000001,0.5
 				mirror = 1,1,1
@@ -7104,13 +6889,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 59
-				srfN = srfAttach, 17
+				sym = 55
+				srfN = srfAttach, 14
 				mass = 0.05
-				temp = 288.020908751129
-				tempExt = 289.518216781627
+				temp = 288.111275733703
+				tempExt = 289.581882550292
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7159,7 +6944,7 @@ GAME
 				uid = 3314072963
 				mid = 4095855536
 				launchID = 15
-				parent = 15
+				parent = 12
 				position = 32.434642791748,0.955348134040833,-6.67572021484375E-06
 				rotation = 1.234452E-08,0.7071067,-7.194916E-08,0.7071069
 				mirror = 1,1,1
@@ -7170,15 +6955,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 60
-				srfN = srfAttach, 15
+				sym = 56
+				srfN = srfAttach, 12
 				attN = bottom, -1
-				attN = top, 31
+				attN = top, 28
 				mass = 0.375
-				temp = 289.022958118203
-				tempExt = 289.938445008563
+				temp = 289.17087586372
+				tempExt = 289.796224512841
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7201,7 +6986,7 @@ GAME
 				uid = 1356277415
 				mid = 4095855536
 				launchID = 15
-				parent = 30
+				parent = 27
 				position = 32.434642791748,3.90582990646362,4.76837158203125E-06
 				rotation = -1.639128E-07,-1.043081E-07,-2.831221E-07,1
 				mirror = 1,1,1
@@ -7212,15 +6997,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 61
-				srfN = srfAttach, 15
-				attN = bottom, 30
+				sym = 57
+				srfN = srfAttach, 12
+				attN = bottom, 27
 				attN = top, -1
 				mass = 0.375
-				temp = 288.941507483671
-				tempExt = 289.788156338518
+				temp = 289.094601432
+				tempExt = 289.746851938573
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7243,7 +7028,7 @@ GAME
 				uid = 2861920104
 				mid = 4095855536
 				launchID = 15
-				parent = 15
+				parent = 12
 				position = 32.4456329345703,-2.64604163169861,-7.62939453125E-06
 				rotation = 0.7071068,-4.214684E-08,0.7071069,-1.366671E-07
 				mirror = 1,1,1
@@ -7254,15 +7039,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 62
-				srfN = srfAttach, 15
+				sym = 58
+				srfN = srfAttach, 12
 				attN = bottom, -1
-				attN = top, 33
+				attN = top, 30
 				mass = 0.375
-				temp = 289.95473302629
-				tempExt = 290.646811149529
+				temp = 289.825878495811
+				tempExt = 290.019260426141
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7285,7 +7070,7 @@ GAME
 				uid = 795986601
 				mid = 4095855536
 				launchID = 15
-				parent = 32
+				parent = 29
 				position = 32.4456558227539,-5.59652423858643,2.86102294921875E-06
 				rotation = 1,2.384186E-07,-5.960464E-08,-5.960464E-08
 				mirror = 1,1,1
@@ -7296,15 +7081,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 63
-				srfN = srfAttach, 15
-				attN = bottom, 32
+				sym = 59
+				srfN = srfAttach, 12
+				attN = bottom, 29
 				attN = top, -1
 				mass = 0.375
-				temp = 289.598680802476
-				tempExt = 290.444625199512
+				temp = 289.754089655189
+				tempExt = 290.277970456323
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7318,58 +7103,6 @@ GAME
 				}
 				PARTDATA
 				{
-				}
-			}
-			PART
-			{
-				name = batteryBankLarge
-				cid = 4294441250
-				uid = 3987467675
-				mid = 4095855536
-				launchID = 15
-				parent = 32
-				position = 32.4313316345215,-0.846160531044006,-0.215216636657715
-				rotation = -0.5000001,-0.4999999,0.5000001,0.4999999
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sym = 64
-				srfN = , -1
-				attN = top, 32
-				attN = bottom, -1
-				mass = 0.2
-				temp = 290.481605480618
-				tempExt = 290.863373905139
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = batteryBankLarge
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 4000
-					maxAmount = 4000
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
 				}
 			}
 			PART
@@ -7390,15 +7123,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 5
+				sym = 2
 				srfN = srfAttach, 1
 				attN = bottom, -1
-				attN = top, 36
+				attN = top, 32
 				mass = 0.375
-				temp = 289.838467163294
-				tempExt = 291.069840641956
+				temp = 290.033783714109
+				tempExt = 290.354410629137
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7421,7 +7154,7 @@ GAME
 				uid = 3329589178
 				mid = 4095855536
 				launchID = 15
-				parent = 35
+				parent = 31
 				position = -4.75029325485229,-0.846167087554932,0
 				rotation = 1.962717E-07,-1.017515E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7432,15 +7165,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 6
+				sym = 3
 				srfN = srfAttach, -1
-				attN = bottom, 37
-				attN = top, 35
+				attN = bottom, 33
+				attN = top, 31
 				mass = 0.375
-				temp = 289.310131143626
-				tempExt = 290.342797992865
+				temp = 289.500499938327
+				tempExt = 290.100766323473
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7463,7 +7196,7 @@ GAME
 				uid = 3075874169
 				mid = 4095855536
 				launchID = 15
-				parent = 36
+				parent = 32
 				position = -7.70077514648438,-0.846166491508484,9.5367431640625E-07
 				rotation = 1.962717E-07,1.745781E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7474,15 +7207,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 7
+				sym = 4
 				srfN = srfAttach, -1
-				attN = bottom, 38
-				attN = top, 36
+				attN = bottom, 34
+				attN = top, 32
 				mass = 0.375
-				temp = 288.951008529398
-				tempExt = 289.856893771234
+				temp = 289.126894237051
+				tempExt = 289.829335656227
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7505,7 +7238,7 @@ GAME
 				uid = 1001130216
 				mid = 4095855536
 				launchID = 15
-				parent = 37
+				parent = 33
 				position = -10.6512670516968,-0.846165895462036,9.5367431640625E-07
 				rotation = 7.706245E-08,1.366671E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7516,15 +7249,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 8
+				sym = 5
 				srfN = srfAttach, -1
-				attN = bottom, 39
-				attN = top, 37
+				attN = bottom, 35
+				attN = top, 33
 				mass = 0.375
-				temp = 288.728262381643
-				tempExt = 289.545852197269
+				temp = 288.891161392446
+				tempExt = 289.61454582779
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7547,7 +7280,7 @@ GAME
 				uid = 1833181083
 				mid = 4095855536
 				launchID = 15
-				parent = 38
+				parent = 34
 				position = -13.6017618179321,-0.846165180206299,9.5367431640625E-07
 				rotation = 1.664694E-07,4.726013E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7558,15 +7291,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 9
+				sym = 6
 				srfN = srfAttach, -1
-				attN = bottom, 40
-				attN = top, 38
+				attN = bottom, 36
+				attN = top, 34
 				mass = 0.375
-				temp = 288.607241817919
-				tempExt = 289.362616025908
+				temp = 288.756501982051
+				tempExt = 289.470613479305
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7589,7 +7322,7 @@ GAME
 				uid = 3781029558
 				mid = 4095855536
 				launchID = 15
-				parent = 39
+				parent = 35
 				position = -16.5522422790527,-0.846162557601929,1.9073486328125E-06
 				rotation = 1.366671E-07,-4.214684E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7600,15 +7333,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 10
+				sym = 7
 				srfN = srfAttach, -1
-				attN = bottom, 41
-				attN = top, 39
+				attN = bottom, 37
+				attN = top, 35
 				mass = 0.375
-				temp = 288.554219758434
-				tempExt = 289.274268637336
+				temp = 288.695489203885
+				tempExt = 289.39926819822
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7631,7 +7364,7 @@ GAME
 				uid = 2966804245
 				mid = 4095855536
 				launchID = 15
-				parent = 40
+				parent = 36
 				position = -19.5027046203613,-0.846161961555481,1.9073486328125E-06
 				rotation = 1.366671E-07,-1.613561E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7642,15 +7375,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 11
+				sym = 8
 				srfN = srfAttach, -1
-				attN = bottom, 42
-				attN = top, 40
+				attN = bottom, 38
+				attN = top, 36
 				mass = 0.375
-				temp = 288.549699643496
-				tempExt = 289.262644731988
+				temp = 288.690183452032
+				tempExt = 289.397008231895
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7673,7 +7406,7 @@ GAME
 				uid = 717010509
 				mid = 4095855536
 				launchID = 15
-				parent = 41
+				parent = 37
 				position = -22.4531936645508,-0.84616219997406,2.86102294921875E-06
 				rotation = 1.664694E-07,4.726013E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7684,15 +7417,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 12
+				sym = 9
 				srfN = srfAttach, -1
-				attN = bottom, 43
-				attN = top, 41
+				attN = bottom, 39
+				attN = top, 37
 				mass = 0.375
-				temp = 288.591446333338
-				tempExt = 289.325603647465
+				temp = 288.738514897011
+				tempExt = 289.469737847264
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7715,7 +7448,7 @@ GAME
 				uid = 1526948366
 				mid = 4095855536
 				launchID = 15
-				parent = 42
+				parent = 38
 				position = -25.4036636352539,-0.846160531044006,2.86102294921875E-06
 				rotation = 2.558764E-07,-4.214683E-08,-0.707107,0.7071067
 				mirror = 1,1,1
@@ -7726,15 +7459,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 13
+				sym = 10
 				srfN = srfAttach, -1
-				attN = bottom, 44
-				attN = top, 42
+				attN = bottom, 40
+				attN = top, 38
 				mass = 0.375
-				temp = 288.69490312995
-				tempExt = 289.475697472306
+				temp = 288.855675158542
+				tempExt = 289.634231061852
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7757,7 +7490,7 @@ GAME
 				uid = 396358162
 				mid = 4095855536
 				launchID = 15
-				parent = 43
+				parent = 39
 				position = -28.3541984558105,-0.846159815788269,-7.62939453125E-06
 				rotation = 1.366671E-07,-1.613561E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -7768,15 +7501,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 14
+				sym = 11
 				srfN = srfAttach, -1
-				attN = bottom, 45
-				attN = top, 43
+				attN = bottom, 41
+				attN = top, 39
 				mass = 0.375
-				temp = 288.891234668145
-				tempExt = 289.739338530051
+				temp = 289.068630519908
+				tempExt = 289.918119069013
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7799,7 +7532,7 @@ GAME
 				uid = 272573636
 				mid = 4095855536
 				launchID = 15
-				parent = 44
+				parent = 40
 				position = -31.3046646118164,-0.846157193183899,-6.67572021484375E-06
 				rotation = 2.558764E-07,-4.214683E-08,-0.707107,0.7071067
 				mirror = 1,1,1
@@ -7810,15 +7543,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 15
+				sym = 12
 				srfN = srfAttach, -1
 				attN = bottom, -1
-				attN = top, 44
+				attN = top, 40
 				mass = 0.375
-				temp = 289.212008844278
-				tempExt = 290.155324952166
+				temp = 289.403602365486
+				tempExt = 290.366231210646
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7841,7 +7574,7 @@ GAME
 				uid = 1515011879
 				mid = 4095855536
 				launchID = 15
-				parent = 45
+				parent = 41
 				position = -32.4313583374023,-0.846161961555481,-1.80045604705811
 				rotation = -0.4999999,-0.4999998,0.5000002,0.5000003
 				mirror = 1,1,1
@@ -7852,15 +7585,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 16
-				srfN = srfAttach, 45
-				attN = bottom, 64
-				attN = top, 47
+				sym = 13
+				srfN = srfAttach, 41
+				attN = bottom, 60
+				attN = top, 43
 				mass = 0.375
-				temp = 288.933838635656
-				tempExt = 289.859193482706
+				temp = 289.104414395404
+				tempExt = 290.06576283047
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7883,7 +7616,7 @@ GAME
 				uid = 1868156501
 				mid = 4095855536
 				launchID = 15
-				parent = 46
+				parent = 42
 				position = -32.4313545227051,-0.846168756484985,-4.75091743469238
 				rotation = -0.4999999,0.5000003,-0.5000003,0.4999998
 				mirror = 1,1,1
@@ -7894,15 +7627,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 17
+				sym = 14
 				srfN = srfAttach, -1
-				attN = bottom, 46
-				attN = top, 48
+				attN = bottom, 42
+				attN = top, 44
 				mass = 0.375
-				temp = 288.666433191999
-				tempExt = 289.530239970174
+				temp = 288.827681047273
+				tempExt = 289.753498486692
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7925,7 +7658,7 @@ GAME
 				uid = 3455487523
 				mid = 4095855536
 				launchID = 15
-				parent = 47
+				parent = 43
 				position = -32.4313850402832,-0.846173763275146,-7.70141887664795
 				rotation = -0.4999998,0.5,-0.5000004,0.5
 				mirror = 1,1,1
@@ -7936,15 +7669,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 18
+				sym = 15
 				srfN = srfAttach, -1
-				attN = bottom, 47
-				attN = top, 49
+				attN = bottom, 43
+				attN = top, 45
 				mass = 0.375
-				temp = 288.520047081158
-				tempExt = 289.386763124979
+				temp = 288.69132581258
+				tempExt = 289.665404846245
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -7967,7 +7700,7 @@ GAME
 				uid = 4194846373
 				mid = 4095855536
 				launchID = 15
-				parent = 48
+				parent = 44
 				position = -32.4313850402832,-0.846179604530334,-10.6519289016724
 				rotation = -0.4999997,0.5000002,-0.5000004,0.4999997
 				mirror = 1,1,1
@@ -7978,15 +7711,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 19
+				sym = 16
 				srfN = srfAttach, -1
-				attN = bottom, 48
-				attN = top, 50
+				attN = bottom, 44
+				attN = top, 46
 				mass = 0.375
-				temp = 288.469160004538
-				tempExt = 289.483294188149
+				temp = 288.700387451798
+				tempExt = 289.773394817184
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8009,7 +7742,7 @@ GAME
 				uid = 208115936
 				mid = 4095855536
 				launchID = 15
-				parent = 49
+				parent = 45
 				position = -32.4314155578613,-0.846187353134155,-13.6023988723755
 				rotation = -0.4999998,0.5000002,-0.5000004,0.4999999
 				mirror = 1,1,1
@@ -8020,15 +7753,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 20
+				sym = 17
 				srfN = srfAttach, -1
-				attN = bottom, 49
-				attN = top, 51
+				attN = bottom, 45
+				attN = top, 47
 				mass = 0.375
-				temp = 288.548769271068
-				tempExt = 289.660805450721
+				temp = 288.903367447435
+				tempExt = 290.072443092606
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8051,7 +7784,7 @@ GAME
 				uid = 1546472977
 				mid = 4095855536
 				launchID = 15
-				parent = 50
+				parent = 46
 				position = -32.4314270019531,-0.846192359924316,-16.5528717041016
 				rotation = -0.4999998,0.5000002,-0.5000004,0.4999999
 				mirror = 1,1,1
@@ -8062,15 +7795,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 21
+				sym = 18
 				srfN = srfAttach, -1
-				attN = bottom, 50
-				attN = top, 52
+				attN = bottom, 46
+				attN = top, 48
 				mass = 0.375
-				temp = 288.406035960764
-				tempExt = 289.339164492531
+				temp = 288.618295346094
+				tempExt = 289.627370585111
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8093,7 +7826,7 @@ GAME
 				uid = 2211005952
 				mid = 4095855536
 				launchID = 15
-				parent = 51
+				parent = 47
 				position = -32.4314270019531,-0.846201181411743,-19.5033416748047
 				rotation = -0.4999999,0.5000001,-0.5000002,0.4999997
 				mirror = 1,1,1
@@ -8104,15 +7837,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 22
+				sym = 19
 				srfN = srfAttach, -1
-				attN = bottom, 51
-				attN = top, 53
+				attN = bottom, 47
+				attN = top, 49
 				mass = 0.375
-				temp = 288.379379779924
-				tempExt = 289.1808741627
+				temp = 288.539041748329
+				tempExt = 289.424076781119
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8135,7 +7868,7 @@ GAME
 				uid = 360450975
 				mid = 4095855536
 				launchID = 15
-				parent = 52
+				parent = 48
 				position = -32.4314384460449,-0.846207141876221,-22.4538307189941
 				rotation = -0.4999998,0.5000001,-0.5000004,0.4999999
 				mirror = 1,1,1
@@ -8146,15 +7879,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 23
+				sym = 20
 				srfN = srfAttach, -1
-				attN = bottom, 52
-				attN = top, 54
+				attN = bottom, 48
+				attN = top, 50
 				mass = 0.375
-				temp = 288.379341326836
-				tempExt = 289.100045000903
+				temp = 288.530098570301
+				tempExt = 289.341842202132
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8177,7 +7910,7 @@ GAME
 				uid = 1654313489
 				mid = 4095855536
 				launchID = 15
-				parent = 53
+				parent = 49
 				position = -32.4314651489258,-0.846213936805725,-25.4043312072754
 				rotation = -0.4999999,0.5000001,-0.5000003,0.4999999
 				mirror = 1,1,1
@@ -8188,15 +7921,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 24
+				sym = 21
 				srfN = srfAttach, -1
-				attN = bottom, 53
+				attN = bottom, 49
 				attN = top, -1
 				mass = 0.375
-				temp = 288.453400020643
-				tempExt = 289.037883638763
+				temp = 288.587649812788
+				tempExt = 289.197308852625
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8219,7 +7952,7 @@ GAME
 				uid = 3778515872
 				mid = 4095855536
 				launchID = 15
-				parent = 54
+				parent = 50
 				position = -31.8938751220703,-0.846216320991516,-26.6879615783691
 				rotation = -0.4545196,-0.4545192,0.5416754,0.5416754
 				mirror = 1,1,1
@@ -8230,13 +7963,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 25
-				srfN = srfAttach, 54
+				sym = 22
+				srfN = srfAttach, 50
 				mass = 0.015
-				temp = 288.606510323621
-				tempExt = 289.05569458049
+				temp = 288.751862380696
+				tempExt = 289.21573703302
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8331,7 +8064,7 @@ GAME
 				uid = 1650020947
 				mid = 4095855536
 				launchID = 15
-				parent = 50
+				parent = 46
 				position = -32.7584114074707,-0.846187472343445,-13.6473474502563
 				rotation = 0.7071071,-3.452833E-07,3.699724E-07,-0.7071066
 				mirror = 1,1,1
@@ -8342,13 +8075,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 26
-				srfN = srfAttach, 50
+				sym = 23
+				srfN = srfAttach, 46
 				mass = 0.3
-				temp = 289.291448335675
-				tempExt = 290.452357450568
+				temp = 290.052063497375
+				tempExt = 291.165198194043
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8367,7 +8100,7 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.4802026, -0.4801953, -0.5190444, 0.5190482)
+					currentRotation = (-0.4760898, -0.4760838, -0.5228209, 0.5228203)
 					stateString = EXTENDED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -8420,7 +8153,7 @@ GAME
 				uid = 541753804
 				mid = 4095855536
 				launchID = 15
-				parent = 48
+				parent = 44
 				position = -32.1067085266113,-0.846173644065857,-7.66844844818115
 				rotation = 4.214685E-08,0.7071068,-0.7071069,-1.366671E-07
 				mirror = 1,1,1
@@ -8431,13 +8164,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 27
-				srfN = srfAttach, 48
+				sym = 24
+				srfN = srfAttach, 44
 				mass = 0.05
-				temp = 287.944749587308
-				tempExt = 289.364111611614
+				temp = 288.030432516116
+				tempExt = 289.638271926748
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8486,7 +8219,7 @@ GAME
 				uid = 326384193
 				mid = 4095855536
 				launchID = 15
-				parent = 47
+				parent = 43
 				position = -32.4313850402832,-0.521353721618652,-6.11787700653076
 				rotation = -0.4999999,0.4999998,-0.5000003,0.5000002
 				mirror = 1,1,1
@@ -8497,13 +8230,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 28
-				srfN = srfAttach, 47
+				sym = 25
+				srfN = srfAttach, 43
 				mass = 0.05
-				temp = 288.019300161472
-				tempExt = 289.506955930994
+				temp = 288.11241945332
+				tempExt = 289.729172384694
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8552,7 +8285,7 @@ GAME
 				uid = 3009224070
 				mid = 4095855536
 				launchID = 15
-				parent = 47
+				parent = 43
 				position = -32.4313850402832,-1.17110824584961,-6.10387706756592
 				rotation = 0.5000004,0.5,-0.4999997,-0.5000001
 				mirror = 1,1,1
@@ -8563,13 +8296,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 29
-				srfN = srfAttach, 47
+				sym = 26
+				srfN = srfAttach, 43
 				mass = 0.05
-				temp = 288.019295633565
-				tempExt = 289.506880426031
+				temp = 288.112413871401
+				tempExt = 289.729090516942
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8618,7 +8351,7 @@ GAME
 				uid = 1195337815
 				mid = 4095855536
 				launchID = 15
-				parent = 45
+				parent = 41
 				position = -32.4346351623535,0.955354332923889,-6.67572021484375E-06
 				rotation = -2.856787E-07,-0.7071069,-1.068648E-07,0.7071066
 				mirror = 1,1,1
@@ -8629,15 +8362,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 30
-				srfN = srfAttach, 45
+				sym = 27
+				srfN = srfAttach, 41
 				attN = bottom, -1
-				attN = top, 61
+				attN = top, 57
 				mass = 0.375
-				temp = 289.062211072243
-				tempExt = 289.957337141414
+				temp = 289.248514508802
+				tempExt = 290.158455001631
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8660,7 +8393,7 @@ GAME
 				uid = 1248395423
 				mid = 4095855536
 				launchID = 15
-				parent = 60
+				parent = 56
 				position = -32.434642791748,3.9058403968811,4.76837158203125E-06
 				rotation = 1.788139E-07,-1.788139E-07,1.192093E-07,1
 				mirror = 1,1,1
@@ -8671,15 +8404,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 31
-				srfN = srfAttach, 45
-				attN = bottom, 60
+				sym = 28
+				srfN = srfAttach, 41
+				attN = bottom, 56
 				attN = top, -1
 				mass = 0.375
-				temp = 288.951930777965
-				tempExt = 289.800800460197
+				temp = 289.140715197203
+				tempExt = 289.992281973786
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8702,7 +8435,7 @@ GAME
 				uid = 2466883830
 				mid = 4095855536
 				launchID = 15
-				parent = 45
+				parent = 41
 				position = -32.4456367492676,-2.64603590965271,-7.62939453125E-06
 				rotation = -0.7071069,2.856787E-07,0.7071066,1.068648E-07
 				mirror = 1,1,1
@@ -8713,15 +8446,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 32
-				srfN = srfAttach, 45
+				sym = 29
+				srfN = srfAttach, 41
 				attN = bottom, -1
-				attN = top, 63
+				attN = top, 59
 				mass = 0.375
-				temp = 289.989120315979
-				tempExt = 290.673321567806
+				temp = 290.222222115002
+				tempExt = 290.906426655443
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8744,7 +8477,7 @@ GAME
 				uid = 790844488
 				mid = 4095855536
 				launchID = 15
-				parent = 62
+				parent = 58
 				position = -32.4456481933594,-5.59651851654053,-1.81198120117188E-05
 				rotation = -1,4.172325E-07,-1.192093E-07,5.960464E-08
 				mirror = 1,1,1
@@ -8755,15 +8488,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 33
-				srfN = srfAttach, 45
-				attN = bottom, 62
+				sym = 30
+				srfN = srfAttach, 41
+				attN = bottom, 58
 				attN = top, -1
 				mass = 0.375
-				temp = 289.585832545554
-				tempExt = 290.453454593628
+				temp = 289.838402668684
+				tempExt = 290.684104680354
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8786,7 +8519,7 @@ GAME
 				uid = 1532231641
 				mid = 4095855536
 				launchID = 15
-				parent = 62
+				parent = 58
 				position = -32.4313468933105,-0.846155285835266,-0.215216636657715
 				rotation = -0.4999999,0.5000005,-0.5000004,0.4999997
 				mirror = 1,1,1
@@ -8797,15 +8530,14 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 34
 				srfN = , -1
-				attN = top, 62
+				attN = top, 58
 				attN = bottom, -1
 				mass = 0.2
-				temp = 290.518638407117
-				tempExt = 290.895340068516
+				temp = 290.768919909395
+				tempExt = 291.134206649285
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -8833,7 +8565,7 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = False, 0
+				Stage = True, 22250.1988212956
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
@@ -8864,9 +8596,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.01776231
-				yaw = -0.008729842
-				roll = 0.009404299
+				pitch = -0.3110173
+				yaw = 0.1080765
+				roll = -0.4179235
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -8882,17 +8614,17 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 358.890014655932
+			met = 502.090014659032
 			lct = 21690.2088066354
 			root = 0
-			lat = 14.9999195635797
-			lon = 245.999965534127
-			alt = 636.89712660946
-			hgt = 0.2761179
-			nrm = 0.0001440828,0.001110462,-0.9999994
-			rot = -0.2555576,0.08499121,-0.9385398,-0.2158933
-			CoM = 0.01146823,-0.815541,-5.25717
-			stg = 3
+			lat = 14.9999195022166
+			lon = 245.999966625705
+			alt = 636.903802982764
+			hgt = 0.2752332
+			nrm = 0.0001807049,0.0002051226,-1
+			rot = -0.255646,0.08453838,-0.9385626,-0.2158674
+			CoM = 0.01074229,-0.8337193,-5.331092
+			stg = 0
 			prst = False
 			ref = 1318995958
 			ctrl = True
@@ -8901,13 +8633,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 74.4699830824355
-				LAN = 300.357260873506
+				LPE = 73.7974003804263
+				LAN = 240.351000493452
 				MNA = -8.40714670366795
-				EPH = 25826.879778325
+				EPH = 22268.4188212961
 				REF = 1
 			}
 			PART
@@ -8932,14 +8664,14 @@ GAME
 				attN = bottom, 1
 				attN = top, -1
 				mass = 0.04
-				temp = 289.58006977105
-				tempExt = 289.969082102264
+				temp = 289.636245965467
+				tempExt = 289.755851064848
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = probeCoreOcto2
+				rTrf = probeCoreOcto2 (Checkpoint 1)
 				modCost = 0
 				EVENTS
 				{
@@ -9020,7 +8752,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.99978020521951
+					amount = 4.9997804379013
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -9050,10 +8782,10 @@ GAME
 				attN = bottom, -1
 				attN = top, 0
 				mass = 0.125
-				temp = 289.579874388297
-				tempExt = 290.285931825944
+				temp = 289.577483703522
+				tempExt = 289.715140513758
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9067,221 +8799,6 @@ GAME
 				}
 				PARTDATA
 				{
-				}
-			}
-			PART
-			{
-				name = radialDecoupler
-				cid = 4294467208
-				uid = 151593336
-				mid = 928391566
-				launchID = 16
-				parent = 1
-				position = 0,-1.10478281974792,-0.331740379333496
-				rotation = 0.270598,0.6532815,-0.270598,-0.6532815
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 1
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 1
-				srfN = srfAttach, 1
-				mass = 0.025
-				temp = 289.868544364002
-				tempExt = 290.471964791796
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = radialDecoupler
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnchoredDecoupler
-					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = False
-					ejectionForcePercent_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 1
-					}
-					EVENTS
-					{
-						Decouple
-						{
-							active = True
-							guiActive = True
-							guiIcon = Decouple
-							guiName = Decouple
-							category = Decouple
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = trussPiece1x
-				cid = 4294465150
-				uid = 4012551042
-				mid = 928391566
-				launchID = 16
-				parent = 2
-				position = 0,-1.64026975631714,-0.816249847412109
-				rotation = 1.490116E-08,0.3826833,-0.9238796,-1.043081E-07
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				srfN = srfAttach, 2
-				attN = bottom, -1
-				attN = top, 4
-				mass = 0.125
-				temp = 290.393312713659
-				tempExt = 290.696012381942
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = trussPiece1x
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-			}
-			PART
-			{
-				name = asasmodule1-2
-				cid = 4294456688
-				uid = 1350206756
-				mid = 928391566
-				launchID = 16
-				parent = 3
-				position = -9.5367431640625E-07,-2.21251201629639,-1.38848972320557
-				rotation = -0.9238796,1.490116E-08,1.490116E-08,0.3826835
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 2
-				dstg = 2
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, -1
-				attN = bottom, 3
-				mass = 0.2
-				temp = 290.423317400341
-				tempExt = 290.702227037688
-				expt = 0.5
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = asasmodule1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
 				}
 			}
 			PART
@@ -9302,15 +8819,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 35
+				sym = 32
 				srfN = srfAttach, 1
 				attN = bottom, -1
-				attN = top, 6
+				attN = top, 3
 				mass = 0.375
-				temp = 289.178352834329
-				tempExt = 289.921913193371
+				temp = 289.241987316181
+				tempExt = 289.636720879966
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9333,7 +8850,7 @@ GAME
 				uid = 1083957004
 				mid = 928391566
 				launchID = 16
-				parent = 5
+				parent = 2
 				position = 4.75029563903809,-0.846167087554932,0
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9344,15 +8861,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 36
+				sym = 33
 				srfN = srfAttach, -1
-				attN = bottom, 7
-				attN = top, 5
+				attN = bottom, 4
+				attN = top, 2
 				mass = 0.375
-				temp = 288.977382590052
-				tempExt = 289.651815394587
+				temp = 289.022805204411
+				tempExt = 289.485729815746
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9375,7 +8892,7 @@ GAME
 				uid = 1772547222
 				mid = 928391566
 				launchID = 16
-				parent = 6
+				parent = 3
 				position = 7.70077228546143,-0.8461674451828,-9.5367431640625E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9386,15 +8903,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 37
+				sym = 34
 				srfN = srfAttach, -1
-				attN = bottom, 8
-				attN = top, 6
+				attN = bottom, 5
+				attN = top, 3
 				mass = 0.375
-				temp = 288.850522935431
-				tempExt = 289.456268994676
+				temp = 288.888887875993
+				tempExt = 289.36841579022
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9417,7 +8934,7 @@ GAME
 				uid = 71201393
 				mid = 928391566
 				launchID = 16
-				parent = 7
+				parent = 4
 				position = 10.6512632369995,-0.846166849136353,-9.5367431640625E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9428,15 +8945,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 38
+				sym = 35
 				srfN = srfAttach, -1
-				attN = bottom, 9
-				attN = top, 7
+				attN = bottom, 6
+				attN = top, 4
 				mass = 0.375
-				temp = 288.751444054648
-				tempExt = 289.31667783567
+				temp = 288.787960269972
+				tempExt = 289.277204302155
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9459,7 +8976,7 @@ GAME
 				uid = 1601248318
 				mid = 928391566
 				launchID = 16
-				parent = 8
+				parent = 5
 				position = 13.6017436981201,-0.846166253089905,9.5367431640625E-07
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9470,15 +8987,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 39
+				sym = 36
 				srfN = srfAttach, -1
-				attN = bottom, 10
-				attN = top, 8
+				attN = bottom, 7
+				attN = top, 5
 				mass = 0.375
-				temp = 288.677197080818
-				tempExt = 289.221682638054
+				temp = 288.713278756868
+				tempExt = 289.211544315859
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9501,7 +9018,7 @@ GAME
 				uid = 1520823343
 				mid = 928391566
 				launchID = 16
-				parent = 9
+				parent = 6
 				position = 16.5522270202637,-0.846164584159851,1.9073486328125E-06
 				rotation = -1.315538E-07,1.315538E-07,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9512,15 +9029,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 40
+				sym = 37
 				srfN = srfAttach, -1
-				attN = bottom, 11
-				attN = top, 9
+				attN = bottom, 8
+				attN = top, 6
 				mass = 0.375
-				temp = 288.630250282664
-				tempExt = 289.164875565919
+				temp = 288.666163911705
+				tempExt = 289.17267745663
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9543,7 +9060,7 @@ GAME
 				uid = 3491981232
 				mid = 928391566
 				launchID = 16
-				parent = 10
+				parent = 7
 				position = 19.5026969909668,-0.846163868904114,1.9073486328125E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9554,15 +9071,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 41
+				sym = 38
 				srfN = srfAttach, -1
-				attN = bottom, 12
-				attN = top, 10
+				attN = bottom, 9
+				attN = top, 7
 				mass = 0.375
-				temp = 288.610508539173
-				tempExt = 289.143082183045
+				temp = 288.64645477714
+				tempExt = 289.162635960079
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9585,7 +9102,7 @@ GAME
 				uid = 2447451095
 				mid = 928391566
 				launchID = 16
-				parent = 11
+				parent = 8
 				position = 22.4531669616699,-0.846164107322693,2.86102294921875E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9596,15 +9113,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 42
+				sym = 39
 				srfN = srfAttach, -1
-				attN = bottom, 13
-				attN = top, 11
+				attN = bottom, 10
+				attN = top, 8
 				mass = 0.375
-				temp = 288.615772540902
-				tempExt = 289.155617705559
+				temp = 288.652342837881
+				tempExt = 289.184938466704
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9627,7 +9144,7 @@ GAME
 				uid = 360947172
 				mid = 928391566
 				launchID = 16
-				parent = 12
+				parent = 9
 				position = 25.4036712646484,-0.846164464950562,2.86102294921875E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9638,15 +9155,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 43
+				sym = 40
 				srfN = srfAttach, -1
-				attN = bottom, 14
-				attN = top, 12
+				attN = bottom, 11
+				attN = top, 9
 				mass = 0.375
-				temp = 288.644385433305
-				tempExt = 289.204738293368
+				temp = 288.682970105122
+				tempExt = 289.246527345863
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9669,7 +9186,7 @@ GAME
 				uid = 2875572261
 				mid = 928391566
 				launchID = 16
-				parent = 13
+				parent = 10
 				position = 28.3541831970215,-0.84616482257843,-7.62939453125E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9680,15 +9197,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 44
+				sym = 41
 				srfN = srfAttach, -1
-				attN = bottom, 15
-				attN = top, 13
+				attN = bottom, 12
+				attN = top, 10
 				mass = 0.375
-				temp = 288.698995872643
-				tempExt = 289.297150191474
+				temp = 288.743322532566
+				tempExt = 289.361344294306
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9711,7 +9228,7 @@ GAME
 				uid = 4101085004
 				mid = 928391566
 				launchID = 16
-				parent = 14
+				parent = 11
 				position = 31.3046493530273,-0.846163272857666,-6.67572021484375E-06
 				rotation = -7.194917E-08,7.194917E-08,0.7071068,0.7071068
 				mirror = 1,1,1
@@ -9722,15 +9239,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 45
+				sym = 42
 				srfN = srfAttach, -1
 				attN = bottom, -1
-				attN = top, 14
+				attN = top, 11
 				mass = 0.375
-				temp = 288.806841494411
-				tempExt = 289.442856852821
+				temp = 288.863594225018
+				tempExt = 289.554051056729
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9753,7 +9270,7 @@ GAME
 				uid = 2932800872
 				mid = 928391566
 				launchID = 16
-				parent = 15
+				parent = 12
 				position = 32.4313583374023,-0.846165657043457,-1.80044746398926
 				rotation = -0.5000001,0.5,-0.5000002,0.5000001
 				mirror = 1,1,1
@@ -9764,15 +9281,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 46
-				srfN = srfAttach, 15
-				attN = bottom, 34
-				attN = top, 17
+				sym = 43
+				srfN = srfAttach, 12
+				attN = bottom, 31
+				attN = top, 14
 				mass = 0.375
-				temp = 288.626076721062
-				tempExt = 289.227802265309
+				temp = 288.674013884368
+				tempExt = 289.340801094316
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9795,7 +9312,7 @@ GAME
 				uid = 250435941
 				mid = 928391566
 				launchID = 16
-				parent = 16
+				parent = 13
 				position = 32.4313583374023,-0.846169352531433,-4.75091743469238
 				rotation = -0.5000001,-0.5,0.5000002,0.5000001
 				mirror = 1,1,1
@@ -9806,15 +9323,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 47
+				sym = 44
 				srfN = srfAttach, -1
-				attN = bottom, 16
-				attN = top, 18
+				attN = bottom, 13
+				attN = top, 15
 				mass = 0.375
-				temp = 288.49038007012
-				tempExt = 289.073857090786
+				temp = 288.528173618774
+				tempExt = 289.147285920436
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9837,7 +9354,7 @@ GAME
 				uid = 3005422591
 				mid = 928391566
 				launchID = 16
-				parent = 17
+				parent = 14
 				position = 32.4313812255859,-0.846174716949463,-7.70144748687744
 				rotation = -0.5000001,-0.5000002,0.5000001,0.5
 				mirror = 1,1,1
@@ -9848,15 +9365,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 48
+				sym = 45
 				srfN = srfAttach, -1
-				attN = bottom, 17
-				attN = top, 19
+				attN = bottom, 14
+				attN = top, 16
 				mass = 0.375
-				temp = 288.39618009336
-				tempExt = 288.975082777813
+				temp = 288.431961942733
+				tempExt = 289.056588181116
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9879,7 +9396,7 @@ GAME
 				uid = 334748398
 				mid = 928391566
 				launchID = 16
-				parent = 18
+				parent = 15
 				position = 32.4313812255859,-0.846178293228149,-10.6519403457642
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -9890,15 +9407,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 49
+				sym = 46
 				srfN = srfAttach, -1
-				attN = bottom, 18
-				attN = top, 20
+				attN = bottom, 15
+				attN = top, 17
 				mass = 0.375
-				temp = 288.323595243225
-				tempExt = 288.927194186807
+				temp = 288.363836757144
+				tempExt = 289.132123419097
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9921,7 +9438,7 @@ GAME
 				uid = 1011940939
 				mid = 928391566
 				launchID = 16
-				parent = 19
+				parent = 16
 				position = 32.4313888549805,-0.846183896064758,-13.6024198532104
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -9932,15 +9449,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 50
+				sym = 47
 				srfN = srfAttach, -1
-				attN = bottom, 19
-				attN = top, 21
+				attN = bottom, 16
+				attN = top, 18
 				mass = 0.375
-				temp = 288.279336636844
-				tempExt = 289.049097607794
+				temp = 288.364968782322
+				tempExt = 289.280360074039
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -9963,7 +9480,7 @@ GAME
 				uid = 1343761371
 				mid = 928391566
 				launchID = 16
-				parent = 20
+				parent = 17
 				position = 32.4314270019531,-0.846188306808472,-16.5528907775879
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -9974,15 +9491,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 51
+				sym = 48
 				srfN = srfAttach, -1
-				attN = bottom, 20
-				attN = top, 22
+				attN = bottom, 17
+				attN = top, 19
 				mass = 0.375
-				temp = 288.233179266599
-				tempExt = 288.884251655753
+				temp = 288.28293043996
+				tempExt = 289.037030235044
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10005,7 +9522,7 @@ GAME
 				uid = 1679764016
 				mid = 928391566
 				launchID = 16
-				parent = 21
+				parent = 18
 				position = 32.4314308166504,-0.846193909645081,-19.5033569335938
 				rotation = -0.5000001,-0.5,0.5000001,0.5000002
 				mirror = 1,1,1
@@ -10016,15 +9533,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 52
+				sym = 49
 				srfN = srfAttach, -1
-				attN = bottom, 21
-				attN = top, 23
+				attN = bottom, 18
+				attN = top, 20
 				mass = 0.375
-				temp = 288.213376717543
-				tempExt = 288.804195040087
+				temp = 288.254573260052
+				tempExt = 288.928171603686
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10047,7 +9564,7 @@ GAME
 				uid = 2611400613
 				mid = 928391566
 				launchID = 16
-				parent = 22
+				parent = 19
 				position = 32.431453704834,-0.846198439598084,-22.4538459777832
 				rotation = -0.5000001,-0.5000002,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -10058,15 +9575,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 53
+				sym = 50
 				srfN = srfAttach, -1
-				attN = bottom, 22
-				attN = top, 24
+				attN = bottom, 19
+				attN = top, 21
 				mass = 0.375
-				temp = 288.211135546821
-				tempExt = 288.769999225658
+				temp = 288.250335719446
+				tempExt = 288.88246203471
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10089,7 +9606,7 @@ GAME
 				uid = 3459934417
 				mid = 928391566
 				launchID = 16
-				parent = 23
+				parent = 20
 				position = 32.4314842224121,-0.846204042434692,-25.4043312072754
 				rotation = -0.5000001,-0.5000001,0.5000001,0.5000001
 				mirror = 1,1,1
@@ -10100,15 +9617,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 54
+				sym = 51
 				srfN = srfAttach, -1
-				attN = bottom, 23
+				attN = bottom, 20
 				attN = top, -1
 				mass = 0.375
-				temp = 288.242468281072
-				tempExt = 288.690576306851
+				temp = 288.280124485397
+				tempExt = 288.74912980036
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10131,7 +9648,7 @@ GAME
 				uid = 2831598452
 				mid = 928391566
 				launchID = 16
-				parent = 24
+				parent = 21
 				position = 31.8938865661621,-0.846205115318298,-26.6879730224609
 				rotation = -0.4545192,0.4545192,-0.5416755,0.5416756
 				mirror = 1,1,1
@@ -10142,13 +9659,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 55
-				srfN = srfAttach, 24
+				sym = 52
+				srfN = srfAttach, 21
 				mass = 0.015
-				temp = 288.360013046827
-				tempExt = 288.702519214761
+				temp = 288.405077135553
+				tempExt = 288.761828813436
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10243,7 +9760,7 @@ GAME
 				uid = 3148302284
 				mid = 928391566
 				launchID = 16
-				parent = 20
+				parent = 17
 				position = 32.758415222168,-0.846183896064758,-13.6473627090454
 				rotation = 3.15481E-07,0.7071071,-0.7071068,-4.214683E-08
 				mirror = 1,1,1
@@ -10254,13 +9771,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 56
-				srfN = srfAttach, 20
+				sym = 53
+				srfN = srfAttach, 17
 				mass = 0.3
-				temp = 288.518107183742
-				tempExt = 289.47116915785
+				temp = 288.778576008302
+				tempExt = 289.99245776883
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10279,10 +9796,10 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.5252055, -0.525207, -0.4734539, 0.4734536)
+					currentRotation = (-0.5309432, -0.5309464, -0.46701, 0.4670084)
 					stateString = EXTENDED
 					storedAnimationTime = 0
-					storedAnimationSpeed = 1
+					storedAnimationSpeed = 0
 					EVENTS
 					{
 						Extend
@@ -10332,7 +9849,7 @@ GAME
 				uid = 1105944514
 				mid = 928391566
 				launchID = 16
-				parent = 18
+				parent = 15
 				position = 32.1066970825195,-0.846174716949463,-7.66845798492432
 				rotation = -0.7071068,-2.260741E-07,-3.452834E-07,0.707107
 				mirror = 1,1,1
@@ -10343,13 +9860,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 57
-				srfN = srfAttach, 18
+				sym = 54
+				srfN = srfAttach, 15
 				mass = 0.05
-				temp = 288.094825223427
-				tempExt = 288.960696958934
+				temp = 288.111750701169
+				tempExt = 289.022082836675
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10398,7 +9915,7 @@ GAME
 				uid = 4047343732
 				mid = 928391566
 				launchID = 16
-				parent = 17
+				parent = 14
 				position = 32.4313812255859,-0.521353721618652,-6.11787891387939
 				rotation = -0.5000001,0.5,-0.5000001,0.5000002
 				mirror = 1,1,1
@@ -10409,13 +9926,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 58
-				srfN = srfAttach, 17
+				sym = 55
+				srfN = srfAttach, 14
 				mass = 0.05
-				temp = 288.177024231162
-				tempExt = 289.059258685995
+				temp = 288.194664796739
+				tempExt = 289.124929618848
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10464,7 +9981,7 @@ GAME
 				uid = 560465278
 				mid = 928391566
 				launchID = 16
-				parent = 17
+				parent = 14
 				position = 32.4313583374023,-1.1711118221283,-6.10387897491455
 				rotation = -0.5000001,-0.5000002,0.5000001,0.5
 				mirror = 1,1,1
@@ -10475,13 +9992,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 59
-				srfN = srfAttach, 17
+				sym = 56
+				srfN = srfAttach, 14
 				mass = 0.05
-				temp = 288.177084323564
-				tempExt = 289.059222142343
+				temp = 288.194721882743
+				tempExt = 289.12487485526
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10530,7 +10047,7 @@ GAME
 				uid = 3151707538
 				mid = 928391566
 				launchID = 16
-				parent = 15
+				parent = 12
 				position = 32.4346389770508,0.955348253250122,-6.67572021484375E-06
 				rotation = 1.234452E-08,0.7071067,-7.194916E-08,0.7071069
 				mirror = 1,1,1
@@ -10541,15 +10058,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 60
-				srfN = srfAttach, 15
+				sym = 57
+				srfN = srfAttach, 12
 				attN = bottom, -1
-				attN = top, 31
+				attN = top, 28
 				mass = 0.375
-				temp = 288.749104244909
-				tempExt = 289.337216448822
+				temp = 288.79900716226
+				tempExt = 289.435821594473
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10572,7 +10089,7 @@ GAME
 				uid = 588330713
 				mid = 928391566
 				launchID = 16
-				parent = 30
+				parent = 27
 				position = 32.4346389770508,3.90582990646362,4.76837158203125E-06
 				rotation = -1.639128E-07,-1.043081E-07,-2.831221E-07,1
 				mirror = 1,1,1
@@ -10583,15 +10100,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 61
-				srfN = srfAttach, 15
-				attN = bottom, 30
+				sym = 58
+				srfN = srfAttach, 12
+				attN = bottom, 27
 				attN = top, -1
 				mass = 0.375
-				temp = 288.73049168243
-				tempExt = 289.293214106268
+				temp = 288.774338133053
+				tempExt = 289.368005536167
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10614,7 +10131,7 @@ GAME
 				uid = 2735913414
 				mid = 928391566
 				launchID = 16
-				parent = 15
+				parent = 12
 				position = 32.445629119873,-2.64604163169861,-7.62939453125E-06
 				rotation = 0.7071068,-4.214684E-08,0.7071069,-1.366671E-07
 				mirror = 1,1,1
@@ -10625,15 +10142,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 62
-				srfN = srfAttach, 15
+				sym = 59
+				srfN = srfAttach, 12
 				attN = bottom, -1
-				attN = top, 33
+				attN = top, 30
 				mass = 0.375
-				temp = 289.238294778854
-				tempExt = 289.763002691249
+				temp = 289.316276120523
+				tempExt = 289.881438411305
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10656,7 +10173,7 @@ GAME
 				uid = 282418369
 				mid = 928391566
 				launchID = 16
-				parent = 32
+				parent = 29
 				position = 32.4456520080566,-5.59652471542358,2.86102294921875E-06
 				rotation = 1,2.384186E-07,-5.960464E-08,-5.960464E-08
 				mirror = 1,1,1
@@ -10667,15 +10184,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 63
-				srfN = srfAttach, 15
-				attN = bottom, 32
+				sym = 60
+				srfN = srfAttach, 12
+				attN = bottom, 29
 				attN = top, -1
 				mass = 0.375
-				temp = 288.9885222579
-				tempExt = 289.660699183511
+				temp = 289.057077917511
+				tempExt = 289.743081532143
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10698,7 +10215,7 @@ GAME
 				uid = 833791327
 				mid = 928391566
 				launchID = 16
-				parent = 32
+				parent = 29
 				position = 32.4313278198242,-0.846160531044006,-0.215216636657715
 				rotation = -0.5000001,-0.4999999,0.5000001,0.4999999
 				mirror = 1,1,1
@@ -10709,15 +10226,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 64
+				sym = 61
 				srfN = , -1
-				attN = top, 32
+				attN = top, 29
 				attN = bottom, -1
 				mass = 0.2
-				temp = 289.618146759358
-				tempExt = 289.915031226534
+				temp = 289.724581138201
+				tempExt = 290.036734205559
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10735,7 +10252,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3999.99978020522
+					amount = 3999.9997804379
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -10761,15 +10278,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 5
+				sym = 2
 				srfN = srfAttach, 1
 				attN = bottom, -1
-				attN = top, 36
+				attN = top, 33
 				mass = 0.375
-				temp = 289.20161761189
-				tempExt = 289.982695517295
+				temp = 289.262768477503
+				tempExt = 289.658320855824
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10792,7 +10309,7 @@ GAME
 				uid = 1769530457
 				mid = 928391566
 				launchID = 16
-				parent = 35
+				parent = 32
 				position = -4.75029325485229,-0.846167087554932,0
 				rotation = 1.962717E-07,-1.017515E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -10803,15 +10320,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 6
+				sym = 3
 				srfN = srfAttach, -1
-				attN = bottom, 37
-				attN = top, 35
+				attN = bottom, 34
+				attN = top, 32
 				mass = 0.375
-				temp = 289.005217322356
-				tempExt = 289.776195785529
+				temp = 289.044913969519
+				tempExt = 289.481427644097
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10834,7 +10351,7 @@ GAME
 				uid = 4279075872
 				mid = 928391566
 				launchID = 16
-				parent = 36
+				parent = 33
 				position = -7.70077514648438,-0.846166491508484,9.5367431640625E-07
 				rotation = 1.962717E-07,1.745781E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -10845,15 +10362,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 7
+				sym = 4
 				srfN = srfAttach, -1
-				attN = bottom, 38
-				attN = top, 36
+				attN = bottom, 35
+				attN = top, 33
 				mass = 0.375
-				temp = 288.829944768783
-				tempExt = 289.377646565383
+				temp = 288.867577571585
+				tempExt = 289.327723983256
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10876,7 +10393,7 @@ GAME
 				uid = 1603698155
 				mid = 928391566
 				launchID = 16
-				parent = 37
+				parent = 34
 				position = -10.6512670516968,-0.846165895462036,9.5367431640625E-07
 				rotation = 7.706245E-08,1.366671E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -10887,15 +10404,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 8
+				sym = 5
 				srfN = srfAttach, -1
-				attN = bottom, 39
-				attN = top, 37
+				attN = bottom, 36
+				attN = top, 34
 				mass = 0.375
-				temp = 288.687984214845
-				tempExt = 289.162153833293
+				temp = 288.725122985041
+				tempExt = 289.202434062462
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10918,7 +10435,7 @@ GAME
 				uid = 2242201807
 				mid = 928391566
 				launchID = 16
-				parent = 38
+				parent = 35
 				position = -13.6017627716064,-0.846165180206299,9.5367431640625E-07
 				rotation = 1.664694E-07,4.726013E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -10929,15 +10446,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 9
+				sym = 6
 				srfN = srfAttach, -1
-				attN = bottom, 40
-				attN = top, 38
+				attN = bottom, 37
+				attN = top, 35
 				mass = 0.375
-				temp = 288.583792488892
-				tempExt = 289.038108296937
+				temp = 288.621098743192
+				tempExt = 289.110735848648
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -10960,7 +10477,7 @@ GAME
 				uid = 3185887663
 				mid = 928391566
 				launchID = 16
-				parent = 39
+				parent = 36
 				position = -16.5522441864014,-0.846162557601929,1.9073486328125E-06
 				rotation = 1.366671E-07,-4.214684E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -10971,15 +10488,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 10
+				sym = 7
 				srfN = srfAttach, -1
-				attN = bottom, 41
-				attN = top, 39
+				attN = bottom, 38
+				attN = top, 36
 				mass = 0.375
-				temp = 288.522212481834
-				tempExt = 288.971819527882
+				temp = 288.559557194711
+				tempExt = 289.057165120873
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11002,7 +10519,7 @@ GAME
 				uid = 445859413
 				mid = 928391566
 				launchID = 16
-				parent = 40
+				parent = 37
 				position = -19.5027046203613,-0.846161961555481,1.9073486328125E-06
 				rotation = 1.366671E-07,-1.613561E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -11013,15 +10530,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 11
+				sym = 8
 				srfN = srfAttach, -1
-				attN = bottom, 42
-				attN = top, 40
+				attN = bottom, 39
+				attN = top, 37
 				mass = 0.375
-				temp = 288.503675018334
-				tempExt = 288.953320649724
+				temp = 288.540871647886
+				tempExt = 289.044862034953
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11044,7 +10561,7 @@ GAME
 				uid = 2507910581
 				mid = 928391566
 				launchID = 16
-				parent = 41
+				parent = 38
 				position = -22.4531936645508,-0.84616219997406,2.86102294921875E-06
 				rotation = 1.664694E-07,4.726013E-08,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -11055,15 +10572,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 12
+				sym = 9
 				srfN = srfAttach, -1
-				attN = bottom, 43
-				attN = top, 41
+				attN = bottom, 40
+				attN = top, 38
 				mass = 0.375
-				temp = 288.524289372198
-				tempExt = 288.978551270032
+				temp = 288.561754119575
+				tempExt = 289.077488795313
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11086,7 +10603,7 @@ GAME
 				uid = 1345829172
 				mid = 928391566
 				launchID = 16
-				parent = 42
+				parent = 39
 				position = -25.4036636352539,-0.846160531044006,2.86102294921875E-06
 				rotation = 2.558764E-07,-4.214683E-08,-0.707107,0.7071067
 				mirror = 1,1,1
@@ -11097,15 +10614,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 13
+				sym = 10
 				srfN = srfAttach, -1
-				attN = bottom, 44
-				attN = top, 42
+				attN = bottom, 41
+				attN = top, 39
 				mass = 0.375
-				temp = 288.580160830258
-				tempExt = 289.054071303396
+				temp = 288.619646380902
+				tempExt = 289.163795599177
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11128,7 +10645,7 @@ GAME
 				uid = 2750822688
 				mid = 928391566
 				launchID = 16
-				parent = 43
+				parent = 40
 				position = -28.3541870117188,-0.846159815788269,-7.62939453125E-06
 				rotation = 1.366671E-07,-1.613561E-07,-0.7071069,0.7071068
 				mirror = 1,1,1
@@ -11139,15 +10656,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 14
+				sym = 11
 				srfN = srfAttach, -1
-				attN = bottom, 45
-				attN = top, 43
+				attN = bottom, 42
+				attN = top, 40
 				mass = 0.375
-				temp = 288.676369652679
-				tempExt = 289.214211067257
+				temp = 288.721684677722
+				tempExt = 289.325330512797
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11170,7 +10687,7 @@ GAME
 				uid = 565284925
 				mid = 928391566
 				launchID = 16
-				parent = 44
+				parent = 41
 				position = -31.3046531677246,-0.846157193183899,-6.67572021484375E-06
 				rotation = 2.558764E-07,-4.214683E-08,-0.707107,0.7071067
 				mirror = 1,1,1
@@ -11181,15 +10698,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 15
+				sym = 12
 				srfN = srfAttach, -1
 				attN = bottom, -1
-				attN = top, 44
+				attN = top, 41
 				mass = 0.375
-				temp = 288.84445020869
-				tempExt = 289.571461417174
+				temp = 288.898029908213
+				tempExt = 289.606506024959
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11212,7 +10729,7 @@ GAME
 				uid = 682192769
 				mid = 928391566
 				launchID = 16
-				parent = 45
+				parent = 42
 				position = -32.4313583374023,-0.846161961555481,-1.80045604705811
 				rotation = -0.4999999,-0.4999998,0.5000002,0.5000003
 				mirror = 1,1,1
@@ -11223,15 +10740,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 16
-				srfN = srfAttach, 45
-				attN = bottom, 64
-				attN = top, 47
+				sym = 13
+				srfN = srfAttach, 42
+				attN = bottom, 61
+				attN = top, 44
 				mass = 0.375
-				temp = 288.673127861643
-				tempExt = 289.399458504038
+				temp = 288.716188420361
+				tempExt = 289.411628042269
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11254,7 +10771,7 @@ GAME
 				uid = 318758732
 				mid = 928391566
 				launchID = 16
-				parent = 46
+				parent = 43
 				position = -32.4313545227051,-0.846168756484985,-4.75091743469238
 				rotation = -0.4999999,0.5000003,-0.5000003,0.4999998
 				mirror = 1,1,1
@@ -11265,15 +10782,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 17
+				sym = 14
 				srfN = srfAttach, -1
-				attN = bottom, 46
-				attN = top, 48
+				attN = bottom, 43
+				attN = top, 45
 				mass = 0.375
-				temp = 288.486015951455
-				tempExt = 288.995475271996
+				temp = 288.524406315618
+				tempExt = 289.14089923059
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11296,7 +10813,7 @@ GAME
 				uid = 4039558469
 				mid = 928391566
 				launchID = 16
-				parent = 47
+				parent = 44
 				position = -32.4313888549805,-0.846173763275146,-7.70141887664795
 				rotation = -0.4999998,0.5,-0.5000004,0.5
 				mirror = 1,1,1
@@ -11307,15 +10824,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 18
+				sym = 15
 				srfN = srfAttach, -1
-				attN = bottom, 47
-				attN = top, 49
+				attN = bottom, 44
+				attN = top, 46
 				mass = 0.375
-				temp = 288.35601351272
-				tempExt = 288.816922123076
+				temp = 288.393875849569
+				tempExt = 289.021731491159
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11338,7 +10855,7 @@ GAME
 				uid = 666511383
 				mid = 928391566
 				launchID = 16
-				parent = 48
+				parent = 45
 				position = -32.4313888549805,-0.846179604530334,-10.6519289016724
 				rotation = -0.4999997,0.5000002,-0.5000004,0.4999997
 				mirror = 1,1,1
@@ -11349,15 +10866,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 19
+				sym = 16
 				srfN = srfAttach, -1
-				attN = bottom, 48
-				attN = top, 50
+				attN = bottom, 45
+				attN = top, 47
 				mass = 0.375
-				temp = 288.266446197374
-				tempExt = 288.746930001744
+				temp = 288.313147323608
+				tempExt = 289.112467230955
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11380,7 +10897,7 @@ GAME
 				uid = 58506754
 				mid = 928391566
 				launchID = 16
-				parent = 49
+				parent = 46
 				position = -32.4314193725586,-0.846187353134155,-13.6023988723755
 				rotation = -0.4999998,0.5000002,-0.5000004,0.4999999
 				mirror = 1,1,1
@@ -11391,15 +10908,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 20
+				sym = 17
 				srfN = srfAttach, -1
-				attN = bottom, 49
-				attN = top, 51
+				attN = bottom, 46
+				attN = top, 48
 				mass = 0.375
-				temp = 288.237686753833
-				tempExt = 289.101442393817
+				temp = 288.323451082541
+				tempExt = 289.291455387865
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11422,7 +10939,7 @@ GAME
 				uid = 992728555
 				mid = 928391566
 				launchID = 16
-				parent = 50
+				parent = 47
 				position = -32.4314270019531,-0.846192359924316,-16.5528678894043
 				rotation = -0.4999998,0.5000002,-0.5000004,0.4999999
 				mirror = 1,1,1
@@ -11433,15 +10950,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 21
+				sym = 18
 				srfN = srfAttach, -1
-				attN = bottom, 50
-				attN = top, 52
+				attN = bottom, 47
+				attN = top, 49
 				mass = 0.375
-				temp = 288.181962142547
-				tempExt = 288.810279400962
+				temp = 288.232047379342
+				tempExt = 288.971060073613
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11464,7 +10981,7 @@ GAME
 				uid = 4266600471
 				mid = 928391566
 				launchID = 16
-				parent = 51
+				parent = 48
 				position = -32.4314270019531,-0.846201181411743,-19.5033378601074
 				rotation = -0.4999999,0.5000001,-0.5000002,0.4999997
 				mirror = 1,1,1
@@ -11475,15 +10992,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 22
+				sym = 19
 				srfN = srfAttach, -1
-				attN = bottom, 51
-				attN = top, 53
+				attN = bottom, 48
+				attN = top, 50
 				mass = 0.375
-				temp = 288.165811624405
-				tempExt = 288.717213436258
+				temp = 288.20589006387
+				tempExt = 288.833401404579
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11506,7 +11023,7 @@ GAME
 				uid = 3656472465
 				mid = 928391566
 				launchID = 16
-				parent = 52
+				parent = 49
 				position = -32.4314270019531,-0.846207141876221,-22.4538307189941
 				rotation = -0.4999998,0.5000001,-0.5000004,0.4999999
 				mirror = 1,1,1
@@ -11517,15 +11034,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 23
+				sym = 20
 				srfN = srfAttach, -1
-				attN = bottom, 52
-				attN = top, 54
+				attN = bottom, 49
+				attN = top, 51
 				mass = 0.375
-				temp = 288.16654946351
-				tempExt = 288.617459548221
+				temp = 288.204473808065
+				tempExt = 288.779627153905
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11548,7 +11065,7 @@ GAME
 				uid = 559201705
 				mid = 928391566
 				launchID = 16
-				parent = 53
+				parent = 50
 				position = -32.4314575195313,-0.846213936805725,-25.4043197631836
 				rotation = -0.4999999,0.5000001,-0.5000003,0.4999999
 				mirror = 1,1,1
@@ -11559,15 +11076,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 24
+				sym = 21
 				srfN = srfAttach, -1
-				attN = bottom, 53
+				attN = bottom, 50
 				attN = top, -1
 				mass = 0.375
-				temp = 288.209978874122
-				tempExt = 288.640753431062
+				temp = 288.247264430119
+				tempExt = 288.726962419039
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11590,7 +11107,7 @@ GAME
 				uid = 313000654
 				mid = 928391566
 				launchID = 16
-				parent = 54
+				parent = 51
 				position = -31.8938674926758,-0.846216320991516,-26.6879501342773
 				rotation = -0.4545196,-0.4545192,0.5416754,0.5416754
 				mirror = 1,1,1
@@ -11601,13 +11118,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 25
-				srfN = srfAttach, 54
+				sym = 22
+				srfN = srfAttach, 51
 				mass = 0.015
-				temp = 288.325247488058
-				tempExt = 288.657974494286
+				temp = 288.375208939052
+				tempExt = 288.741696666533
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11702,7 +11219,7 @@ GAME
 				uid = 238757275
 				mid = 928391566
 				launchID = 16
-				parent = 50
+				parent = 47
 				position = -32.758415222168,-0.846187472343445,-13.6473474502563
 				rotation = 0.7071071,-3.452833E-07,3.699724E-07,-0.7071066
 				mirror = 1,1,1
@@ -11713,13 +11230,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 26
-				srfN = srfAttach, 50
+				sym = 23
+				srfN = srfAttach, 47
 				mass = 0.3
-				temp = 288.492912265813
-				tempExt = 289.463882359805
+				temp = 288.756763395391
+				tempExt = 289.979229864474
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11738,10 +11255,10 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.4715747, -0.4715759, -0.5268948, 0.5268922)
+					currentRotation = (-0.4683634, -0.4683668, -0.529752, 0.5297462)
 					stateString = EXTENDED
 					storedAnimationTime = 0
-					storedAnimationSpeed = 1
+					storedAnimationSpeed = 0
 					EVENTS
 					{
 						Extend
@@ -11791,7 +11308,7 @@ GAME
 				uid = 2534494082
 				mid = 928391566
 				launchID = 16
-				parent = 48
+				parent = 45
 				position = -32.1067085266113,-0.846173644065857,-7.66844654083252
 				rotation = 4.214685E-08,0.7071068,-0.7071069,-1.366671E-07
 				mirror = 1,1,1
@@ -11802,13 +11319,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 27
-				srfN = srfAttach, 48
+				sym = 24
+				srfN = srfAttach, 45
 				mass = 0.05
-				temp = 288.073716079721
-				tempExt = 288.805945842636
+				temp = 288.089801853238
+				tempExt = 289.005452252479
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11857,7 +11374,7 @@ GAME
 				uid = 3435723467
 				mid = 928391566
 				launchID = 16
-				parent = 47
+				parent = 44
 				position = -32.4313888549805,-0.521353721618652,-6.11787700653076
 				rotation = -0.4999999,0.4999998,-0.5000003,0.5000002
 				mirror = 1,1,1
@@ -11868,13 +11385,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 28
-				srfN = srfAttach, 47
+				sym = 25
+				srfN = srfAttach, 44
 				mass = 0.05
-				temp = 288.179285758228
-				tempExt = 288.984469557487
+				temp = 288.196567565113
+				tempExt = 289.125178115426
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11923,7 +11440,7 @@ GAME
 				uid = 1909005345
 				mid = 928391566
 				launchID = 16
-				parent = 47
+				parent = 44
 				position = -32.4313888549805,-1.17110824584961,-6.10387706756592
 				rotation = 0.5000004,0.5,-0.4999997,-0.5000001
 				mirror = 1,1,1
@@ -11934,13 +11451,13 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 29
-				srfN = srfAttach, 47
+				sym = 26
+				srfN = srfAttach, 44
 				mass = 0.05
-				temp = 288.179281620304
-				tempExt = 288.984442471241
+				temp = 288.196563169907
+				tempExt = 289.125138318854
 				expt = 0
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -11989,7 +11506,7 @@ GAME
 				uid = 456015289
 				mid = 928391566
 				launchID = 16
-				parent = 45
+				parent = 42
 				position = -32.4346389770508,0.955354332923889,-6.67572021484375E-06
 				rotation = -2.856787E-07,-0.7071069,-1.068648E-07,0.7071066
 				mirror = 1,1,1
@@ -12000,15 +11517,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 30
-				srfN = srfAttach, 45
+				sym = 27
+				srfN = srfAttach, 42
 				attN = bottom, -1
-				attN = top, 61
+				attN = top, 58
 				mass = 0.375
-				temp = 288.790629834828
-				tempExt = 289.45708451049
+				temp = 288.838336094938
+				tempExt = 289.488972718305
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -12031,7 +11548,7 @@ GAME
 				uid = 3257198773
 				mid = 928391566
 				launchID = 16
-				parent = 60
+				parent = 57
 				position = -32.434642791748,3.90584135055542,4.76837158203125E-06
 				rotation = 1.788139E-07,-1.788139E-07,1.192093E-07,1
 				mirror = 1,1,1
@@ -12042,15 +11559,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 31
-				srfN = srfAttach, 45
-				attN = bottom, 60
+				sym = 28
+				srfN = srfAttach, 42
+				attN = bottom, 57
 				attN = top, -1
 				mass = 0.375
-				temp = 288.750791682145
-				tempExt = 289.270976958073
+				temp = 288.795908912916
+				tempExt = 289.379603529011
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -12073,7 +11590,7 @@ GAME
 				uid = 1420081809
 				mid = 928391566
 				launchID = 16
-				parent = 45
+				parent = 42
 				position = -32.4456367492676,-2.64603590965271,-7.62939453125E-06
 				rotation = -0.7071069,2.856787E-07,0.7071066,1.068648E-07
 				mirror = 1,1,1
@@ -12084,15 +11601,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 1
-				sym = 32
-				srfN = srfAttach, 45
+				sym = 29
+				srfN = srfAttach, 42
 				attN = bottom, -1
-				attN = top, 63
+				attN = top, 60
 				mass = 0.375
-				temp = 289.283258432157
-				tempExt = 289.850063134045
+				temp = 289.359779911567
+				tempExt = 289.932883433802
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -12115,7 +11632,7 @@ GAME
 				uid = 732445324
 				mid = 928391566
 				launchID = 16
-				parent = 62
+				parent = 59
 				position = -32.4456481933594,-5.59651851654053,-1.81198120117188E-05
 				rotation = -1,4.172325E-07,-1.192093E-07,5.960464E-08
 				mirror = 1,1,1
@@ -12126,15 +11643,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 33
-				srfN = srfAttach, 45
-				attN = bottom, 62
+				sym = 30
+				srfN = srfAttach, 42
+				attN = bottom, 59
 				attN = top, -1
 				mass = 0.375
-				temp = 289.002650162135
-				tempExt = 289.57382862145
+				temp = 289.073075426978
+				tempExt = 289.731642907827
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -12157,7 +11674,7 @@ GAME
 				uid = 1166679250
 				mid = 928391566
 				launchID = 16
-				parent = 62
+				parent = 59
 				position = -32.4313468933105,-0.846155166625977,-0.215216636657715
 				rotation = -0.4999999,0.5000005,-0.5000004,0.4999997
 				mirror = 1,1,1
@@ -12168,15 +11685,15 @@ GAME
 				sepI = 0
 				sidx = -1
 				attm = 0
-				sym = 34
+				sym = 31
 				srfN = , -1
-				attN = top, 62
+				attN = top, 59
 				attN = bottom, -1
 				mass = 0.2
-				temp = 289.673026957151
-				tempExt = 289.979247639523
+				temp = 289.772788208211
+				tempExt = 290.084801744477
 				expt = 0.5
-				state = 0
+				state = 1
 				connected = True
 				attached = True
 				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
@@ -12194,7 +11711,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 3999.99978020522
+					amount = 3999.9997804379
 					maxAmount = 4000
 					flowState = True
 					isTweakable = True
@@ -12204,7 +11721,7 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = False, 0
+				Stage = True, 22187.7188212943
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
@@ -12235,9 +11752,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.001707876
-				yaw = 0.0175834
-				roll = -0.004152548
+				pitch = 0.01430079
+				yaw = -0.002759035
+				roll = 0.0003146627
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
