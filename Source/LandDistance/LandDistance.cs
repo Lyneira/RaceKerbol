@@ -76,7 +76,6 @@ namespace LandDistance {
 			landDistance = 0.0d;
 			highScore = 0.0d;
 			landed = false;
-			updateState();
 			if (windowVisible) {
 				// Run our toggle method to activate window
 				windowVisible = false;
@@ -127,7 +126,7 @@ namespace LandDistance {
 				double radius = v.mainBody.Radius + altitude + (v.altitude - altitude) / 2.0d;
 				double la1 = toRadians(latitude);
 				double la2 = toRadians(v.latitude);
-				double dLa = toRadians(la2 - la1);
+				double dLa = toRadians(v.latitude - latitude);
 				double dLo = toRadians(v.longitude - longitude);
 
 				double a = Math.Pow(Math.Sin(dLa / 2.0d), 2) +
@@ -298,8 +297,7 @@ namespace LandDistance {
 			config.save();
 		}
 
-		public static void ClampToScreen(Rect window)
-		{
+		public static void ClampToScreen(Rect window) {
 			window.x = Mathf.Clamp(window.x, -window.width + 20, Screen.width - 20);
 			window.y = Mathf.Clamp(window.y, -window.height + 20, Screen.height - 20);
 		}

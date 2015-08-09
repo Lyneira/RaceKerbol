@@ -1,3 +1,5 @@
+Random notes made while creating my scenarios, perhaps they'll be helpful for making your own.
+
 = Sun exposure thresholds =
 These are the thresholds for different states of the solar racer based on sun
 exposure on a level surface. Sun exposure may be higher when going downhill,
@@ -43,6 +45,11 @@ non-moving racer.
 == KSC to west side of the continent ==
 start: 0:17
 end: 15:50
+
+== Desert Pass ==
+start: 1:17:37
+end: 1:31:43
+begin at sun exposure: 0.46
 
 = Misc =
 Kerbin rotational velocity: 174.6 m/s
