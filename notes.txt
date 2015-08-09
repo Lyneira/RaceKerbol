@@ -7,7 +7,8 @@ has a great effect here when the sun starts to set.
 For states less than full power, a small margin allowing for maneuvering and
 hilly terrain is taken into account. (at least -0.5 on the ElectricCharge meter)
 
-Timestamps for the exposure states were experimentally recorded with a non-moving racer.
+Timestamps for the exposure states were experimentally recorded with a
+non-moving racer.
 * 0.9, -27:37, Full Power, 150 m/s
 * 0.8, -16:24, Full Power
 * 0.75, -11:40, Full Power
