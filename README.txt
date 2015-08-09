@@ -1,7 +1,7 @@
 Race Kerbol
 ===========
 About:
-Race Kerbol (the sun) in a series of scenarios from start to finish, while trying to
+Race Kerbol (the sun) in a series of scenarios from start to finish while trying to
 keep as close to the ground as possible to get a higher score! Your craft is solar powered,
 so make sure to keep your panels exposed to the sun as much as possible.
 
