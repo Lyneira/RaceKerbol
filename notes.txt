@@ -1,0 +1,48 @@
+= Sun exposure thresholds =
+These are the thresholds for different states of the solar racer based on sun
+exposure on a level surface. Sun exposure may be higher when going downhill,
+lower when maintaining flight or going uphill, but atmospheric attenuation also
+has a great effect here when the sun starts to set.
+
+For states less than full power, a small margin allowing for maneuvering and
+hilly terrain is taken into account. (at least -0.5 on the ElectricCharge meter)
+
+Timestamps for the exposure states were experimentally recorded with a non-moving racer.
+* 0.9, -27:37, Full Power, 150 m/s
+* 0.8, -16:24, Full Power
+* 0.75, -11:40, Full Power
+* 0.7, -7:36, Full Power
+* 0.65, -3:42, Full Power
+* 0.6, 0:00, Full Power (small margin)
+* 0.55, 3:32, 80% Power, ? m/s
+* 0.53, 4:54, 67% Power, ? m/s
+* 0.52, 5:35, 50% Power, ? m/s
+* 0.5, 6:55, 33% Power, ? m/s
+* 0.45, 10:12, 20% Power, 100 m/s
+* 0.4, 13:32, 10% Power, 65 m/s
+* 0.32, 18:19, Anti Grav motor failure
+
+
+0.9 - 8:34 - 
+0.8 - 19:47 - 
+0.75 - 24:31 - 
+0.7 - 28:35 - 
+0.65 - 32:29 - 
+0.6 - 36:11 - 
+0.55 - 39:43 - 
+0.53 - 41:05 - 
+0.52 - 41:46 - 
+0.5 - 43:06 - 
+0.45 - 46:23 - 
+0.4 - 49:34 - 
+0.32 - 54:30 - 
+
+= Scenarios =
+
+== KSC to west side of the continent ==
+start: 0:17
+end: 15:50
+
+= Misc =
+Kerbin rotational velocity: 174.6 m/s
+Max speed: 150 m/s

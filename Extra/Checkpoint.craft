@@ -1,0 +1,2843 @@
+ship = Checkpoint
+version = 1.0.4
+description = 
+type = SPH
+size = 67.36266,27.2712,12.4513
+PART
+{
+	part = probeCoreOcto2_4294722298
+	partName = Part
+	pos = -0.3324506,10.68455,-1.94874
+	attPos = 0,0,0
+	attPos0 = -0.3324506,10.68455,-1.94874
+	rot = 0,0.7071068,-0.7071068,0
+	attRot = 0,0,-0.9999999,0
+	attRot0 = 0.7071068,0,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4294715336
+	attN = bottom,trussPiece1x_4294715336
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		standaloneToggle_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece1x_4294715336
+	partName = Part
+	pos = -0.3324506,10.68455,-1.328406
+	attPos = 0,0,0
+	attPos0 = 0,-0.6203349,7.394968E-08
+	rot = 0,0.7071068,-0.7071068,0
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = radialDecoupler_4294467208
+	link = trussPiece3x_4294667542
+	link = trussPiece3x_4294439942
+	attN = top,probeCoreOcto2_4294722298
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = radialDecoupler_4294467208
+	partName = Part
+	pos = -0.3324506,11.01629,-0.8439569
+	attPos = 0,0,0
+	attPos0 = -2.980232E-08,-0.4844486,-0.3317385
+	rot = 0.2705981,-0.6532815,0.2705981,-0.6532815
+	attRot = 0,0,0.3826835,0.9238795
+	attRot0 = 0.2705981,0.6532815,-0.2705981,-0.6532815
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 1
+	sidx = 0
+	sqor = 0
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece1x_4294465150
+	srfN = srfAttach,trussPiece1x_4294715336
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece1x_4294465150
+	partName = Part
+	pos = -0.3324506,11.5008,-0.3084705
+	attPos = 0,0,0
+	attPos0 = -0.7212429,-0.03604865,1.753858E-07
+	rot = -0.3826836,-2.280971E-08,5.506752E-08,-0.9238795
+	attRot = 0,0,0,1
+	attRot0 = 0.5000001,-0.5,0.5,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = asasmodule1-2_4294456688
+	srfN = srfAttach,radialDecoupler_4294467208
+	attN = top,asasmodule1-2_4294456688
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = asasmodule1-2_4294456688
+	partName = Part
+	pos = -0.3324503,12.07304,0.263772
+	attPos = 0,0,0
+	attPos0 = 2.980229E-08,0.809273,-1.192093E-07
+	rot = 0,0.9238796,0.3826834,0
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 8.940697E-08,-1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,trussPiece1x_4294465150
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4294667542
+	partName = Part
+	pos = -2.132271,10.68455,-1.102573
+	attPos = 0,0,0
+	attPos0 = 1.79982,-0.2258329,-5.043549E-08
+	rot = -4.214685E-08,0,-0.7071068,-0.7071069
+	attRot = 0,0,0,1
+	attRot0 = 0.5,0.5,-0.5000001,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294554850
+	sym = trussPiece3x_4294439942
+	srfN = srfAttach,trussPiece1x_4294715336
+	attN = top,trussPiece3x_4294554850
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294554850
+	partName = Part
+	pos = -5.082746,10.68455,-1.102573
+	attPos = 0,0,0
+	attPos0 = -3.517241E-07,2.950476,-8.793103E-08
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = -0.7071068,-3.853122E-08,0.7071068,-8.067808E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294667274
+	sym = trussPiece3x_4294439916
+	attN = bottom,trussPiece3x_4294667274
+	attN = top,trussPiece3x_4294667542
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294667274
+	partName = Part
+	pos = -8.03322,10.68456,-1.102573
+	attPos = 0,0,0
+	attPos0 = 0,-2.950475,-1.129536E-06
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294667060
+	sym = trussPiece3x_4294439890
+	attN = bottom,trussPiece3x_4294667060
+	attN = top,trussPiece3x_4294554850
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294667060
+	partName = Part
+	pos = -10.98371,10.68456,-1.102574
+	attPos = 0,0,0
+	attPos0 = 0,-2.950478,3.517244E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294666856
+	sym = trussPiece3x_4294439864
+	attN = bottom,trussPiece3x_4294666856
+	attN = top,trussPiece3x_4294667274
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294666856
+	partName = Part
+	pos = -13.93419,10.68455,-1.102575
+	attPos = 0,0,0
+	attPos0 = 0,-2.950479,3.517243E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294669698
+	sym = trussPiece3x_4294439838
+	attN = bottom,trussPiece3x_4294669698
+	attN = top,trussPiece3x_4294667060
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294669698
+	partName = Part
+	pos = -16.88467,10.68455,-1.102576
+	attPos = 0,0,0
+	attPos0 = 0,-2.95048,3.517245E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294669018
+	sym = trussPiece3x_4294439812
+	attN = bottom,trussPiece3x_4294669018
+	attN = top,trussPiece3x_4294666856
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294669018
+	partName = Part
+	pos = -19.83514,10.68455,-1.102577
+	attPos = 0,0,0
+	attPos0 = 0,-2.950477,3.517242E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294668434
+	sym = trussPiece3x_4294439786
+	attN = bottom,trussPiece3x_4294668434
+	attN = top,trussPiece3x_4294669698
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294668434
+	partName = Part
+	pos = -22.7856,10.68455,-1.102577
+	attPos = 0,0,0
+	attPos0 = 0,-2.950478,3.517244E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294673286
+	sym = trussPiece3x_4294439760
+	attN = bottom,trussPiece3x_4294673286
+	attN = top,trussPiece3x_4294669018
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294673286
+	partName = Part
+	pos = -25.73611,10.68455,-1.102577
+	attPos = 0,0,0
+	attPos0 = 0,-2.950479,3.517243E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294673084
+	sym = trussPiece3x_4294439734
+	attN = bottom,trussPiece3x_4294673084
+	attN = top,trussPiece3x_4294668434
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294673084
+	partName = Part
+	pos = -28.68661,10.68456,-1.102577
+	attPos = 0,0,0
+	attPos0 = 0,-2.950477,3.517242E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294714592
+	sym = trussPiece3x_4294439708
+	attN = bottom,trussPiece3x_4294714592
+	attN = top,trussPiece3x_4294673286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294714592
+	partName = Part
+	pos = -31.63708,10.68456,-1.102579
+	attPos = 0,0,0
+	attPos0 = 0,-2.950478,3.517244E-07
+	rot = 0.5000001,0.5000001,-0.5,0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294713786
+	link = trussPiece3x_4294671328
+	link = trussPiece3x_4294477052
+	sym = trussPiece3x_4294439682
+	attN = top,trussPiece3x_4294673084
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294713786
+	partName = Part
+	pos = -32.76379,12.485,-1.102577
+	attPos = 0,0,0
+	attPos0 = -2.843075E-08,-1.126716,-1.800448
+	rot = -8.42937E-08,0.7071069,-8.42937E-08,-0.7071069
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071067,-0.7071069,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294677920
+	sym = trussPiece3x_4294439656
+	srfN = srfAttach,trussPiece3x_4294714592
+	attN = bottom,batteryBankLarge_4294441250
+	attN = top,trussPiece3x_4294677920
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294677920
+	partName = Part
+	pos = -32.76379,15.43547,-1.102575
+	attPos = 0,0,0
+	attPos0 = 0,2.950477,1.141344E-06
+	rot = 1.264406E-07,0.7071069,4.214685E-08,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,-1,1.685874E-07,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294674394
+	link = strutConnector_4294670476
+	link = strutConnector_4294476850
+	sym = trussPiece3x_4294439630
+	attN = bottom,trussPiece3x_4294713786
+	attN = top,trussPiece3x_4294674394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294674394
+	partName = Part
+	pos = -32.76381,18.38599,-1.102571
+	attPos = 0,0,0
+	attPos0 = 0,2.950479,-2.851426E-06
+	rot = -8.42937E-08,0.7071069,8.42937E-08,0.707107
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294674994
+	link = strutConnector_4294671916
+	sym = trussPiece3x_4294439604
+	attN = bottom,trussPiece3x_4294677920
+	attN = top,trussPiece3x_4294674994
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294674994
+	partName = Part
+	pos = -32.76381,21.33648,-1.102569
+	attPos = 0,0,0
+	attPos0 = 0,2.95048,-3.328264E-06
+	rot = 4.214685E-08,0.7071069,-4.214685E-08,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294674832
+	sym = trussPiece3x_4294439578
+	attN = bottom,trussPiece3x_4294674394
+	attN = top,trussPiece3x_4294674832
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294674832
+	partName = Part
+	pos = -32.76382,24.28696,-1.102565
+	attPos = 0,0,0
+	attPos0 = 0,2.95048,-3.328264E-06
+	rot = -8.42937E-08,0.7071069,8.42937E-08,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294677298
+	link = largeSolarPanel_4294477552
+	sym = trussPiece3x_4294439552
+	attN = bottom,trussPiece3x_4294674994
+	attN = top,trussPiece3x_4294677298
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294677298
+	partName = Part
+	pos = -32.76385,27.23743,-1.102562
+	attPos = 0,0,0
+	attPos0 = 0,2.950477,-4.520357E-06
+	rot = 4.214685E-08,0.7071069,-4.214685E-08,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294677136
+	sym = trussPiece3x_4294439526
+	attN = bottom,trussPiece3x_4294674832
+	attN = top,trussPiece3x_4294677136
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294677136
+	partName = Part
+	pos = -32.76385,30.1879,-1.102558
+	attPos = 0,0,0
+	attPos0 = 0,2.95048,-3.328264E-06
+	rot = 0,0.707107,0,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294678462
+	sym = trussPiece3x_4294439500
+	attN = bottom,trussPiece3x_4294677298
+	attN = top,trussPiece3x_4294678462
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294678462
+	partName = Part
+	pos = -32.76387,33.13839,-1.102556
+	attPos = 0,0,0
+	attPos0 = 0,2.950477,-4.520357E-06
+	rot = 0,0.7071069,-4.214685E-08,0.707107
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294679492
+	sym = trussPiece3x_4294439474
+	attN = bottom,trussPiece3x_4294677136
+	attN = top,trussPiece3x_4294679492
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294679492
+	partName = Part
+	pos = -32.7639,36.08887,-1.102552
+	attPos = 0,0,0
+	attPos0 = 0,2.950479,-2.851426E-06
+	rot = -8.42937E-08,0.7071069,8.42937E-08,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = spotLight1_4294706386
+	sym = trussPiece3x_4294439448
+	attN = bottom,trussPiece3x_4294678462
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = spotLight1_4294706386
+	partName = Part
+	pos = -32.2263,37.37251,-1.102551
+	attPos = 0,0,0
+	attPos0 = 0,1.283628,0.5376004
+	rot = -0.06162868,0.7044162,-0.06162877,-0.7044162
+	attRot = 0.08715575,0,0,0.9961947
+	attRot0 = 0,0.9961947,-0.08715624,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = spotLight1_4294439422
+	srfN = srfAttach,trussPiece3x_4294679492
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		lightR = 1
+		lightG = 0.7
+		lightB = 0
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = largeSolarPanel_4294477552
+	partName = Part
+	pos = -33.09083,24.3319,-1.102565
+	attPos = 0,0,0
+	attPos0 = -2.980233E-08,0.04493904,-0.3269997
+	rot = 4.214685E-08,-1.341105E-07,-1.634741E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = 1.071077E-07,0.7071068,-1.071077E-07,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = largeSolarPanel_4294439382
+	srfN = srfAttach,trussPiece3x_4294674832
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = Custom01
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294671916
+	partName = CompoundPart
+	pos = -32.43913,18.353,-1.102571
+	attPos = 0,0,0
+	attPos0 = 0,-0.03297377,0.324684
+	rot = -4.585021E-07,1,-4.214685E-08,-1.341104E-07
+	attRot = 0,0,0,1
+	attRot0 = -3.455262E-07,0.7071068,-3.455262E-07,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294439312
+	srfN = srfAttach,trussPiece3x_4294674394
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294673286
+		pos = -6.74251,-7.343884,-0.006106776
+		rot = 7.82497E-09,5.358753E-08,0.7071075,0.7071067
+		dir = -0.676303,-0.7366233,-0.000612536
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294670476
+	partName = CompoundPart
+	pos = -32.76381,16.80243,-1.427391
+	attPos = 0,0,0
+	attPos0 = 0.324817,1.366947,-3.79275E-06
+	rot = -8.42937E-08,0.707107,-8.42937E-08,-0.7071069
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294439246
+	srfN = srfAttach,trussPiece3x_4294677920
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294671104
+		pos = -5.769481,-5.793304,-0.007196672
+		rot = 1.570966E-14,-1.366673E-07,0.7071077,0.7071073
+		dir = -0.7056482,-0.7085619,-0.0008802037
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294476850
+	partName = CompoundPart
+	pos = -32.76379,16.78843,-0.7776338
+	attPos = 0,0,0
+	attPos0 = -0.3249378,1.352961,-2.142561E-07
+	rot = -8.42937E-08,0.7071069,8.42937E-08,0.707107
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294439180
+	srfN = srfAttach,trussPiece3x_4294677920
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294477026
+		pos = -5.792444,-5.779298,-0.01158877
+		rot = -3.853126E-08,1.384214E-08,0.7071074,0.7071074
+		dir = -0.7079089,-0.7063024,-0.001416292
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4294671328
+	partName = Part
+	pos = -32.76707,10.68456,-2.90409
+	attPos = 0,0,0
+	attPos0 = 1.801511,-1.129988,-3.824895E-06
+	rot = 0.4999999,0.5000001,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0.5,0.5,-0.5000001,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294671104
+	sym = trussPiece3x_4294439114
+	srfN = srfAttach,trussPiece3x_4294714592
+	attN = top,trussPiece3x_4294671104
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294671104
+	partName = Part
+	pos = -32.76707,10.68455,-5.854571
+	attPos = 0,0,0
+	attPos0 = -3.517245E-07,2.950476,2.083211E-06
+	rot = -2.107343E-07,0.7071068,-0.7071069,-8.429371E-08
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = 8.067807E-08,-0.7071068,3.853122E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = trussPiece3x_4294439088
+	srfN = srfAttach,trussPiece3x_4294714592
+	attN = bottom,trussPiece3x_4294671328
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294477052
+	partName = Part
+	pos = -32.77806,10.68456,0.6972992
+	attPos = 0,0,0
+	attPos0 = -1.799878,-1.140986,-3.825551E-06
+	rot = 0.5000001,-0.5000001,-0.5,0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0.5,-0.5,0.5000001,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294477026
+	link = batteryBankLarge_4294441250
+	sym = trussPiece3x_4294439062
+	srfN = srfAttach,trussPiece3x_4294714592
+	attN = top,trussPiece3x_4294477026
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294477026
+	partName = Part
+	pos = -32.77808,10.68455,3.64778
+	attPos = 0,0,0
+	attPos0 = -3.517245E-07,2.950476,2.083211E-06
+	rot = 1.685874E-07,-0.7071071,-0.7071069,-1.685874E-07
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = 8.067807E-08,-0.7071068,3.853122E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = trussPiece3x_4294439036
+	srfN = srfAttach,trussPiece3x_4294714592
+	attN = bottom,trussPiece3x_4294477052
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = batteryBankLarge_4294441250
+	partName = Part
+	pos = -32.76376,10.89977,-1.102581
+	attPos = 0,0,0
+	attPos0 = -0.2152051,-1.799877,-0.01428219
+	rot = 8.42937E-08,0.7071069,8.42937E-08,0.7071069
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.7071068,0.7071069,-4.214685E-08,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = batteryBankLarge_4294439010
+	attN = top,trussPiece3x_4294477052
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 4000
+		maxAmount = 4000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439942
+	partName = Part
+	pos = 1.46737,10.68455,-1.102573
+	attPos = 0,0,0
+	attPos0 = -1.79982,-0.2258327,-5.043547E-08
+	rot = -4.214685E-08,0,0.7071068,-0.7071069
+	attRot = 0,0,0,1
+	attRot0 = -0.5,0.5,-0.5000001,-0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439916
+	sym = trussPiece3x_4294667542
+	srfN = srfAttach,trussPiece1x_4294715336
+	attN = top,trussPiece3x_4294439916
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439916
+	partName = Part
+	pos = 4.417842,10.68455,-1.102573
+	attPos = 0,0,0
+	attPos0 = -3.517241E-07,2.950476,-8.793103E-08
+	rot = -0.5000001,0.4999999,-0.5000001,-0.5
+	attRot = 0,0,0.7071067,0.7071067
+	attRot0 = -0.7071068,-3.853122E-08,0.7071068,-8.067808E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439890
+	sym = trussPiece3x_4294554850
+	attN = bottom,trussPiece3x_4294439890
+	attN = top,trussPiece3x_4294439942
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439890
+	partName = Part
+	pos = 7.368321,10.68455,-1.102574
+	attPos = 0,0,0
+	attPos0 = 0,-2.950475,-1.129536E-06
+	rot = -0.5000001,0.4999999,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439864
+	sym = trussPiece3x_4294667274
+	attN = bottom,trussPiece3x_4294439864
+	attN = top,trussPiece3x_4294439916
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439864
+	partName = Part
+	pos = 10.31881,10.68455,-1.102575
+	attPos = 0,0,0
+	attPos0 = 0,-2.950478,3.517244E-07
+	rot = -0.5,0.4999999,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439838
+	sym = trussPiece3x_4294667060
+	attN = bottom,trussPiece3x_4294439838
+	attN = top,trussPiece3x_4294439890
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439838
+	partName = Part
+	pos = 13.2693,10.68455,-1.102576
+	attPos = 0,0,0
+	attPos0 = 0,-2.950479,3.517243E-07
+	rot = -0.5000001,0.4999999,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439812
+	sym = trussPiece3x_4294666856
+	attN = bottom,trussPiece3x_4294439812
+	attN = top,trussPiece3x_4294439864
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439812
+	partName = Part
+	pos = 16.21978,10.68455,-1.102578
+	attPos = 0,0,0
+	attPos0 = 0,-2.95048,3.517245E-07
+	rot = -0.5000001,0.4999999,-0.5000001,-0.5000002
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439786
+	sym = trussPiece3x_4294669698
+	attN = bottom,trussPiece3x_4294439786
+	attN = top,trussPiece3x_4294439838
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439786
+	partName = Part
+	pos = 19.17024,10.68455,-1.102579
+	attPos = 0,0,0
+	attPos0 = 0,-2.950477,3.517242E-07
+	rot = -0.5000001,0.4999999,-0.5000001,-0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439760
+	sym = trussPiece3x_4294669018
+	attN = bottom,trussPiece3x_4294439760
+	attN = top,trussPiece3x_4294439812
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439760
+	partName = Part
+	pos = 22.12073,10.68455,-1.102579
+	attPos = 0,0,0
+	attPos0 = 0,-2.950478,3.517244E-07
+	rot = -0.5000001,0.4999999,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439734
+	sym = trussPiece3x_4294668434
+	attN = bottom,trussPiece3x_4294439734
+	attN = top,trussPiece3x_4294439786
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439734
+	partName = Part
+	pos = 25.0712,10.68455,-1.102581
+	attPos = 0,0,0
+	attPos0 = 0,-2.950479,3.517243E-07
+	rot = -0.5000002,0.4999998,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439708
+	sym = trussPiece3x_4294673286
+	attN = bottom,trussPiece3x_4294439708
+	attN = top,trussPiece3x_4294439760
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439708
+	partName = Part
+	pos = 28.02172,10.68456,-1.102582
+	attPos = 0,0,0
+	attPos0 = 0,-2.950477,3.517242E-07
+	rot = -0.5000002,0.4999999,-0.5000001,-0.5
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439682
+	sym = trussPiece3x_4294673084
+	attN = bottom,trussPiece3x_4294439682
+	attN = top,trussPiece3x_4294439734
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439682
+	partName = Part
+	pos = 30.97219,10.68456,-1.102585
+	attPos = 0,0,0
+	attPos0 = 0,-2.950478,3.517244E-07
+	rot = -0.5000002,0.4999998,-0.5000001,-0.5000001
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439656
+	link = trussPiece3x_4294439114
+	link = trussPiece3x_4294439062
+	sym = trussPiece3x_4294714592
+	attN = top,trussPiece3x_4294439708
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439656
+	partName = Part
+	pos = 32.09889,12.48501,-1.102581
+	attPos = 0,0,0
+	attPos0 = -2.843075E-08,-1.126716,-1.800448
+	rot = 2.528811E-07,0.7071069,-2.528811E-07,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0.7071067,-0.7071069,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439630
+	sym = trussPiece3x_4294713786
+	srfN = srfAttach,trussPiece3x_4294439682
+	attN = bottom,batteryBankLarge_4294439010
+	attN = top,trussPiece3x_4294439630
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439630
+	partName = Part
+	pos = 32.09889,15.43547,-1.102576
+	attPos = 0,0,0
+	attPos0 = 0,2.950477,1.141344E-06
+	rot = -4.214685E-08,0.7071065,4.214685E-08,-0.7071072
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,-1,1.685874E-07,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439604
+	link = strutConnector_4294439246
+	link = strutConnector_4294439180
+	sym = trussPiece3x_4294677920
+	attN = bottom,trussPiece3x_4294439656
+	attN = top,trussPiece3x_4294439604
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439604
+	partName = Part
+	pos = 32.09892,18.38597,-1.102573
+	attPos = 0,0,0
+	attPos0 = 0,2.950479,-2.851426E-06
+	rot = -2.95028E-07,0.7071066,-1.264406E-07,-0.7071071
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439578
+	link = strutConnector_4294439312
+	sym = trussPiece3x_4294674394
+	attN = bottom,trussPiece3x_4294439630
+	attN = top,trussPiece3x_4294439578
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439578
+	partName = Part
+	pos = 32.09892,21.33648,-1.102569
+	attPos = 0,0,0
+	attPos0 = 0,2.95048,-3.328264E-06
+	rot = -4.214685E-08,0.7071065,2.107343E-08,-0.7071072
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439552
+	sym = trussPiece3x_4294674994
+	attN = bottom,trussPiece3x_4294439604
+	attN = top,trussPiece3x_4294439552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439552
+	partName = Part
+	pos = 32.09895,24.28695,-1.102563
+	attPos = 0,0,0
+	attPos0 = 0,2.95048,-3.328264E-06
+	rot = -1.685874E-07,0.7071066,-8.42937E-08,-0.7071072
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439526
+	link = largeSolarPanel_4294439382
+	sym = trussPiece3x_4294674832
+	attN = bottom,trussPiece3x_4294439578
+	attN = top,trussPiece3x_4294439526
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439526
+	partName = Part
+	pos = 32.09895,27.23742,-1.10256
+	attPos = 0,0,0
+	attPos0 = 0,2.950477,-4.520357E-06
+	rot = -1.264406E-07,0.7071065,-6.322028E-08,-0.7071072
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439500
+	sym = trussPiece3x_4294677298
+	attN = bottom,trussPiece3x_4294439552
+	attN = top,trussPiece3x_4294439500
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439500
+	partName = Part
+	pos = 32.09895,30.18789,-1.102554
+	attPos = 0,0,0
+	attPos0 = 0,2.95048,-3.328264E-06
+	rot = -8.42937E-08,0.7071066,1.264406E-07,-0.7071072
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439474
+	sym = trussPiece3x_4294677136
+	attN = bottom,trussPiece3x_4294439526
+	attN = top,trussPiece3x_4294439474
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439474
+	partName = Part
+	pos = 32.09896,33.13838,-1.10255
+	attPos = 0,0,0
+	attPos0 = 0,2.950477,-4.520357E-06
+	rot = -1.685874E-07,0.7071066,-2.107343E-08,-0.7071072
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439448
+	sym = trussPiece3x_4294678462
+	attN = bottom,trussPiece3x_4294439500
+	attN = top,trussPiece3x_4294439448
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439448
+	partName = Part
+	pos = 32.09899,36.08887,-1.102545
+	attPos = 0,0,0
+	attPos0 = 0,2.950479,-2.851426E-06
+	rot = -1.264406E-07,0.7071066,-6.322028E-08,-0.7071071
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = spotLight1_4294439422
+	sym = trussPiece3x_4294679492
+	attN = bottom,trussPiece3x_4294439474
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = spotLight1_4294439422
+	partName = Part
+	pos = 31.5614,37.3725,-1.102543
+	attPos = 0,0,0
+	attPos0 = 0,1.283628,0.5376004
+	rot = 0.06162877,0.7044162,-0.0616286,0.704416
+	attRot = 0.08715575,0,0,0.9961947
+	attRot0 = 0,0.9961947,-0.08715624,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = spotLight1_4294706386
+	srfN = srfAttach,trussPiece3x_4294439448
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = True
+		lightR = 1
+		lightG = 0.7
+		lightB = 0
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = largeSolarPanel_4294439382
+	partName = Part
+	pos = 32.42595,24.3319,-1.102563
+	attPos = 0,0,0
+	attPos0 = -2.980233E-08,0.04493904,-0.3269997
+	rot = 8.940703E-08,-1,-2.95028E-07,6.556513E-07
+	attRot = 0,0,0,1
+	attRot0 = 1.071077E-07,0.7071068,-1.071077E-07,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = largeSolarPanel_4294477552
+	srfN = srfAttach,trussPiece3x_4294439552
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		currentRotation = (0, 0, 0, 0)
+		stateString = RETRACTED
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		EVENTS
+		{
+			Extend
+			{
+				active = True
+				guiActive = True
+				guiIcon = Extend Panels
+				guiName = Extend Panels
+				category = Extend Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Retract
+			{
+				active = True
+				guiActive = True
+				guiIcon = Retract Panels
+				guiName = Retract Panels
+				category = Retract Panels
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = Custom01
+			}
+			ExtendAction
+			{
+				actionGroup = None
+			}
+			RetractAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294439312
+	partName = CompoundPart
+	pos = 31.77424,18.353,-1.102573
+	attPos = 0,0,0
+	attPos0 = 0,-0.03297377,0.324684
+	rot = 0,-1.639128E-07,1.213273E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -3.455262E-07,0.7071068,-3.455262E-07,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294671916
+	srfN = srfAttach,trussPiece3x_4294439604
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294439734
+		pos = -6.7425,-7.343881,0.006104656
+		rot = 2.401579E-09,1.535313E-07,0.7071077,0.7071071
+		dir = -0.6763026,-0.7366238,0.000612324
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294439246
+	partName = CompoundPart
+	pos = 32.09892,16.80243,-1.427392
+	attPos = 0,0,0
+	attPos0 = 0.324817,1.366947,-3.79275E-06
+	rot = -3.161014E-07,0.7071068,-1.47514E-07,-0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294670476
+	srfN = srfAttach,trussPiece3x_4294439630
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294439088
+		pos = -5.769482,-5.793303,0.007174632
+		rot = 4.033901E-08,-1.770062E-07,0.7071071,0.7071072
+		dir = -0.7056482,-0.7085617,0.000877508
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutConnector_4294439180
+	partName = CompoundPart
+	pos = 32.09892,16.78843,-0.7776376
+	attPos = 0,0,0
+	attPos0 = -0.3249378,1.352961,-2.142561E-07
+	rot = 1.685874E-07,-0.7071072,-2.528811E-07,-0.7071066
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = strutConnector_4294476850
+	srfN = srfAttach,trussPiece3x_4294439630
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+		tgt = 4294439036
+		pos = -5.792441,-5.779293,0.01161233
+		rot = 4.576258E-08,-8.067802E-08,0.7071073,0.7071071
+		dir = -0.707909,-0.7063022,0.001419172
+	}
+	MODULE
+	{
+		name = CModuleLinkedMesh
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = CModuleStrut
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439114
+	partName = Part
+	pos = 32.10217,10.68456,-2.904096
+	attPos = 0,0,0
+	attPos0 = 1.801511,-1.129988,-3.824895E-06
+	rot = -0.5000002,0.5000001,-0.4999998,0.5000002
+	attRot = 0,0,0,1
+	attRot0 = 0.5,0.5,-0.5000001,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439088
+	sym = trussPiece3x_4294671328
+	srfN = srfAttach,trussPiece3x_4294439682
+	attN = top,trussPiece3x_4294439088
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439088
+	partName = Part
+	pos = 32.10218,10.68455,-5.85458
+	attPos = 0,0,0
+	attPos0 = -3.517245E-07,2.950476,2.083211E-06
+	rot = -1.685874E-07,0.7071069,-0.7071071,1.264406E-07
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = 8.067807E-08,-0.7071068,3.853122E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = trussPiece3x_4294671104
+	srfN = srfAttach,trussPiece3x_4294439682
+	attN = bottom,trussPiece3x_4294439114
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439062
+	partName = Part
+	pos = 32.11317,10.68456,0.6972935
+	attPos = 0,0,0
+	attPos0 = -1.799878,-1.140986,-3.825551E-06
+	rot = 0.5000001,0.5000002,0.5000002,0.4999998
+	attRot = 0,0,0,1
+	attRot0 = 0.5,-0.5,0.5000001,0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = trussPiece3x_4294439036
+	link = batteryBankLarge_4294439010
+	sym = trussPiece3x_4294477052
+	srfN = srfAttach,trussPiece3x_4294439682
+	attN = top,trussPiece3x_4294439036
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = trussPiece3x_4294439036
+	partName = Part
+	pos = 32.11318,10.68456,3.647773
+	attPos = 0,0,0
+	attPos0 = -3.517245E-07,2.950476,2.083211E-06
+	rot = 2.739545E-07,0.7071069,0.7071069,-4.636154E-07
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = 8.067807E-08,-0.7071068,3.853122E-08,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = trussPiece3x_4294477026
+	srfN = srfAttach,trussPiece3x_4294439682
+	attN = bottom,trussPiece3x_4294439062
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+}
+PART
+{
+	part = batteryBankLarge_4294439010
+	partName = Part
+	pos = 32.09888,10.89977,-1.102586
+	attPos = 0,0,0
+	attPos0 = -0.2152051,-1.799877,-0.01428219
+	rot = 1.264406E-07,0.7071065,1.264406E-07,-0.7071074
+	attRot = -0.7071068,0,0,0.7071068
+	attRot0 = -0.7071068,0.7071069,-4.214685E-08,0
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = batteryBankLarge_4294441250
+	attN = top,trussPiece3x_4294439062
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 4000
+		maxAmount = 4000
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
