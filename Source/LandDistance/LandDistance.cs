@@ -43,6 +43,8 @@ namespace LandDistance {
 		private double altitude;
 		private double landDistance;
 		private double highScore;
+		private double targetDistance = 0.0d;
+		private Vessel target = null;
 
 		// UI
 		private static ApplicationLauncherButton stockToolbarButton = null;
@@ -122,22 +124,26 @@ namespace LandDistance {
 		private void updateState() {
 			Vessel v = FlightGlobals.ActiveVessel;
 			if (landed && v.Landed) {
-				// Uses the "haversine" formula to calculate great-circle distance between previous and current position
-				double radius = v.mainBody.Radius + altitude + (v.altitude - altitude) / 2.0d;
-				double la1 = toRadians(latitude);
-				double la2 = toRadians(v.latitude);
-				double dLa = toRadians(v.latitude - latitude);
-				double dLo = toRadians(v.longitude - longitude);
-
-				double a = Math.Pow(Math.Sin(dLa / 2.0d), 2) +
-				           Math.Cos(la1) * Math.Cos(la2) *
-				           Math.Pow(Math.Sin(dLo / 2.0d), 2);
-				double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
-				landDistance += radius * c;
+				// Only add to the total if the vessel is landed and was also landed in the previous frame
+				double averageAltitude = altitude + (v.altitude - altitude) / 2.0d;
+				landDistance += haversine(latitude, longitude, averageAltitude, v);
 
 				// Update highscore if needed
 				if (landDistance > highScore) {
 					highScore = landDistance;
+				}
+			}
+			if (windowVisible) {
+				if (v.targetObject is Vessel) {
+					// Calculate distance to target vessel if one is selected
+					target = (Vessel) v.targetObject;
+					if (target.mainBody == v.mainBody) {
+						targetDistance = haversine(v.latitude, v.longitude, 0.0d, target);
+					} else {
+						target = null;
+					}
+				} else {
+					target = null;
 				}
 			}
 
@@ -159,8 +165,25 @@ namespace LandDistance {
 			landed = false;
 		}
 
-		private double toRadians(double x) {
+		private static double toRadians(double x) {
 			return Math.PI * x / 180.0d;
+		}
+
+		/**
+		 *  Uses the "haversine" formula to calculate great-circle distance to v from the given coordinates and altitude.
+		 */
+		private static double haversine(double latitude, double longitude, double altitude, Vessel v) {
+			double radius = v.mainBody.Radius + altitude;
+			double la1 = toRadians(latitude);
+			double la2 = toRadians(v.latitude);
+			double dLa = toRadians(v.latitude - latitude);
+			double dLo = toRadians(v.longitude - longitude);
+
+			double a = Math.Pow(Math.Sin(dLa / 2.0d), 2) +
+				Math.Cos(la1) * Math.Cos(la2) *
+				Math.Pow(Math.Sin(dLo / 2.0d), 2);
+			double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+			return radius * c;
 		}
 
 		// ***** GUI *****
@@ -259,6 +282,13 @@ namespace LandDistance {
 				GUILayout.BeginHorizontal();
 				GUILayout.Label("Session high score:", GUILayout.ExpandWidth(true));
 				GUILayout.Label(distanceReadable(highScore));
+				GUILayout.EndHorizontal();
+			}
+
+			if (target != null) {
+				GUILayout.BeginHorizontal();
+				GUILayout.Label("Surface distance to " + target.RevealName() + ":", GUILayout.ExpandWidth(true));
+				GUILayout.Label(distanceReadable(targetDistance));
 				GUILayout.EndHorizontal();
 			}
 
