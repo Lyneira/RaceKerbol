@@ -11,10 +11,13 @@ Installation: Copy the saves and GameData directories into your KSP folder.
 
 Quick Start: Go to Start Game, then Scenarios, pick a Race Kerbol scenario.
 Play!
-Scoring: To be determined, but a higher land distance is better!
+Scoring: Gain score by traveling on the ground. You get a bonus for traveling
+on steep slopes.
+Troubleshooting: If a scenario seems bugged when you start it for the second
+time, remember to click the Restart button in the bottom left corner!
 
-Extra: The Extra folder contains craft files for the Solar Racer, plus a
-Finishline and Checkpoint craft for making your own scenarios.
+Extra: The Extra folder contains a craft file for the Solar Racer, plus Finish
+and Checkpoint craft for making your own scenarios.
 
 = How to make a scenario =
 * Create a fresh sandbox save and copy the Solar Racer.craft and optionally the

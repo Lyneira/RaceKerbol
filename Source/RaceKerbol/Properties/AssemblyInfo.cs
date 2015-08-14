@@ -4,8 +4,8 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("LandDistance")]
-[assembly: AssemblyDescription ("Measures the distance traveled over land this session and shows it in a small window.")]
+[assembly: AssemblyTitle ("RaceKerbol")]
+[assembly: AssemblyDescription ("Tracks distance traveled over land this session, calculates score and shows score and other useful data for Race Kerbol in a small window.")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]

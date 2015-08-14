@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <rect name="windowRect">
-        <xmin>1</xmin>
-        <xmax>321</xmax>
-        <ymin>46</ymin>
-        <ymax>134</ymax>
+        <xmin>2</xmin>
+        <xmax>322</xmax>
+        <ymin>47</ymin>
+        <ymax>153</ymax>
     </rect>
     <bool name="windowVisible">1</bool>
 </config>

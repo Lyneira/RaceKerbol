@@ -21,9 +21,10 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace LandDistance {
+namespace RaceKerbol {
 	/**
-	 * Measures the distance traveled over land this session and shows it in a small window.
+	 * Tracks distance traveled over land this session, calculates score
+	 * and shows score and other useful data for Race Kerbol in a small window.
 	 * 
 	 * Author: Lyneira
 	 * License: GPLv3
@@ -31,17 +32,14 @@ namespace LandDistance {
 
 	// Needed to run a partless plugin
 	[KSPAddon(KSPAddon.Startup.Flight, false)]
-	public class LandDistance : MonoBehaviour {
-		// Logging
-		private float lastFixedUpdate = 0.0f;
-		private float logInterval = 5.0f;
-
+	public class RaceKerbol : MonoBehaviour {
 		// Tracking
 		private bool landed;
-		private double longitude;
-		private double latitude;
-		private double altitude;
+		private double lastFrameDistance;
+
 		private double landDistance;
+		private double score;
+		private double scoreMultiplier = 1.0d;
 		private double highScore;
 		private double targetDistance = 0.0d;
 		private Vessel target = null;
@@ -51,7 +49,8 @@ namespace LandDistance {
 		private static IButton blizzyToolbarButton = null;
 		private static Rect windowRect;
 		private static bool windowVisible;
-		private static string buttonTexturePath = "RaceKerbol/LD";
+		private static string buttonTexturePath = "RaceKerbol/RK";
+		private static GUIStyle textNormal, textMultiplierActive;
 
 		// ***** Overrides *****
 		// These get called implicitly by the ksp engine
@@ -76,6 +75,7 @@ namespace LandDistance {
 		public void Start() {
 			GameEvents.onVesselChange.Add(this.onVesselChange);
 			landDistance = 0.0d;
+			score = 0.0d;
 			highScore = 0.0d;
 			landed = false;
 			if (windowVisible) {
@@ -89,15 +89,47 @@ namespace LandDistance {
 		 * Override: Called at a fixed time interval determined by the physics time step.
 		 */
 		public void FixedUpdate() {
-			if ((Time.time - lastFixedUpdate) > logInterval) {
-				lastFixedUpdate = Time.time;
-				/* Debug
-				Debug.Log("LandDistance [" + this.GetInstanceID().ToString("X")	+ "][" + Time.time.ToString("0.0000") +
-					"]: FixedUpdate - Position: [" + longitude.ToString() + ", " + latitude.ToString() + ", " + altitude.ToString() +
-					"] - Landed: " + landed.ToString() + " - LandDistance: " + landDistance.ToString() + " - High Score: " + highScore);
-				*/
+			Vessel v = FlightGlobals.ActiveVessel;
+			scoreMultiplier = 1.0d;
+			if (v.Landed) {
+				Vector3d vel = v.srf_velocity;
+				if (landed) {
+					// Only add to the total if the vessel is landed and was also landed in the previous frame
+					landDistance += lastFrameDistance;
+					double lastFrameScore = lastFrameDistance;
+
+					// Add a bonus for significant slopes.
+					RaycastHit raycastHit;
+					if (Physics.Raycast (v.vesselTransform.position, -FlightGlobals.getUpAxis (v.mainBody, v.vesselTransform.position), out raycastHit, (float)FlightGlobals.getAltitudeAtPos (v.vesselTransform.position, v.mainBody) + 600f, 32768))
+					{
+						scoreMultiplier = sigmoidScoreMultiplier(Vector3d.Angle(raycastHit.normal, v.mainBody.GetSurfaceNVector(v.latitude, v.longitude)));
+						lastFrameScore *= scoreMultiplier;
+					}
+
+					// Update score and highscore if needed
+					score += lastFrameScore;
+					if (score > highScore) {
+						highScore = score;
+					}
+				}
+				lastFrameDistance = Math.Sqrt(vel.x * vel.x + vel.y * vel.y + vel.z * vel.z) * TimeWarp.fixedDeltaTime;
 			}
-			updateState();
+			if (windowVisible) {
+				if (v.targetObject is Vessel) {
+					// Calculate distance to target vessel if one is selected
+					target = (Vessel) v.targetObject;
+					if (target.mainBody == v.mainBody) {
+						targetDistance = haversine(v.latitude, v.longitude, 0.0d, target);
+					} else {
+						target = null;
+					}
+				} else {
+					target = null;
+				}
+			}
+
+			// Update for next distance calc
+			landed = v.Landed;
 		}
 
 		/**
@@ -117,51 +149,15 @@ namespace LandDistance {
 		}
 
 		// ***** Tracking *****
-
-		/**
-		 * Tracks distance covered while landed and updates stored parameters with vessel's new position.
-		 */
-		private void updateState() {
-			Vessel v = FlightGlobals.ActiveVessel;
-			if (landed && v.Landed) {
-				// Only add to the total if the vessel is landed and was also landed in the previous frame
-				double averageAltitude = altitude + (v.altitude - altitude) / 2.0d;
-				landDistance += haversine(latitude, longitude, averageAltitude, v);
-
-				// Update highscore if needed
-				if (landDistance > highScore) {
-					highScore = landDistance;
-				}
-			}
-			if (windowVisible) {
-				if (v.targetObject is Vessel) {
-					// Calculate distance to target vessel if one is selected
-					target = (Vessel) v.targetObject;
-					if (target.mainBody == v.mainBody) {
-						targetDistance = haversine(v.latitude, v.longitude, 0.0d, target);
-					} else {
-						target = null;
-					}
-				} else {
-					target = null;
-				}
-			}
-
-			// Update stuff for next distance calc
-			landed = v.Landed;
-			longitude = v.longitude;
-			latitude = v.latitude;
-			altitude = v.altitude;
-		}
-
 		/**
 		 * Callback: resets total, keep highscore
 		 */
 		private void onVesselChange(Vessel v) {
-			if (landDistance > highScore) {
-				highScore = landDistance;
+			if (score > highScore) {
+				highScore = score;
 			}
 			landDistance = 0.0d;
+			score = 0.0d;
 			landed = false;
 		}
 
@@ -184,6 +180,19 @@ namespace LandDistance {
 				Math.Pow(Math.Sin(dLo / 2.0d), 2);
 			double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
 			return radius * c;
+		}
+
+		private static double sigmoidScoreMultiplier(double angle) {
+			double cutoff = 15.0d;
+			if (angle <= cutoff) {
+				return 1.0d;
+			}
+			double startMultiplier = 1.0d; // Score multiplier starts here at the cutoff
+			double maxMultiplierBonus = 1.0d; // Asymptote
+			double halfwayPoint = 30.0d; // Angle above cutoff at which startMultiplier is increased by half of maxMultiplierBonus
+			double y = (angle - cutoff) / halfwayPoint;
+
+			return startMultiplier + maxMultiplierBonus * y / (1.0d + y);
 		}
 
 		// ***** GUI *****
@@ -234,9 +243,9 @@ namespace LandDistance {
 
 		private void setupBlizzyToolbarButton() {
 			if (blizzyToolbarButton == null) {
-				blizzyToolbarButton = ToolbarManager.Instance.add("LandDistance", "LandDistanceButton");
+				blizzyToolbarButton = ToolbarManager.Instance.add("RaceKerbol", "RaceKerbolButton");
 				blizzyToolbarButton.TexturePath = buttonTexturePath;
-				blizzyToolbarButton.ToolTip = "Land Distance";
+				blizzyToolbarButton.ToolTip = "Race Kerbol";
 				blizzyToolbarButton.Visibility = new GameScenesVisibility(GameScenes.FLIGHT);
 				blizzyToolbarButton.OnClick += (e) => onButtonToggle();
 			}
@@ -261,7 +270,7 @@ namespace LandDistance {
 
 		private void onDraw() {
 			GUI.skin = HighLogic.Skin;
-			windowRect = GUILayout.Window(this.GetHashCode(), windowRect, onWindow, "Land Distance", GUILayout.MinWidth(320));
+			windowRect = GUILayout.Window(this.GetHashCode(), windowRect, onWindow, "Race Kerbol", GUILayout.MinWidth(320));
 			ClampToScreen(windowRect);
 		}
 
@@ -269,19 +278,36 @@ namespace LandDistance {
 		 * Draw our window 
 		 */
 		private void onWindow(int windowId) {
+			if (textNormal == null) {
+				textNormal = GUI.skin.label;
+				textMultiplierActive = new GUIStyle(textNormal);
+				textMultiplierActive.normal.textColor = Color.cyan;
+				textMultiplierActive.fontStyle = FontStyle.Bold;
+			}
+			GUIStyle scoreStyle = textNormal;
+			if (scoreMultiplier > 1.0d) {
+				scoreStyle = textMultiplierActive;
+			}
+
 			GUILayout.BeginVertical();
 
-			GUILayout.Label("Tracks the distance traveled while on the ground.");
+			GUILayout.Label("Gain score by traveling on the ground. You get a bonus for traveling on steep slopes.");
 
 			GUILayout.BeginHorizontal();
-			GUILayout.Label("Land Distance:", GUILayout.ExpandWidth(true));
-			GUILayout.Label(distanceReadable(landDistance));
+			GUILayout.Label("Score:", GUILayout.ExpandWidth(true));
+			GUILayout.Label(score.ToString("F0"), scoreStyle);
 			GUILayout.EndHorizontal();
 
-			if (landDistance < highScore) {
+			double scoreMultiplierPercent = scoreMultiplier * 100;
+			GUILayout.BeginHorizontal();
+			GUILayout.Label("Multiplier:", GUILayout.ExpandWidth(true));
+			GUILayout.Label(scoreMultiplierPercent.ToString("F0") + " %", scoreStyle);
+			GUILayout.EndHorizontal();
+
+			if (score < highScore) {
 				GUILayout.BeginHorizontal();
 				GUILayout.Label("Session high score:", GUILayout.ExpandWidth(true));
-				GUILayout.Label(distanceReadable(highScore));
+				GUILayout.Label(highScore.ToString("F0"));
 				GUILayout.EndHorizontal();
 			}
 
@@ -291,6 +317,36 @@ namespace LandDistance {
 				GUILayout.Label(distanceReadable(targetDistance));
 				GUILayout.EndHorizontal();
 			}
+
+			// Debug
+			/*
+			GUILayout.BeginHorizontal();
+			GUILayout.Label("Land Distance:", GUILayout.ExpandWidth(true));
+			GUILayout.Label(distanceReadable(landDistance));
+			GUILayout.EndHorizontal();
+
+			Vessel v = FlightGlobals.ActiveVessel;
+			Vector3d vel = v.srf_velocity;
+
+			GUILayout.BeginHorizontal();
+			GUILayout.Label("Surface Velocity:", GUILayout.ExpandWidth(true));
+			GUILayout.Label(vel.ToString());
+			GUILayout.EndHorizontal();
+
+			RaycastHit raycastHit;
+			if (Physics.Raycast (v.vesselTransform.position, -FlightGlobals.getUpAxis (v.mainBody, v.vesselTransform.position), out raycastHit, (float)FlightGlobals.getAltitudeAtPos (v.vesselTransform.position, v.mainBody) + 600f, 32768))
+			{
+				GUILayout.BeginHorizontal();
+				GUILayout.Label("Terrain Normal:", GUILayout.ExpandWidth(true));
+				GUILayout.Label(raycastHit.normal.ToString());
+				GUILayout.EndHorizontal();
+
+				GUILayout.BeginHorizontal();
+				GUILayout.Label("Terrain Slope:", GUILayout.ExpandWidth(true));
+				GUILayout.Label(Vector3d.Angle(raycastHit.normal, v.mainBody.GetSurfaceNVector(v.latitude, v.longitude)).ToString("F3"));
+				GUILayout.EndHorizontal();
+			}
+			*/
 
 			GUILayout.EndVertical();
 
@@ -314,14 +370,14 @@ namespace LandDistance {
 		}
 
 		private void loadSettings() {
-			KSP.IO.PluginConfiguration config = KSP.IO.PluginConfiguration.CreateForType<LandDistance>();
+			KSP.IO.PluginConfiguration config = KSP.IO.PluginConfiguration.CreateForType<RaceKerbol>();
 			config.load();
 			windowRect = config.GetValue("windowRect", new Rect());
 			windowVisible = config.GetValue("windowVisible", false);
 		}
 
 		private void saveSettings() {
-			KSP.IO.PluginConfiguration config = KSP.IO.PluginConfiguration.CreateForType<LandDistance>();
+			KSP.IO.PluginConfiguration config = KSP.IO.PluginConfiguration.CreateForType<RaceKerbol>();
 			config.SetValue("windowRect", windowRect);
 			config.SetValue("windowVisible", windowVisible);
 			config.save();
