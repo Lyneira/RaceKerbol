@@ -1665,11 +1665,11 @@ GAME
 				}
 				MODULE
 				{
-					name = Repulsor
+					name = KFRepulsor
 					isEnabled = True
 					groupNumber = 1
-					Rideheight = 60
-					SpringRate = 1.2
+					rideHeight = 100
+					SpringRate = 2.4
 					DamperRate = 0.1
 					groupNumber_UIFlight
 					{
@@ -1678,7 +1678,7 @@ GAME
 						maxValue = 10
 						stepIncrement = 1
 					}
-					Rideheight_UIFlight
+					rideHeight_UIFlight
 					{
 						controlEnabled = True
 						minValue = 0
@@ -1720,10 +1720,6 @@ GAME
 							actionGroup = None
 						}
 						Extend
-						{
-							actionGroup = None
-						}
-						ApplySettingsAction
 						{
 							actionGroup = None
 						}
@@ -2146,11 +2142,11 @@ GAME
 				}
 				MODULE
 				{
-					name = Repulsor
+					name = KFRepulsor
 					isEnabled = True
 					groupNumber = 1
-					Rideheight = 60
-					SpringRate = 1.2
+					rideHeight = 100
+					SpringRate = 2.4
 					DamperRate = 0.1
 					groupNumber_UIFlight
 					{
@@ -2159,7 +2155,7 @@ GAME
 						maxValue = 10
 						stepIncrement = 1
 					}
-					Rideheight_UIFlight
+					rideHeight_UIFlight
 					{
 						controlEnabled = True
 						minValue = 0
@@ -2201,10 +2197,6 @@ GAME
 							actionGroup = None
 						}
 						Extend
-						{
-							actionGroup = None
-						}
-						ApplySettingsAction
 						{
 							actionGroup = None
 						}
@@ -3122,11 +3114,11 @@ GAME
 				}
 				MODULE
 				{
-					name = Repulsor
+					name = KFRepulsor
 					isEnabled = True
 					groupNumber = 1
-					Rideheight = 60
-					SpringRate = 1.2
+					rideHeight = 100
+					SpringRate = 2.4
 					DamperRate = 0.1
 					groupNumber_UIFlight
 					{
@@ -3135,7 +3127,7 @@ GAME
 						maxValue = 10
 						stepIncrement = 1
 					}
-					Rideheight_UIFlight
+					rideHeight_UIFlight
 					{
 						controlEnabled = True
 						minValue = 0
@@ -3177,10 +3169,6 @@ GAME
 							actionGroup = None
 						}
 						Extend
-						{
-							actionGroup = None
-						}
-						ApplySettingsAction
 						{
 							actionGroup = None
 						}
@@ -3864,11 +3852,11 @@ GAME
 				}
 				MODULE
 				{
-					name = Repulsor
+					name = KFRepulsor
 					isEnabled = True
 					groupNumber = 1
-					Rideheight = 60
-					SpringRate = 1.2
+					rideHeight = 100
+					SpringRate = 2.4
 					DamperRate = 0.1
 					groupNumber_UIFlight
 					{
@@ -3877,7 +3865,7 @@ GAME
 						maxValue = 10
 						stepIncrement = 1
 					}
-					Rideheight_UIFlight
+					rideHeight_UIFlight
 					{
 						controlEnabled = True
 						minValue = 0
@@ -3919,10 +3907,6 @@ GAME
 							actionGroup = None
 						}
 						Extend
-						{
-							actionGroup = None
-						}
-						ApplySettingsAction
 						{
 							actionGroup = None
 						}
@@ -4391,11 +4375,11 @@ GAME
 				}
 				MODULE
 				{
-					name = Repulsor
+					name = KFRepulsor
 					isEnabled = True
 					groupNumber = 1
-					Rideheight = 60
-					SpringRate = 1.2
+					rideHeight = 100
+					SpringRate = 2.4
 					DamperRate = 0.1
 					groupNumber_UIFlight
 					{
@@ -4404,7 +4388,7 @@ GAME
 						maxValue = 10
 						stepIncrement = 1
 					}
-					Rideheight_UIFlight
+					rideHeight_UIFlight
 					{
 						controlEnabled = True
 						minValue = 0
@@ -4446,10 +4430,6 @@ GAME
 							actionGroup = None
 						}
 						Extend
-						{
-							actionGroup = None
-						}
-						ApplySettingsAction
 						{
 							actionGroup = None
 						}
@@ -4816,11 +4796,11 @@ GAME
 				}
 				MODULE
 				{
-					name = Repulsor
+					name = KFRepulsor
 					isEnabled = True
 					groupNumber = 1
-					Rideheight = 60
-					SpringRate = 1.2
+					rideHeight = 100
+					SpringRate = 2.4
 					DamperRate = 0.1
 					groupNumber_UIFlight
 					{
@@ -4829,7 +4809,7 @@ GAME
 						maxValue = 10
 						stepIncrement = 1
 					}
-					Rideheight_UIFlight
+					rideHeight_UIFlight
 					{
 						controlEnabled = True
 						minValue = 0
@@ -4871,10 +4851,6 @@ GAME
 							actionGroup = None
 						}
 						Extend
-						{
-							actionGroup = None
-						}
-						ApplySettingsAction
 						{
 							actionGroup = None
 						}
