@@ -10,7 +10,7 @@ GAME
 	scene = 7
 	editor = None
 	flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-	launchID = 17
+	launchID = 18
 	PARAMETERS
 	{
 		preset = Normal
@@ -364,11 +364,29 @@ GAME
 			MaxDeltaTime = 21600
 		}
 	}
+	SCENARIO
+	{
+		name = TRScenario
+		scene = 5
+		reflectionType = REAL
+		isHelmetRemovalEnabled = True
+		isAtmSuitEnabled = True
+		Kerbals
+		{
+			Jebediah Kerman = M GENERIC GENERIC
+			Bill Kerman = M GENERIC GENERIC
+			Bob Kerman = M GENERIC GENERIC
+			Valentina Kerman = F GENERIC GENERIC
+		}
+		ClassSuits
+		{
+		}
+	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 25877.4710640348
-		activeVessel = 7
+		UT = 25878.5310640348
+		activeVessel = 9
 		mapViewFiltering = 1023
 		VESSEL
 		{
@@ -946,4540 +964,6 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 4fe76271fd7648a9adeafe2eac718b1d
-			name = Solar Racer
-			type = Ship
-			sit = FLYING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 0.0
-			lct = 25877.4710640348
-			root = 0
-			lat = 22.0678243758111
-			lon = 249.615510139066
-			alt = 149.052040706505
-			hgt = 204.2355
-			nrm = -0.04793888,-0.03944286,-0.9980712
-			rot = 0.2195798,-0.1530155,0.91899,0.2895313
-			CoM = -7.457777E-05,-2.050139,-0.002946148
-			stg = 0
-			prst = False
-			ref = 1746263274
-			ctrl = True
-			cPch = 0.1539998
-			cHdg = -8.935979
-			cMod = 0
-			ORBIT
-			{
-				SMA = 300591.547871924
-				ECC = 0.996560221662137
-				INC = 47.437474439446
-				LPE = 329.332016415545
-				LAN = 252.76621810523
-				MNA = 3.13988718851047
-				EPH = 25877.4710640348
-				REF = 1
-			}
-			PART
-			{
-				name = Mark2Cockpit
-				cid = 4293223304
-				uid = 1746263274
-				mid = 505584253
-				launchID = 13
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, 38
-				attN = bottom, 1
-				mass = 1
-				temp = 297.727411203547
-				tempExt = 298.33768305666
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = Mark2Cockpit (Solar Racer)
-				modCost = 0
-				crew = Valentina Kerman
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Operational
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					Inoperable = False
-					EVENTS
-					{
-						DeployExperiment
-						{
-							active = True
-							guiActive = True
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiIcon = 
-							guiName = Take Data
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Report
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperiment
-						{
-							active = False
-							guiActive = True
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						DeployExperimentExternal
-						{
-							active = True
-							guiActive = False
-							guiIcon = Deploy
-							guiName = Crew Report
-							category = Deploy
-							guiActiveUnfocused = True
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ResetExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Reset
-							guiName = Discard Crew Report
-							category = Reset
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-						CleanUpExperimentExternal
-						{
-							active = False
-							guiActive = False
-							guiIcon = Restore
-							guiName = Restore
-							category = Restore
-							guiActiveUnfocused = True
-							unfocusedRange = 1.5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-						}
-						ResetAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					EVENTS
-					{
-						StoreDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiIcon = 
-							guiName = Store Experiments (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						CollectDataExternalEvent
-						{
-							active = False
-							guiActive = False
-							guiIcon = 
-							guiName = Take Data (0)
-							category = 
-							guiActiveUnfocused = True
-							unfocusedRange = 1.3
-							externalToEVAOnly = True
-						}
-						ReviewDataEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Review Data
-							guiName = Review Stored Data (0)
-							category = Review Data
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateGeneric
-					isEnabled = True
-					status = Locked
-					animSwitch = True
-					animTime = 0
-					animSpeed = -1
-					EVENTS
-					{
-						Toggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle
-							guiName = Lights On
-							category = Toggle
-							guiActiveUnfocused = True
-							unfocusedRange = 5
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Land,Kerbin
-						0 = Flight,Kerbin
-					}
-				}
-				MODULE
-				{
-					name = ModuleWaterSlider
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 29.8051269145886
-					maxAmount = 50
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = MonoPropellant
-					amount = 0
-					maxAmount = 7.5
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = advSasModule
-				cid = 4294320546
-				uid = 2350054986
-				mid = 505584253
-				launchID = 13
-				parent = 0
-				position = 0,-1.13652729988098,1.35484597763025E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, 0
-				attN = bottom, 2
-				mass = 0.1
-				temp = 298.732349689897
-				tempExt = 299.373974383834
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = advSasModule
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = Mk1FuselageStructural
-				cid = 4294174452
-				uid = 51527062
-				mid = 505584253
-				launchID = 13
-				parent = 1
-				position = 0,-2.27306866645813,2.70970872406906E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 1
-				attN = bottom, 3
-				mass = 0.1
-				temp = 299.939101830321
-				tempExt = 300.427982756891
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = Mk1FuselageStructural
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-			}
-			PART
-			{
-				name = Mk1FuselageStructural
-				cid = 4293041756
-				uid = 3822654020
-				mid = 505584253
-				launchID = 13
-				parent = 2
-				position = 0,-4.14810657501221,4.94492780944711E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 2
-				attN = bottom, 4
-				mass = 0.1
-				temp = 302.714681906602
-				tempExt = 303.910089902669
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = Mk1FuselageStructural
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-			}
-			PART
-			{
-				name = probeStackSmall
-				cid = 4294340582
-				uid = 1304826775
-				mid = 505584253
-				launchID = 13
-				parent = 3
-				position = 0,-5.18563032150269,6.18175249655906E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = bottom, 5
-				attN = top, 3
-				mass = 0.1
-				temp = 300.597035873642
-				tempExt = 301.468545684863
-				expt = 0
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = probeStackSmall
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Operational
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					stateString = Running
-					WheelState = Active
-					EVENTS
-					{
-						OnToggle
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Toggle Torque
-							guiName = Toggle Torque
-							category = Toggle Torque
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSAS
-					isEnabled = True
-					standaloneToggle = True
-					standaloneToggle_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-						0 = Land,Kerbin
-						0 = Flight,Kerbin
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 4.46426746011627
-					maxAmount = 15
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = pointyNoseConeA
-				cid = 4294447370
-				uid = 1747188017
-				mid = 505584253
-				launchID = 13
-				parent = 4
-				position = 0,-5.91063451766968,7.04602484802308E-07
-				rotation = 0,0,-1,0
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = bottom01, 4
-				mass = 0.075
-				temp = 299.121092370413
-				tempExt = 300.303595418391
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = pointyNoseConeA
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294338254
-				uid = 1890548589
-				mid = 505584253
-				launchID = 13
-				parent = 5
-				position = 0.793522119522095,-6.42080879211426,0.21262152493
-				rotation = 0.1102452,0.9852967,0.01451386,0.1297163
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 7
-				srfN = srfAttach, 5
-				mass = 0.1
-				temp = 297.82543888622
-				tempExt = 298.862097382804
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = True
-					deploy = False
-					deployInvert = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294332870
-				uid = 1108346100
-				mid = 505584253
-				launchID = 13
-				parent = 5
-				position = -0.793522238731384,-6.42080879211426,0.21262152493
-				rotation = -0.01451407,-0.1297163,-0.1102452,-0.9852967
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 6
-				srfN = srfAttach, 5
-				mass = 0.1
-				temp = 297.824288942436
-				tempExt = 298.840628392729
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = True
-					deploy = False
-					deployInvert = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294331778
-				uid = 3340900377
-				mid = 505584253
-				launchID = 13
-				parent = 5
-				position = 0.793861925601959,-6.42316913604736,-0.212710589170456
-				rotation = -0.1102452,-0.9852967,0.01451407,0.1297163
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 9
-				srfN = srfAttach, 5
-				mass = 0.1
-				temp = 297.826878724241
-				tempExt = 298.833604496922
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = True
-					deploy = False
-					deployInvert = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4294331714
-				uid = 4077257000
-				mid = 505584253
-				launchID = 13
-				parent = 5
-				position = -0.79386180639267,-6.42316913604736,-0.212710589170456
-				rotation = 0.01451407,0.1297163,-0.1102452,-0.9852968
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 8
-				srfN = srfAttach, 5
-				mass = 0.1
-				temp = 297.827109971415
-				tempExt = 298.858339696459
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = False
-					ignoreYaw = False
-					ignoreRoll = True
-					deploy = False
-					deployInvert = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = delta.small
-				cid = 4294042754
-				uid = 968220525
-				mid = 505584253
-				launchID = 13
-				parent = 3
-				position = 0.613050282001495,-3.3427414894104,3.98485781261115E-07
-				rotation = -4.469872E-08,-4.214685E-08,0.9999997,-0.001033589
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 15
-				srfN = srfAttach, 3
-				mass = 0.05
-				temp = 310.081250336814
-				tempExt = 310.82457915775
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = delta.small
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294526116
-				uid = 1018808961
-				mid = 505584253
-				launchID = 13
-				parent = 10
-				position = 0.963134288787842,-3.20087027549744,-0.0937477201223373
-				rotation = 0.001033589,-0.9999997,-4.214685E-08,-2.582318E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 16
-				srfN = srfAttach, 10
-				mass = 0.02
-				temp = 309.691685869354
-				tempExt = 310.018749199054
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = KF.RepulsorRacer
-				cid = 4294688534
-				uid = 414933738
-				mid = 505584253
-				launchID = 13
-				parent = 10
-				position = 0.870817184448242,-4.03305816650391,0.061291228979826
-				rotation = 0.7071068,0.0007309107,-0.7071064,0.0007309107
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 17
-				srfN = srfAttach, 10
-				attN = 001, -1
-				mass = 0.1
-				temp = 304.186596562789
-				tempExt = 309.741630144701
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = KF.RepulsorRacer
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KFRepulsor
-					isEnabled = True
-					groupNumber = 1
-					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
-					groupNumber_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 10
-						stepIncrement = 1
-					}
-					rideHeight_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 5
-					}
-					SpringRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 6
-						stepIncrement = 0.2
-					}
-					DamperRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 0.3
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						ApplySettings
-						{
-							active = True
-							guiActive = True
-							guiIcon = Apply Settings
-							guiName = Apply Settings
-							category = Apply Settings
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Retract
-						{
-							actionGroup = None
-						}
-						Extend
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = atmoPlasmaEngine
-				cid = 4294696842
-				uid = 2244637693
-				mid = 505584253
-				launchID = 13
-				parent = 10
-				position = 1.64528799057007,-3.6007673740387,4.29244863653366E-07
-				rotation = -0.0007309529,0.7071065,-0.0007308475,-0.7071066
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 18
-				srfN = srfAttach, 10
-				attN = top, 14
-				attN = bottom, -1
-				mass = 0.3
-				temp = 330.716574297351
-				tempExt = 319.312485864246
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = atmoPlasmaEngine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					staged = True
-					flameout = False
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 1
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleResourceIntake
-					isEnabled = True
-					intakeEnabled = True
-					EVENTS
-					{
-						Deactivate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Close Intake
-							guiName = Close Intake
-							category = Close Intake
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Open Intake
-							guiName = Open Intake
-							category = Open Intake
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = IntakeAir
-					amount = 0.0828801807016134
-					maxAmount = 0.1
-					flowState = True
-					isTweakable = False
-					hideFlow = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = standardNoseCone
-				cid = 4294352250
-				uid = 2028420983
-				mid = 505584253
-				launchID = 13
-				parent = 13
-				position = 1.64414310455322,-3.04577016830444,3.63084041055117E-07
-				rotation = 8.429371E-08,-2.510701E-09,0.00103365,0.9999998
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sym = 19
-				srfN = srfAttach, -1
-				attN = bottom01, 13
-				mass = 0.01
-				temp = 323.871547489575
-				tempExt = 318.497954487789
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = standardNoseCone
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = delta.small
-				cid = 4294684220
-				uid = 2657781850
-				mid = 505584253
-				launchID = 13
-				parent = 3
-				position = -0.613050222396851,-3.3427414894104,3.98485781261115E-07
-				rotation = 0.9999997,-0.001033589,-1.358248E-09,4.214685E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 10
-				srfN = srfAttach, 3
-				mass = 0.05
-				temp = 310.104948354697
-				tempExt = 310.885049872161
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = delta.small
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294684182
-				uid = 3582616664
-				mid = 505584253
-				launchID = 13
-				parent = 15
-				position = -0.963134229183197,-3.20087027549744,-0.0937477201223373
-				rotation = 0.001033589,0.9999997,4.214685E-08,-2.581495E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 11
-				srfN = srfAttach, 15
-				mass = 0.02
-				temp = 309.718300623729
-				tempExt = 310.067578968377
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = KF.RepulsorRacer
-				cid = 4294683966
-				uid = 3891845462
-				mid = 505584253
-				launchID = 13
-				parent = 15
-				position = -0.870816648006439,-4.03305816650391,0.061291228979826
-				rotation = -0.7071065,0.0007308686,0.7071068,0.0007307422
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 12
-				srfN = srfAttach, 15
-				attN = 001, -1
-				mass = 0.1
-				temp = 304.210782736879
-				tempExt = 309.799327112254
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = KF.RepulsorRacer
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KFRepulsor
-					isEnabled = True
-					groupNumber = 1
-					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
-					groupNumber_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 10
-						stepIncrement = 1
-					}
-					rideHeight_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 5
-					}
-					SpringRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 6
-						stepIncrement = 0.2
-					}
-					DamperRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 0.3
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						ApplySettings
-						{
-							active = True
-							guiActive = True
-							guiIcon = Apply Settings
-							guiName = Apply Settings
-							category = Apply Settings
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Retract
-						{
-							actionGroup = None
-						}
-						Extend
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = atmoPlasmaEngine
-				cid = 4294696146
-				uid = 3768060971
-				mid = 505584253
-				launchID = 13
-				parent = 15
-				position = -1.64528810977936,-3.6007673740387,4.29244863653366E-07
-				rotation = 0.000730974,0.7071065,-0.0007307211,0.7071068
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 13
-				srfN = srfAttach, 15
-				attN = top, 19
-				attN = bottom, -1
-				mass = 0.3
-				temp = 330.73094533075
-				tempExt = 319.358541058987
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = atmoPlasmaEngine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					staged = True
-					flameout = False
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 1
-					thrustPercentage = 100
-					manuallyOverridden = False
-					thrustPercentage_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 0.5
-					}
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Engine
-							guiName = Activate Engine
-							category = Activate Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = True
-							guiActive = True
-							guiIcon = Shutdown Engine
-							guiName = Shutdown Engine
-							category = Shutdown Engine
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleResourceIntake
-					isEnabled = True
-					intakeEnabled = True
-					EVENTS
-					{
-						Deactivate
-						{
-							active = True
-							guiActive = True
-							guiIcon = Close Intake
-							guiName = Close Intake
-							category = Close Intake
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Open Intake
-							guiName = Open Intake
-							category = Open Intake
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = IntakeAir
-					amount = 0.1
-					maxAmount = 0.1
-					flowState = True
-					isTweakable = False
-					hideFlow = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = standardNoseCone
-				cid = 4294696010
-				uid = 2132685818
-				mid = 505584253
-				launchID = 13
-				parent = 18
-				position = -1.6441410779953,-3.04576826095581,3.63083813681442E-07
-				rotation = 0,1.699045E-07,-0.001033562,0.9999998
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sym = 14
-				srfN = srfAttach, -1
-				attN = bottom01, 18
-				mass = 0.01
-				temp = 323.868333862132
-				tempExt = 318.442013996633
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = standardNoseCone
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = wingConnector2
-				cid = 4294244644
-				uid = 77530207
-				mid = 505584253
-				launchID = 13
-				parent = 2
-				position = 0.622569680213928,-1.78224670886993,2.12460335546893E-07
-				rotation = -0.00104858,0.9999997,4.214685E-08,1.494073E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 29
-				srfN = srfAttach, 2
-				mass = 0.2
-				temp = 297.578353731955
-				tempExt = 298.140954430729
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = wingConnector2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = delta.small
-				cid = 4294403418
-				uid = 1289363460
-				mid = 505584253
-				launchID = 13
-				parent = 20
-				position = 4.37343883514404,-2.07917666435242,2.47857144586305E-07
-				rotation = -0.00104864,0.9999997,4.214685E-08,4.465756E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 30
-				srfN = srfAttach, 20
-				mass = 0.05
-				temp = 297.427127866922
-				tempExt = 297.767108062465
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = delta.small
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = StandardCtrlSrf
-				cid = 4294277028
-				uid = 1767697815
-				mid = 505584253
-				launchID = 13
-				parent = 21
-				position = 5.31742286682129,-2.70220184326172,3.22127533536332E-07
-				rotation = -0.001048617,0.9999997,-4.214685E-08,-0.0001442314
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 31
-				srfN = srfAttach, 21
-				mass = 0.05
-				temp = 297.477602854674
-				tempExt = 297.468927614302
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = StandardCtrlSrf
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = True
-					ignoreYaw = True
-					ignoreRoll = False
-					deploy = False
-					deployInvert = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294132238
-				uid = 1809568465
-				mid = 505584253
-				launchID = 13
-				parent = 21
-				position = 4.42771577835083,-2.2473156452179,-0.0937497466802597
-				rotation = -0.00104864,0.9999997,4.214685E-08,-1.692048E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 32
-				srfN = srfAttach, 21
-				mass = 0.02
-				temp = 297.428633489521
-				tempExt = 297.562765251975
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x16
-				cid = 4294192282
-				uid = 1513688645
-				mid = 505584253
-				launchID = 13
-				parent = 20
-				position = 1.29385304450989,-1.78196561336517,-0.0937497988343239
-				rotation = -0.9999997,-0.00104858,-1.461146E-08,4.214685E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 33
-				srfN = srfAttach, 20
-				mass = 0.08
-				temp = 297.578918047488
-				tempExt = 297.740902854102
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x16
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x16
-				cid = 4294191310
-				uid = 2079339323
-				mid = 505584253
-				launchID = 13
-				parent = 20
-				position = 2.68237209320068,-1.77991962432861,-0.0937497988343239
-				rotation = -0.9999997,-0.00104858,-1.461146E-08,4.214685E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 34
-				srfN = srfAttach, 20
-				mass = 0.08
-				temp = 297.578422281779
-				tempExt = 297.719621268754
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x16
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294148062
-				uid = 1678051375
-				mid = 505584253
-				launchID = 13
-				parent = 20
-				position = 3.73817586898804,-2.24888467788696,-0.0937497466802597
-				rotation = -0.00104858,0.9999997,4.214685E-08,1.461146E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 35
-				srfN = srfAttach, 20
-				mass = 0.02
-				temp = 297.579965222779
-				tempExt = 297.749859011306
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294147666
-				uid = 253533739
-				mid = 505584253
-				launchID = 13
-				parent = 20
-				position = 3.7384877204895,-1.31019330024719,-0.0937498584389687
-				rotation = -0.00104858,0.9999997,4.214685E-08,1.461146E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 36
-				srfN = srfAttach, 20
-				mass = 0.02
-				temp = 297.580014245045
-				tempExt = 297.756266198435
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = KF.RepulsorRacer
-				cid = 4294687210
-				uid = 100473348
-				mid = 505584253
-				launchID = 13
-				parent = 20
-				position = 4.09376382827759,-2.10799765586853,0.0604231543838978
-				rotation = -0.0007412789,0.7071066,0.0007416372,0.7071065
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 37
-				srfN = srfAttach, 20
-				attN = 001, -1
-				mass = 0.1
-				temp = 297.451353219272
-				tempExt = 298.067919700295
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = KF.RepulsorRacer
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KFRepulsor
-					isEnabled = True
-					groupNumber = 1
-					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
-					groupNumber_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 10
-						stepIncrement = 1
-					}
-					rideHeight_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 5
-					}
-					SpringRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 6
-						stepIncrement = 0.2
-					}
-					DamperRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 0.3
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						ApplySettings
-						{
-							active = True
-							guiActive = True
-							guiIcon = Apply Settings
-							guiName = Apply Settings
-							category = Apply Settings
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Retract
-						{
-							actionGroup = None
-						}
-						Extend
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = wingConnector2
-				cid = 4294685568
-				uid = 3159419393
-				mid = 505584253
-				launchID = 13
-				parent = 2
-				position = -0.622569620609283,-1.78224670886993,2.12460335546893E-07
-				rotation = -2.107343E-07,-5.844583E-08,0.00104858,-0.9999997
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 20
-				srfN = srfAttach, 2
-				mass = 0.2
-				temp = 297.574769295268
-				tempExt = 298.131617185798
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = wingConnector2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = delta.small
-				cid = 4294685530
-				uid = 3853503591
-				mid = 505584253
-				launchID = 13
-				parent = 29
-				position = -4.37342023849487,-2.07917666435242,2.47857144586305E-07
-				rotation = -2.107343E-07,-8.803918E-08,0.00104864,-0.9999997
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 21
-				srfN = srfAttach, 29
-				mass = 0.05
-				temp = 297.423715711008
-				tempExt = 297.762682394921
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = delta.small
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = StandardCtrlSrf
-				cid = 4294685492
-				uid = 3575728929
-				mid = 505584253
-				launchID = 13
-				parent = 30
-				position = -5.3174033164978,-2.70220160484314,3.22127505114622E-07
-				rotation = -4.214685E-08,0.000144188,0.001048617,-0.9999997
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 22
-				srfN = srfAttach, 30
-				mass = 0.05
-				temp = 297.47452825313
-				tempExt = 297.465809528636
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = StandardCtrlSrf
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleControlSurface
-					isEnabled = True
-					ignorePitch = True
-					ignoreYaw = True
-					ignoreRoll = False
-					deploy = False
-					deployInvert = False
-					ignorePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					ignoreRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					deploy_UIFlight
-					{
-						controlEnabled = True
-					}
-					deployInvert_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = None
-						}
-						ActionExtend
-						{
-							actionGroup = None
-						}
-						ActionRetract
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294685456
-				uid = 3487588252
-				mid = 505584253
-				launchID = 13
-				parent = 30
-				position = -4.42769622802734,-2.2473156452179,-0.0937497466802597
-				rotation = 0.001048638,0.9999998,0,1.690402E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 23
-				srfN = srfAttach, 30
-				mass = 0.02
-				temp = 297.425090891074
-				tempExt = 297.577366907125
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x16
-				cid = 4294685420
-				uid = 1767606276
-				mid = 505584253
-				launchID = 13
-				parent = 29
-				position = -1.29385209083557,-1.78196561336517,-0.0937497988343239
-				rotation = -0.9999998,0.001048577,1.469378E-08,0
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 24
-				srfN = srfAttach, 29
-				mass = 0.08
-				temp = 297.575365779132
-				tempExt = 297.879801220574
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x16
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x16
-				cid = 4294685384
-				uid = 3739036318
-				mid = 505584253
-				launchID = 13
-				parent = 29
-				position = -2.68237018585205,-1.77991962432861,-0.0937497988343239
-				rotation = -0.9999998,0.001048577,1.469378E-08,0
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 25
-				srfN = srfAttach, 29
-				mass = 0.08
-				temp = 297.575481426209
-				tempExt = 297.75241326409
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x16
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294685348
-				uid = 2034184520
-				mid = 505584253
-				launchID = 13
-				parent = 29
-				position = -3.7381579875946,-2.24888467788696,-0.0937497466802597
-				rotation = 0.001048577,0.9999998,0,-1.452914E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 26
-				srfN = srfAttach, 29
-				mass = 0.02
-				temp = 297.576711924449
-				tempExt = 297.768228298525
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294685312
-				uid = 3140482919
-				mid = 505584253
-				launchID = 13
-				parent = 29
-				position = -3.73847007751465,-1.31019330024719,-0.0937498584389687
-				rotation = 0.001048577,0.9999998,0,-1.452914E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 27
-				srfN = srfAttach, 29
-				mass = 0.02
-				temp = 297.576526691175
-				tempExt = 297.760323298342
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = KF.RepulsorRacer
-				cid = 4294695326
-				uid = 661095151
-				mid = 505584253
-				launchID = 13
-				parent = 29
-				position = -4.09374809265137,-2.10799765586853,0.0604231543838978
-				rotation = 0.0007416583,0.7071065,-0.0007413421,0.7071066
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 28
-				srfN = srfAttach, 29
-				attN = 001, -1
-				mass = 0.1
-				temp = 297.447926909189
-				tempExt = 298.060158326494
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = KF.RepulsorRacer
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KFRepulsor
-					isEnabled = True
-					groupNumber = 1
-					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
-					groupNumber_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 10
-						stepIncrement = 1
-					}
-					rideHeight_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 5
-					}
-					SpringRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 6
-						stepIncrement = 0.2
-					}
-					DamperRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 0.3
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						ApplySettings
-						{
-							active = True
-							guiActive = True
-							guiIcon = Apply Settings
-							guiName = Apply Settings
-							category = Apply Settings
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Retract
-						{
-							actionGroup = None
-						}
-						Extend
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = batteryBank
-				cid = 4294686712
-				uid = 1512784153
-				mid = 505584253
-				launchID = 13
-				parent = 0
-				position = 0,1.04835641384125,-1.24973809079165E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, 39
-				attN = bottom, 0
-				mass = 0.05
-				temp = 297.608842581754
-				tempExt = 298.174390170203
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = batteryBank
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 979.805126913982
-					maxAmount = 1000
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = pointyNoseConeA
-				cid = 4293206676
-				uid = 2605469595
-				mid = 505584253
-				launchID = 13
-				parent = 38
-				position = 0,1.78421473503113,-2.12694942547387E-07
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = bottom01, 38
-				mass = 0.075
-				temp = 297.475072023168
-				tempExt = 297.68256047243
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = pointyNoseConeA
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleAnimateHeat
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralWing2
-				cid = 4294390928
-				uid = 3848351455
-				mid = 505584253
-				launchID = 13
-				parent = 0
-				position = 0.619487583637238,-0.205536514520645,2.45018583200363E-08
-				rotation = 2.980233E-08,1,8.429371E-08,2.980233E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 45
-				srfN = srfAttach, 0
-				mass = 0.1
-				temp = 297.444692724176
-				tempExt = 297.748114762428
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = structuralWing2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294147096
-				uid = 3174809970
-				mid = 505584253
-				launchID = 13
-				parent = 40
-				position = 0.942304372787476,-0.348695367574692,-0.0937471091747284
-				rotation = 2.980244E-08,1,-8.429371E-08,-1.210605E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 46
-				srfN = srfAttach, 40
-				mass = 0.02
-				temp = 297.445602902807
-				tempExt = 297.520442275521
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294136548
-				uid = 1862354549
-				mid = 505584253
-				launchID = 13
-				parent = 40
-				position = 1.63781690597534,-0.350375264883041,-0.0937480628490448
-				rotation = 2.980244E-08,1,-8.429371E-08,-1.210605E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 47
-				srfN = srfAttach, 40
-				mass = 0.02
-				temp = 297.44572336638
-				tempExt = 297.599164512424
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294136078
-				uid = 3009399061
-				mid = 505584253
-				launchID = 13
-				parent = 40
-				position = 2.46046900749207,-0.466298550367355,-0.0937480479478836
-				rotation = -0.7071071,0.7071069,-2.107343E-07,-1.685874E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 48
-				srfN = srfAttach, 40
-				mass = 0.02
-				temp = 297.445578547473
-				tempExt = 297.523665555774
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = KF.RepulsorRacer
-				cid = 4294688088
-				uid = 745969603
-				mid = 505584253
-				launchID = 13
-				parent = 40
-				position = 0.87686675786972,0.686378359794617,0.0607213228940964
-				rotation = 1.053671E-07,0.7071071,-4.214685E-08,0.7071069
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 49
-				srfN = srfAttach, 40
-				attN = 001, -1
-				mass = 0.1
-				temp = 297.419692518749
-				tempExt = 297.717847107196
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = KF.RepulsorRacer
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KFRepulsor
-					isEnabled = True
-					groupNumber = 1
-					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
-					groupNumber_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 10
-						stepIncrement = 1
-					}
-					rideHeight_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 5
-					}
-					SpringRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 6
-						stepIncrement = 0.2
-					}
-					DamperRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 0.3
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						ApplySettings
-						{
-							active = True
-							guiActive = True
-							guiIcon = Apply Settings
-							guiName = Apply Settings
-							category = Apply Settings
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Retract
-						{
-							actionGroup = None
-						}
-						Extend
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = structuralWing2
-				cid = 4294685868
-				uid = 473626412
-				mid = 505584253
-				launchID = 13
-				parent = 0
-				position = -0.619487524032593,-0.205536410212517,2.45018458855384E-08
-				rotation = -3.371748E-07,-7.351371E-08,-2.980231E-08,-1
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 40
-				srfN = srfAttach, 0
-				mass = 0.1
-				temp = 297.443443137616
-				tempExt = 297.746382297849
-				expt = 0.1
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = structuralWing2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294685830
-				uid = 1196929620
-				mid = 505584253
-				launchID = 13
-				parent = 45
-				position = -0.942304253578186,-0.348695129156113,-0.0937471091747284
-				rotation = -2.980235E-08,1,0,1.210604E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 41
-				srfN = srfAttach, 45
-				mass = 0.02
-				temp = 297.443837617835
-				tempExt = 297.511438672879
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294685794
-				uid = 3574395169
-				mid = 505584253
-				launchID = 13
-				parent = 45
-				position = -1.63781702518463,-0.350374966859818,-0.0937480628490448
-				rotation = -2.980235E-08,1,0,1.210604E-07
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 42
-				srfN = srfAttach, 45
-				mass = 0.02
-				temp = 297.444499511991
-				tempExt = 297.52277436009
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = solarPanels5x4
-				cid = 4294685758
-				uid = 3574586294
-				mid = 505584253
-				launchID = 13
-				parent = 45
-				position = -2.46046805381775,-0.466298252344131,-0.0937480479478836
-				rotation = 0.7071071,0.7071068,-1.896609E-07,-4.214685E-08
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 43
-				srfN = srfAttach, 45
-				mass = 0.02
-				temp = 297.444974462336
-				tempExt = 297.533686108668
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = solarPanels5x4
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					currentRotation = (0, 0, 0, 1)
-					stateString = EXTENDED
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					EVENTS
-					{
-						Extend
-						{
-							active = False
-							guiActive = True
-							guiIcon = Extend Panels
-							guiName = Extend Panels
-							category = Extend Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-						Retract
-						{
-							active = False
-							guiActive = True
-							guiIcon = Retract Panels
-							guiName = Retract Panels
-							category = Retract Panels
-							guiActiveUnfocused = True
-							unfocusedRange = 4
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			PART
-			{
-				name = KF.RepulsorRacer
-				cid = 4294685722
-				uid = 3546661504
-				mid = 505584253
-				launchID = 13
-				parent = 45
-				position = -0.87686675786972,0.686378538608551,0.0607213228940964
-				rotation = 1.47514E-07,0.7071069,2.107343E-07,0.707107
-				mirror = 1,1,1
-				symMethod = Mirror
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sym = 44
-				srfN = srfAttach, 45
-				attN = 001, -1
-				mass = 0.1
-				temp = 297.417981788389
-				tempExt = 297.715764996573
-				expt = 0.5
-				state = 1
-				connected = True
-				attached = True
-				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-				rTrf = KF.RepulsorRacer
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KFRepulsor
-					isEnabled = True
-					groupNumber = 1
-					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
-					groupNumber_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 10
-						stepIncrement = 1
-					}
-					rideHeight_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 100
-						stepIncrement = 5
-					}
-					SpringRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 6
-						stepIncrement = 0.2
-					}
-					DamperRate_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 0.3
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						ApplySettings
-						{
-							active = True
-							guiActive = True
-							guiIcon = Apply Settings
-							guiName = Apply Settings
-							category = Apply Settings
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						Retract
-						{
-							actionGroup = None
-						}
-						Extend
-						{
-							actionGroup = None
-						}
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 25835.7910640339
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = True, 25835.2710640338
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			TARGET
-			{
-				type = Vessel
-				vesselID = c4f3082a-b404-43e1-b1e2-c3009283d13d
-			}
-			CTRLSTATE
-			{
-				pitch = 0.05411066
-				yaw = -0.0110894
-				roll = 0.001180365
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 1
-			}
-		}
-		VESSEL
-		{
 			pid = e087e5b9ad3a404e95750a5ab8015cda
 			name = Finish
 			type = Base
@@ -5506,13 +990,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 74.7839510544337
-				LAN = 240.351000493452
+				LPE = 75.4984629038784
+				LAN = 300.382627289088
 				MNA = -8.40714670366795
-				EPH = 22268.4188212961
+				EPH = 25827.2110640337
 				REF = 1
 			}
 			PART
@@ -8612,10 +4096,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 73.7974003804263
-				LAN = 240.351000493452
+				LPE = 74.4890975932388
+				LAN = 300.382627289088
 				MNA = -8.40714670366795
-				EPH = 22268.4188212961
+				EPH = 25827.2110640337
 				REF = 1
 			}
 			PART
@@ -11737,6 +7221,4661 @@ GAME
 				mainThrottle = 0
 			}
 		}
+		VESSEL
+		{
+			pid = b805cefd9f5e4ff685701fd1069fc594
+			name = Solar Racer
+			type = Ship
+			sit = FLYING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0.0
+			lct = 25878.5310640348
+			root = 0
+			lat = 22.1405616799046
+			lon = 249.578021322562
+			alt = 310.734900195501
+			hgt = 379.9046
+			nrm = -0.02990532,-0.05050964,-0.9982758
+			rot = 0.217856,-0.1384852,0.9309748,0.2581599
+			CoM = -8.850078E-05,-2.022875,0.002855157
+			stg = 0
+			prst = False
+			ref = 2840076417
+			ctrl = True
+			cPch = 0.14
+			cHdg = -2.65
+			cMod = 0
+			ORBIT
+			{
+				SMA = 300795.123769057
+				ECC = 0.995748253874739
+				INC = 54.2419239898947
+				LPE = 332.321266367708
+				LAN = 247.926567690373
+				MNA = 3.14578280829145
+				EPH = 25878.5310640348
+				REF = 1
+			}
+			PART
+			{
+				name = Mark2Cockpit
+				cid = 4293223304
+				uid = 2840076417
+				mid = 2963920872
+				launchID = 17
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, 38
+				attN = bottom, 1
+				mass = 1
+				temp = 290.117671594487
+				tempExt = 292.703449016324
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = Mark2Cockpit (Solar Racer)
+				modCost = 0
+				crew = Valentina Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Running
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Report
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					EVENTS
+					{
+						StoreDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Store Experiments (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.3
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.3
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Stored Data (0)
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle Flag
+							guiName = Toggle Flag
+							category = Toggle Flag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = -1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Lights On
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+						0 = Land,Kerbin
+						0 = Flight,Kerbin
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 13.3093907701341
+					maxAmount = 50
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = MonoPropellant
+					amount = 0
+					maxAmount = 7.5
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = advSasModule
+				cid = 4294320546
+				uid = 2166506115
+				mid = 2963920872
+				launchID = 17
+				parent = 0
+				position = 0,-1.13652729988098,1.35484597763025E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.1
+				temp = 291.69227826557
+				tempExt = 293.158024499509
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = advSasModule
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Running
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = Mk1FuselageStructural
+				cid = 4294174452
+				uid = 3315861946
+				mid = 2963920872
+				launchID = 17
+				parent = 1
+				position = 0,-2.27306962013245,2.70970986093744E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 0.1
+				temp = 293.678848303516
+				tempExt = 294.313453153693
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = Mk1FuselageStructural
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+			}
+			PART
+			{
+				name = Mk1FuselageStructural
+				cid = 4293041756
+				uid = 1455307976
+				mid = 2963920872
+				launchID = 17
+				parent = 2
+				position = 0,-4.14816951751709,4.94500284276E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = top, 2
+				attN = bottom, 4
+				mass = 0.1
+				temp = 298.066084815919
+				tempExt = 304.982969019392
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = Mk1FuselageStructural
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+			}
+			PART
+			{
+				name = probeStackSmall
+				cid = 4294340582
+				uid = 1020713291
+				mid = 2963920872
+				launchID = 17
+				parent = 3
+				position = 0,-5.18569231033325,6.18182639300358E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = bottom, 5
+				attN = top, 3
+				mass = 0.1
+				temp = 294.20125813591
+				tempExt = 296.003890085783
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = probeStackSmall
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Running
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					standaloneToggle = True
+					standaloneToggle_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+						0 = Land,Kerbin
+						0 = Flight,Kerbin
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0.465932760480704
+					maxAmount = 15
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = pointyNoseConeA
+				cid = 4294447370
+				uid = 2754964656
+				mid = 2963920872
+				launchID = 17
+				parent = 4
+				position = 0,-5.91069650650024,7.0460987444676E-07
+				rotation = 0,0,-1,0
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom01, 4
+				mass = 0.075
+				temp = 291.494464852547
+				tempExt = 292.599980257282
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = pointyNoseConeA
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294338254
+				uid = 1585516286
+				mid = 2963920872
+				launchID = 17
+				parent = 5
+				position = 0.793534517288208,-6.42094135284424,0.21262152493
+				rotation = 0.1102452,0.9852967,0.01451386,0.1297163
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 7
+				srfN = srfAttach, 5
+				mass = 0.1
+				temp = 288.739159268089
+				tempExt = 292.016971203072
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = True
+					deploy = False
+					deployInvert = False
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294332870
+				uid = 967281452
+				mid = 2963920872
+				launchID = 17
+				parent = 5
+				position = -0.793534517288208,-6.42094135284424,0.21262152493
+				rotation = -0.01451407,-0.1297164,-0.1102452,-0.9852968
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 6
+				srfN = srfAttach, 5
+				mass = 0.1
+				temp = 288.738650350368
+				tempExt = 291.994889473916
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = True
+					deploy = False
+					deployInvert = False
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294331778
+				uid = 2087594308
+				mid = 2963920872
+				launchID = 17
+				parent = 5
+				position = 0.793874263763428,-6.42329978942871,-0.212710589170456
+				rotation = -0.1102452,-0.9852968,0.01451407,0.1297164
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 9
+				srfN = srfAttach, 5
+				mass = 0.1
+				temp = 288.728598661364
+				tempExt = 291.982463853136
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = True
+					deploy = False
+					deployInvert = False
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				cid = 4294331714
+				uid = 2133057657
+				mid = 2963920872
+				launchID = 17
+				parent = 5
+				position = -0.793874442577362,-6.42329978942871,-0.212710589170456
+				rotation = 0.01451407,0.1297163,-0.1102452,-0.9852968
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 8
+				srfN = srfAttach, 5
+				mass = 0.1
+				temp = 288.733407560746
+				tempExt = 292.010647407112
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					ignorePitch = False
+					ignoreYaw = False
+					ignoreRoll = True
+					deploy = False
+					deployInvert = False
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = delta.small
+				cid = 4294042754
+				uid = 3725376666
+				mid = 2963920872
+				launchID = 17
+				parent = 3
+				position = 0.613050282001495,-3.34280443191528,3.98493284592405E-07
+				rotation = -4.469872E-08,-4.214685E-08,0.9999997,-0.001033589
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 15
+				srfN = srfAttach, 3
+				mass = 0.05
+				temp = 307.071257382453
+				tempExt = 311.145927362797
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = delta.small
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294526116
+				uid = 172678383
+				mid = 2963920872
+				launchID = 17
+				parent = 10
+				position = 0.963134288787842,-3.2009334564209,-0.0937477201223373
+				rotation = 0.001033589,-0.9999997,-4.214685E-08,-2.582318E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 16
+				srfN = srfAttach, 10
+				mass = 0.02
+				temp = 306.651583373219
+				tempExt = 309.868929760031
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = KF.RepulsorRacer
+				cid = 4294688534
+				uid = 3565017938
+				mid = 2963920872
+				launchID = 17
+				parent = 10
+				position = 0.870817303657532,-4.03312349319458,0.117279544472694
+				rotation = 0.7071068,0.0007309107,-0.7071064,0.0007309107
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 17
+				srfN = srfAttach, 10
+				attN = 001, -1
+				mass = 0.1
+				temp = 297.698436387487
+				tempExt = 309.425979227328
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = KF.RepulsorRacer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KFRepulsor
+					isEnabled = True
+					groupNumber = 1
+					rideHeight = 100
+					SpringRate = 4
+					DamperRate = 0.3
+					groupNumber_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 10
+						stepIncrement = 1
+					}
+					rideHeight_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 5
+					}
+					SpringRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 6
+						stepIncrement = 0.2
+					}
+					DamperRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.3
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						ApplySettings
+						{
+							active = True
+							guiActive = True
+							guiIcon = Apply Settings
+							guiName = Apply Settings
+							category = Apply Settings
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Retract
+						{
+							actionGroup = None
+						}
+						Extend
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = atmoPlasmaEngine
+				cid = 4294696842
+				uid = 4154533510
+				mid = 2963920872
+				launchID = 17
+				parent = 10
+				position = 1.64528799057007,-3.6008312702179,-8.15381736174459E-06
+				rotation = -0.0007309529,0.7071065,-0.0007308475,-0.7071066
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 18
+				srfN = srfAttach, 10
+				attN = top, 14
+				attN = bottom, -1
+				mass = 0.3
+				temp = 338.1245562461
+				tempExt = 323.2307398748
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = atmoPlasmaEngine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceIntake
+					isEnabled = True
+					intakeEnabled = True
+					EVENTS
+					{
+						Deactivate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Close Intake
+							guiName = Close Intake
+							category = Close Intake
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Open Intake
+							guiName = Open Intake
+							category = Open Intake
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = IntakeAir
+					amount = 0.0890142716467381
+					maxAmount = 0.1
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = standardNoseCone
+				cid = 4294352250
+				uid = 75116497
+				mid = 2963920872
+				launchID = 17
+				parent = 13
+				position = 1.64414310455322,-3.04583406448364,-8.21997855382506E-06
+				rotation = 8.429371E-08,-2.510701E-09,0.00103365,0.9999998
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				sym = 19
+				srfN = srfAttach, -1
+				attN = bottom01, 13
+				mass = 0.01
+				temp = 327.002440627839
+				tempExt = 315.974338140785
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = standardNoseCone
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = delta.small
+				cid = 4294684220
+				uid = 3423966541
+				mid = 2963920872
+				launchID = 17
+				parent = 3
+				position = -0.613050222396851,-3.34280443191528,3.98493284592405E-07
+				rotation = 0.9999997,-0.001033589,-1.358248E-09,4.214685E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 10
+				srfN = srfAttach, 3
+				mass = 0.05
+				temp = 307.078261333552
+				tempExt = 311.138811656018
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = delta.small
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294684182
+				uid = 4032895866
+				mid = 2963920872
+				launchID = 17
+				parent = 15
+				position = -0.963134229183197,-3.2009334564209,-0.0937477201223373
+				rotation = 0.001033589,0.9999997,4.214685E-08,-2.581495E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 11
+				srfN = srfAttach, 15
+				mass = 0.02
+				temp = 306.657372203524
+				tempExt = 309.857344501872
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = KF.RepulsorRacer
+				cid = 4294683966
+				uid = 1556335280
+				mid = 2963920872
+				launchID = 17
+				parent = 15
+				position = -0.870817124843597,-4.0331244468689,0.117279544472694
+				rotation = -0.7071065,0.0007308686,0.7071068,0.0007307422
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 12
+				srfN = srfAttach, 15
+				attN = 001, -1
+				mass = 0.1
+				temp = 297.708096085548
+				tempExt = 309.424186875875
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = KF.RepulsorRacer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KFRepulsor
+					isEnabled = True
+					groupNumber = 1
+					rideHeight = 100
+					SpringRate = 4
+					DamperRate = 0.3
+					groupNumber_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 10
+						stepIncrement = 1
+					}
+					rideHeight_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 5
+					}
+					SpringRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 6
+						stepIncrement = 0.2
+					}
+					DamperRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.3
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						ApplySettings
+						{
+							active = True
+							guiActive = True
+							guiIcon = Apply Settings
+							guiName = Apply Settings
+							category = Apply Settings
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Retract
+						{
+							actionGroup = None
+						}
+						Extend
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = atmoPlasmaEngine
+				cid = 4294696146
+				uid = 3867163980
+				mid = 2963920872
+				launchID = 17
+				parent = 15
+				position = -1.64528810977936,-3.60083246231079,-8.15381736174459E-06
+				rotation = 0.0007311426,0.7071065,-0.0007308475,0.7071068
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 13
+				srfN = srfAttach, 15
+				attN = top, 19
+				attN = bottom, -1
+				mass = 0.3
+				temp = 338.114485215789
+				tempExt = 323.126120779608
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = atmoPlasmaEngine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceIntake
+					isEnabled = True
+					intakeEnabled = True
+					EVENTS
+					{
+						Deactivate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Close Intake
+							guiName = Close Intake
+							category = Close Intake
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Open Intake
+							guiName = Open Intake
+							category = Open Intake
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = IntakeAir
+					amount = 0.1
+					maxAmount = 0.1
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = standardNoseCone
+				cid = 4294696010
+				uid = 2309501874
+				mid = 2963920872
+				launchID = 17
+				parent = 18
+				position = -1.64414310455322,-3.04583549499512,-8.21997764433036E-06
+				rotation = 8.429371E-08,1.234771E-09,-0.00103371,0.9999998
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				sym = 14
+				srfN = srfAttach, -1
+				attN = bottom01, 18
+				mass = 0.01
+				temp = 327.095208548728
+				tempExt = 316.732321247857
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = standardNoseCone
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = wingConnector2
+				cid = 4294244644
+				uid = 3199046879
+				mid = 2963920872
+				launchID = 17
+				parent = 2
+				position = 0.622569680213928,-1.78224861621857,2.12460562920569E-07
+				rotation = -0.00104858,0.9999997,4.214685E-08,1.494073E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 29
+				srfN = srfAttach, 2
+				mass = 0.2
+				temp = 290.478875200368
+				tempExt = 292.886718324095
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = wingConnector2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = delta.small
+				cid = 4294403418
+				uid = 2148132924
+				mid = 2963920872
+				launchID = 17
+				parent = 20
+				position = 4.37350177764893,-2.07917761802673,2.47857258273143E-07
+				rotation = -0.00104864,0.9999997,4.214685E-08,4.465756E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 30
+				srfN = srfAttach, 20
+				mass = 0.05
+				temp = 290.309421889747
+				tempExt = 292.605512759645
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = delta.small
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = StandardCtrlSrf
+				cid = 4294277028
+				uid = 2490968884
+				mid = 2963920872
+				launchID = 17
+				parent = 21
+				position = 5.31748676300049,-2.7022066116333,3.2212810197052E-07
+				rotation = -0.001048617,0.9999997,-4.214685E-08,-0.0001442314
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 31
+				srfN = srfAttach, 21
+				mass = 0.05
+				temp = 288.837501234206
+				tempExt = 292.070292341519
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = StandardCtrlSrf
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					ignorePitch = True
+					ignoreYaw = True
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294132238
+				uid = 1092342564
+				mid = 2963920872
+				launchID = 17
+				parent = 21
+				position = 4.42777872085571,-2.24731659889221,-0.0937497466802597
+				rotation = -0.00104864,0.9999997,4.214685E-08,-1.692048E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 32
+				srfN = srfAttach, 21
+				mass = 0.02
+				temp = 290.521522834616
+				tempExt = 292.699113712382
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x16
+				cid = 4294192282
+				uid = 3062467957
+				mid = 2963920872
+				launchID = 17
+				parent = 20
+				position = 1.29385304450989,-1.78196668624878,-0.0937497988343239
+				rotation = -0.9999997,-0.00104858,-1.461146E-08,4.214685E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 33
+				srfN = srfAttach, 20
+				mass = 0.08
+				temp = 290.673386507686
+				tempExt = 292.930853655807
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x16
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x16
+				cid = 4294191310
+				uid = 3367669628
+				mid = 2963920872
+				launchID = 17
+				parent = 20
+				position = 2.682373046875,-1.77992165088654,-0.0937497988343239
+				rotation = -0.9999997,-0.00104858,-1.461146E-08,4.214685E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 34
+				srfN = srfAttach, 20
+				mass = 0.08
+				temp = 290.663643074015
+				tempExt = 292.851786838208
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x16
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294148062
+				uid = 368695589
+				mid = 2963920872
+				launchID = 17
+				parent = 20
+				position = 3.73823881149292,-2.24888563156128,-0.0937497466802597
+				rotation = -0.00104858,0.9999997,4.214685E-08,1.461146E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 35
+				srfN = srfAttach, 20
+				mass = 0.02
+				temp = 290.685778375657
+				tempExt = 292.935809435105
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294147666
+				uid = 3522385053
+				mid = 2963920872
+				launchID = 17
+				parent = 20
+				position = 3.73855066299438,-1.31019330024719,-0.0937498584389687
+				rotation = -0.00104858,0.9999997,4.214685E-08,1.461146E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 36
+				srfN = srfAttach, 20
+				mass = 0.02
+				temp = 290.685777943754
+				tempExt = 292.935809747878
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = KF.RepulsorRacer
+				cid = 4294687210
+				uid = 1676939692
+				mid = 2963920872
+				launchID = 17
+				parent = 20
+				position = 4.0938286781311,-2.10799956321716,0.116331368684769
+				rotation = -0.0007412789,0.7071066,0.0007416372,0.7071065
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 37
+				srfN = srfAttach, 20
+				attN = 001, -1
+				mass = 0.1
+				temp = 289.660437658971
+				tempExt = 292.870638592767
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = KF.RepulsorRacer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KFRepulsor
+					isEnabled = True
+					groupNumber = 1
+					rideHeight = 100
+					SpringRate = 4
+					DamperRate = 0.3
+					groupNumber_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 10
+						stepIncrement = 1
+					}
+					rideHeight_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 5
+					}
+					SpringRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 6
+						stepIncrement = 0.2
+					}
+					DamperRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.3
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						ApplySettings
+						{
+							active = True
+							guiActive = True
+							guiIcon = Apply Settings
+							guiName = Apply Settings
+							category = Apply Settings
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Retract
+						{
+							actionGroup = None
+						}
+						Extend
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = wingConnector2
+				cid = 4294685568
+				uid = 695695903
+				mid = 2963920872
+				launchID = 17
+				parent = 2
+				position = -0.622569620609283,-1.78224861621857,2.12460562920569E-07
+				rotation = -2.107343E-07,-5.844583E-08,0.00104858,-0.9999997
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 20
+				srfN = srfAttach, 2
+				mass = 0.2
+				temp = 290.482882676705
+				tempExt = 292.886543820529
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = wingConnector2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = delta.small
+				cid = 4294685530
+				uid = 4257509746
+				mid = 2963920872
+				launchID = 17
+				parent = 29
+				position = -4.37342023849487,-2.07917761802673,2.47857258273143E-07
+				rotation = -2.107343E-07,-8.803918E-08,0.00104864,-0.9999997
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 21
+				srfN = srfAttach, 29
+				mass = 0.05
+				temp = 290.314785000256
+				tempExt = 292.607185994046
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = delta.small
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = StandardCtrlSrf
+				cid = 4294685492
+				uid = 1262474953
+				mid = 2963920872
+				launchID = 17
+				parent = 30
+				position = -5.3174033164978,-2.70220255851746,3.2212761880146E-07
+				rotation = -4.214685E-08,0.000144188,0.001048617,-0.9999997
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 22
+				srfN = srfAttach, 30
+				mass = 0.05
+				temp = 288.839574168827
+				tempExt = 292.071402098395
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = StandardCtrlSrf
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleControlSurface
+					isEnabled = True
+					ignorePitch = True
+					ignoreYaw = True
+					ignoreRoll = False
+					deploy = False
+					deployInvert = False
+					ignorePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					ignoreRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					deploy_UIFlight
+					{
+						controlEnabled = True
+					}
+					deployInvert_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionExtend
+						{
+							actionGroup = None
+						}
+						ActionRetract
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294685456
+				uid = 2154603029
+				mid = 2963920872
+				launchID = 17
+				parent = 30
+				position = -4.42769622802734,-2.24731659889221,-0.0937497466802597
+				rotation = 0.001048632,0.9999998,0,1.68999E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 23
+				srfN = srfAttach, 30
+				mass = 0.02
+				temp = 290.526672362952
+				tempExt = 292.701075400138
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x16
+				cid = 4294685420
+				uid = 1563003536
+				mid = 2963920872
+				launchID = 17
+				parent = 29
+				position = -1.29385209083557,-1.78196668624878,-0.0937497988343239
+				rotation = -0.9999998,0.001048575,1.47761E-08,0
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 24
+				srfN = srfAttach, 29
+				mass = 0.08
+				temp = 290.677311689805
+				tempExt = 292.933221900119
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x16
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x16
+				cid = 4294685384
+				uid = 472241276
+				mid = 2963920872
+				launchID = 17
+				parent = 29
+				position = -2.68237018585205,-1.77992165088654,-0.0937497988343239
+				rotation = -0.9999998,0.001048575,1.47761E-08,0
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 25
+				srfN = srfAttach, 29
+				mass = 0.08
+				temp = 290.667573808985
+				tempExt = 292.854132369378
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x16
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294685348
+				uid = 1807845181
+				mid = 2963920872
+				launchID = 17
+				parent = 29
+				position = -3.7381579875946,-2.24888563156128,-0.0937497466802597
+				rotation = 0.001048572,0.9999998,0,-1.448798E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 26
+				srfN = srfAttach, 29
+				mass = 0.02
+				temp = 290.689579941749
+				tempExt = 292.936184702113
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294685312
+				uid = 1548535888
+				mid = 2963920872
+				launchID = 17
+				parent = 29
+				position = -3.73847007751465,-1.31019330024719,-0.0937498584389687
+				rotation = 0.001048572,0.9999998,0,-1.448798E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 27
+				srfN = srfAttach, 29
+				mass = 0.02
+				temp = 290.68963527458
+				tempExt = 292.936193601158
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = KF.RepulsorRacer
+				cid = 4294695326
+				uid = 465761922
+				mid = 2963920872
+				launchID = 17
+				parent = 29
+				position = -4.09380435943604,-2.10800266265869,0.116331368684769
+				rotation = 0.0007417215,0.7071066,-0.0007413421,0.7071066
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 28
+				srfN = srfAttach, 29
+				attN = 001, -1
+				mass = 0.1
+				temp = 289.6651542893
+				tempExt = 292.870778273934
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = KF.RepulsorRacer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KFRepulsor
+					isEnabled = True
+					groupNumber = 1
+					rideHeight = 100
+					SpringRate = 4
+					DamperRate = 0.3
+					groupNumber_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 10
+						stepIncrement = 1
+					}
+					rideHeight_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 5
+					}
+					SpringRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 6
+						stepIncrement = 0.2
+					}
+					DamperRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.3
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						ApplySettings
+						{
+							active = True
+							guiActive = True
+							guiIcon = Apply Settings
+							guiName = Apply Settings
+							category = Apply Settings
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Retract
+						{
+							actionGroup = None
+						}
+						Extend
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = batteryBank
+				cid = 4294686712
+				uid = 3720134444
+				mid = 2963920872
+				launchID = 17
+				parent = 0
+				position = 0,1.04835641384125,-1.24973809079165E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, 39
+				attN = bottom, 0
+				mass = 0.05
+				temp = 289.993170877168
+				tempExt = 292.507595548154
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = batteryBank
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 963.309390769498
+					maxAmount = 1000
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = pointyNoseConeA
+				cid = 4293206676
+				uid = 67405372
+				mid = 2963920872
+				launchID = 17
+				parent = 38
+				position = 0,1.78421676158905,-2.12695184131917E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom01, 38
+				mass = 0.075
+				temp = 289.835395812973
+				tempExt = 292.360661391077
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = pointyNoseConeA
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = structuralWing2
+				cid = 4294390928
+				uid = 3220379944
+				mid = 2963920872
+				launchID = 17
+				parent = 0
+				position = 0.619487583637238,-0.205542713403702,2.45025972844815E-08
+				rotation = 2.980233E-08,1,8.429371E-08,2.980233E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 45
+				srfN = srfAttach, 0
+				mass = 0.1
+				temp = 290.140676524136
+				tempExt = 292.395196788227
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = structuralWing2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294147096
+				uid = 2635029869
+				mid = 2963920872
+				launchID = 17
+				parent = 40
+				position = 0.942304372787476,-0.348697453737259,-0.0937471091747284
+				rotation = 2.980244E-08,1,-8.429371E-08,-1.210605E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 46
+				srfN = srfAttach, 40
+				mass = 0.02
+				temp = 290.356058406033
+				tempExt = 292.515573891041
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294136548
+				uid = 2401552241
+				mid = 2963920872
+				launchID = 17
+				parent = 40
+				position = 1.63781690597534,-0.350377827882767,-0.0937480628490448
+				rotation = 2.980244E-08,1,-8.429371E-08,-1.210605E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 47
+				srfN = srfAttach, 40
+				mass = 0.02
+				temp = 290.356051924058
+				tempExt = 292.515762555477
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294136078
+				uid = 2483892732
+				mid = 2963920872
+				launchID = 17
+				parent = 40
+				position = 2.46046900749207,-0.466299027204514,-0.0937480479478836
+				rotation = -0.7071071,0.7071069,-2.107343E-07,-1.685874E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 48
+				srfN = srfAttach, 40
+				mass = 0.02
+				temp = 290.35534473915
+				tempExt = 292.51091575846
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = KF.RepulsorRacer
+				cid = 4294688088
+				uid = 3606982148
+				mid = 2963920872
+				launchID = 17
+				parent = 40
+				position = 0.87686675786972,0.68637877702713,0.116822175681591
+				rotation = 1.053671E-07,0.707107,-4.214685E-08,0.7071069
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 49
+				srfN = srfAttach, 40
+				attN = 001, -1
+				mass = 0.1
+				temp = 289.468931615784
+				tempExt = 292.424883954171
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = KF.RepulsorRacer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KFRepulsor
+					isEnabled = True
+					groupNumber = 1
+					rideHeight = 100
+					SpringRate = 4
+					DamperRate = 0.3
+					groupNumber_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 10
+						stepIncrement = 1
+					}
+					rideHeight_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 5
+					}
+					SpringRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 6
+						stepIncrement = 0.2
+					}
+					DamperRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.3
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						ApplySettings
+						{
+							active = True
+							guiActive = True
+							guiIcon = Apply Settings
+							guiName = Apply Settings
+							category = Apply Settings
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Retract
+						{
+							actionGroup = None
+						}
+						Extend
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = structuralWing2
+				cid = 4294685868
+				uid = 679872886
+				mid = 2963920872
+				launchID = 17
+				parent = 0
+				position = -0.619487524032593,-0.205542609095573,2.45025848499836E-08
+				rotation = -3.371748E-07,-7.351371E-08,-2.980231E-08,-1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 40
+				srfN = srfAttach, 0
+				mass = 0.1
+				temp = 290.148711979365
+				tempExt = 292.400400554482
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = structuralWing2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294685830
+				uid = 2619875446
+				mid = 2963920872
+				launchID = 17
+				parent = 45
+				position = -0.942304253578186,-0.348695427179337,-0.0937471091747284
+				rotation = -2.980235E-08,1,0,1.210604E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 41
+				srfN = srfAttach, 45
+				mass = 0.02
+				temp = 290.363934893557
+				tempExt = 292.520615492689
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294685794
+				uid = 3070669748
+				mid = 2963920872
+				launchID = 17
+				parent = 45
+				position = -1.63781702518463,-0.350377053022385,-0.0937480628490448
+				rotation = -2.980235E-08,1,0,1.210604E-07
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 42
+				srfN = srfAttach, 45
+				mass = 0.02
+				temp = 290.363937321393
+				tempExt = 292.520805175963
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solarPanels5x4
+				cid = 4294685758
+				uid = 4072398656
+				mid = 2963920872
+				launchID = 17
+				parent = 45
+				position = -2.46046805381775,-0.466299027204514,-0.0937480479478836
+				rotation = 0.7071071,0.7071068,-1.896609E-07,-4.214685E-08
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 43
+				srfN = srfAttach, 45
+				mass = 0.02
+				temp = 290.36324096258
+				tempExt = 292.516035535179
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = solarPanels5x4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, 0, 1)
+					stateString = EXTENDED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					EVENTS
+					{
+						Extend
+						{
+							active = False
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = KF.RepulsorRacer
+				cid = 4294685722
+				uid = 3866527607
+				mid = 2963920872
+				launchID = 17
+				parent = 45
+				position = -0.87686675786972,0.68637877702713,0.116822175681591
+				rotation = 0,-0.7071069,-2.107343E-07,-0.7071069
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				sym = 44
+				srfN = srfAttach, 45
+				attN = 001, -1
+				mass = 0.1
+				temp = 289.477196126529
+				tempExt = 292.429713543954
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Agencies/IonicSymphonicProtonicElectronics
+				rTrf = KF.RepulsorRacer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KFRepulsor
+					isEnabled = True
+					groupNumber = 1
+					rideHeight = 100
+					SpringRate = 4
+					DamperRate = 0.3
+					groupNumber_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 10
+						stepIncrement = 1
+					}
+					rideHeight_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 5
+					}
+					SpringRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 6
+						stepIncrement = 0.2
+					}
+					DamperRate_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.3
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						ApplySettings
+						{
+							active = True
+							guiActive = True
+							guiIcon = Apply Settings
+							guiName = Apply Settings
+							category = Apply Settings
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Retract
+						{
+							actionGroup = None
+						}
+						Extend
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 25885.1710640351
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 25877.5710640349
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			TARGET
+			{
+				type = Vessel
+				vesselID = c4f3082a-b404-43e1-b1e2-c3009283d13d
+			}
+			CTRLSTATE
+			{
+				pitch = 0.04290839
+				yaw = 0.01950631
+				roll = 0.002443371
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 1
+			}
+		}
 	}
 	ROSTER
 	{
@@ -11820,18 +11959,21 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 2
+				flight = 3
 				0 = Land,Kerbin
 				0 = Flight,Kerbin
 				0 = Recover
 				1 = Land,Kerbin
 				1 = Flight,Kerbin
+				2 = Land,Kerbin
+				2 = Flight,Kerbin
+				2 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 2
-				2 = Land,Kerbin
-				2 = Flight,Kerbin
+				flight = 3
+				3 = Land,Kerbin
+				3 = Flight,Kerbin
 			}
 		}
 		KERBAL

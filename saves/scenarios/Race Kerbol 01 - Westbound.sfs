@@ -10,7 +10,7 @@ GAME
 	scene = 7
 	editor = None
 	flag = Squad/Agencies/IonicSymphonicProtonicElectronics
-	launchID = 11
+	launchID = 12
 	PARAMETERS
 	{
 		preset = Normal
@@ -360,12 +360,604 @@ GAME
 			MaxDeltaTime = 21600
 		}
 	}
+	SCENARIO
+	{
+		name = TRScenario
+		scene = 5
+		reflectionType = REAL
+		isHelmetRemovalEnabled = True
+		isAtmSuitEnabled = True
+		Kerbals
+		{
+			Jebediah Kerman = M GENERIC GENERIC
+			Bill Kerman = M GENERIC GENERIC
+			Bob Kerman = M GENERIC GENERIC
+			Valentina Kerman = F GENERIC GENERIC
+		}
+		ClassSuits
+		{
+		}
+	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 2076.97383056598
-		activeVessel = 1
+		UT = 2144.03383056593
+		activeVessel = 8
 		mapViewFiltering = 1023
+		VESSEL
+		{
+			pid = bf93c170a9694b5081f96c141bfe845e
+			name = Ast. HSJ-227
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0
+			lct = 0
+			root = 0
+			lat = -2.83448079789533
+			lon = 181.081293330851
+			alt = 14594725647.149
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2984336,0.402898,-0.8173988,0.283672
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15240603816.5306
+				ECC = 0.109160279581076
+				INC = 2.8722369411542
+				LPE = 2.11729314595258
+				LAN = 261.773336336443
+				MNA = 6.22770556444832
+				EPH = 2043585.73608398
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 559298752
+				mid = 559298752
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 0
+				lifetime = 586354.751586914
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = f95aed04cdef490ca244162a365dc190
+			name = Ast. XCB-150
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 25.4999999999996
+			lct = 25.4999999999996
+			root = 0
+			lat = 1.27304064321926
+			lon = 176.765813290373
+			alt = 13585037164.9564
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.5964009,0.2069356,0.4419263,0.6373263
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14639687494.0378
+				ECC = 0.0804087412234534
+				INC = 1.28694386366717
+				LPE = 149.579924322263
+				LAN = 78.3560556046268
+				MNA = 0.451822820685737
+				EPH = 2002429.14990234
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1483630681
+				mid = 1483630681
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 25.4999999999996
+				lifetime = 241868.476867676
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 2d2a310794514deba8c07a54a54cc737
+			name = Ast. FYA-279
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 68.4200000000036
+			lct = 68.4200000000036
+			root = 0
+			lat = 0.553268316531609
+			lon = 181.669816915735
+			alt = 13721273564.3794
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.7104073,-0.03828573,0.6784164,0.1833215
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13761062493.3806
+				ECC = 0.019433956809141
+				INC = 0.726942115501183
+				LPE = 196.216574155631
+				LAN = 132.167975474873
+				MNA = 5.90209936793063
+				EPH = 3215830.71248047
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1013981956
+				mid = 1013981956
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 68.4200000000036
+				lifetime = 867860.485839844
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 26660793e25d4d718f99c5719c8eed30
+			name = Ast. DHF-735
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 143.44
+			lct = 143.44
+			root = 0
+			lat = 2.06008001666134
+			lon = 178.819065885419
+			alt = 14572015054.6318
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.3315306,-0.2450874,-0.07273085,0.9081464
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 16058532505.0587
+				ECC = 0.156576549398246
+				INC = 2.18439719653121
+				LPE = 178.448384815456
+				LAN = 69.5067714484875
+				MNA = 0.0250639137359597
+				EPH = 1786161.46978516
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1486061809
+				mid = 1486061809
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 143.44
+				lifetime = 1540359.55810547
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = aa86cfd0845247a7b262754eed48298d
+			name = Ast. QTN-223
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 169.73004302979
+			lct = 169.73004302979
+			root = 0
+			lat = -0.283589246332468
+			lon = 181.540447995767
+			alt = 13804277427.2541
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.7205675,0.394621,0.4593203,0.33776
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13894067324.5804
+				ECC = 0.0254814020821287
+				INC = 0.284201064221654
+				LPE = 34.060149972576
+				LAN = 267.921624581722
+				MNA = 5.69240259536771
+				EPH = 2215226.23028717
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 417346620
+				mid = 417346620
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 169.73004302979
+				lifetime = 430073.835754395
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 28abeb674c7f415a816bf313b9e464bb
+			name = Ast. QJN-929
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 230.790043029821
+			lct = 230.790043029821
+			root = 0
+			lat = -0.296011650663063
+			lon = 178.335991926585
+			alt = 13315583480.121
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.7217633,-0.5364673,-0.2982569,0.3198491
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13578020053.541
+				ECC = 0.0043031644819589
+				INC = 0.432664660200089
+				LPE = 312.593227111669
+				LAN = 315.360565751494
+				MNA = 4.73889716950995
+				EPH = 11717.0386256949
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 2009708788
+				mid = 2009708788
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 230.790043029821
+				lifetime = 1486704.8034668
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = abc9cd99faef4afa9e2f32a89613c340
+			name = Ast. CGA-101
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 931.670043029221
+			lct = 931.670043029221
+			root = 0
+			lat = -0.478946104530294
+			lon = 182.370401899619
+			alt = 14073036773.6109
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.511997,-0.272588,-0.6600804,0.477335
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14023523347.7637
+				ECC = 0.037074953617696
+				INC = 0.495728994271674
+				LPE = 23.4868641758602
+				LAN = 288.09855007912
+				MNA = 5.77893334505487
+				EPH = 2575094.76208405
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1785162889
+				mid = 1785162889
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 931.670043029221
+				lifetime = 311468.025970459
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
 		VESSEL
 		{
 			pid = 0b76ef5e62f243b389ae85e5d5cb12ce
@@ -394,13 +986,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300134.97064443
 				ECC = 1
 				INC = NaN
-				LPE = 48.4994009329864
-				LAN = 240.439554074914
-				MNA = -8.40714670366795
-				EPH = 562.559999999778
+				LPE = 48.4272458414195
+				LAN = 264.852728912774
+				MNA = 3.14159265358979
+				EPH = 2095.51383056597
 				REF = 1
 			}
 			PART
@@ -3524,7 +4116,7 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 761a7847845e43fea8680f4e2b82dada
+			pid = db4fd774cdf2489d8f53cd170d89d978
 			name = Solar Racer
 			type = Ship
 			sit = FLYING
@@ -3532,40 +4124,40 @@ GAME
 			landedAt = 
 			splashed = False
 			met = 0.0
-			lct = 2076.97383056598
+			lct = 2144.03383056593
 			root = 0
-			lat = -0.0503097185082683
-			lon = 285.489677583857
-			alt = 147.012154024094
-			hgt = 78.54478
-			nrm = 0.01019592,0.03908636,-0.9991839
-			rot = -0.1118928,-0.1048865,0.6924056,0.7050201
-			CoM = 0.0001668404,-2.050883,-0.002881859
+			lat = -0.0491663125725466
+			lon = 285.448081309731
+			alt = 96.9699399257079
+			hgt = 29.08766
+			nrm = -0.02035431,0.01589442,-0.9996665
+			rot = -0.09322468,-0.1074776,0.6961682,0.7036388
+			CoM = -7.875923E-05,-2.023069,0.002941129
 			stg = 0
 			prst = False
-			ref = 4206241522
+			ref = 1729765127
 			ctrl = True
-			cPch = 0.2019997
-			cHdg = -1.556001
+			cPch = 0.14
+			cHdg = -1.56
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300096.412299315
-				ECC = 0.999849337756995
-				INC = 4.05101169142036
-				LPE = 179.288840159494
-				LAN = 50.8166789480876
-				MNA = 3.13757745043718
-				EPH = 2076.97383056598
+				SMA = 300068.10008212
+				ECC = 0.999869165826693
+				INC = 7.46038630478785
+				LPE = 179.621406652488
+				LAN = 51.5577989881125
+				MNA = 3.1414080615555
+				EPH = 2144.03383056593
 				REF = 1
 			}
 			PART
 			{
 				name = Mark2Cockpit
 				cid = 4293223304
-				uid = 4206241522
-				mid = 2505219364
-				launchID = 10
+				uid = 1729765127
+				mid = 4082277791
+				launchID = 11
 				parent = 0
 				position = 0,0,0
 				rotation = 0,0,0,1
@@ -3581,8 +4173,8 @@ GAME
 				attN = top, 38
 				attN = bottom, 1
 				mass = 1
-				temp = 308.132783499416
-				tempExt = 308.013128402979
+				temp = 292.782448536345
+				tempExt = 299.470270957311
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3885,21 +4477,10 @@ GAME
 						0 = Flight,Kerbin
 					}
 				}
-				MODULE
-				{
-					name = ModuleWaterSlider
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 35.6127545898126
+					amount = 40.6271038190231
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -3921,9 +4502,9 @@ GAME
 			{
 				name = advSasModule
 				cid = 4294320546
-				uid = 429334471
-				mid = 2505219364
-				launchID = 10
+				uid = 3311511382
+				mid = 4082277791
+				launchID = 11
 				parent = 0
 				position = 0,-1.13652729988098,1.35484597763025E-07
 				rotation = 0,0,0,1
@@ -3939,8 +4520,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.1
-				temp = 309.051987251392
-				tempExt = 308.361874755058
+				temp = 295.132616987049
+				tempExt = 300.231407526281
 				expt = 0.5
 				state = 1
 				connected = True
@@ -3999,11 +4580,11 @@ GAME
 			{
 				name = Mk1FuselageStructural
 				cid = 4294174452
-				uid = 2908268142
-				mid = 2505219364
-				launchID = 10
+				uid = 4246216854
+				mid = 4082277791
+				launchID = 11
 				parent = 1
-				position = 0,-2.27306866645813,2.70970872406906E-07
+				position = 0,-2.27306962013245,2.70970986093744E-07
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4017,8 +4598,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 0.1
-				temp = 310.368133456593
-				tempExt = 308.903205804341
+				temp = 297.8520557623
+				tempExt = 301.421525625409
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4040,11 +4621,11 @@ GAME
 			{
 				name = Mk1FuselageStructural
 				cid = 4293041756
-				uid = 356573254
-				mid = 2505219364
-				launchID = 10
+				uid = 2080162004
+				mid = 4082277791
+				launchID = 11
 				parent = 2
-				position = 0,-4.14810657501221,4.94492780944711E-07
+				position = 0,-4.14816951751709,4.94500284276E-07
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4058,8 +4639,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.1
-				temp = 314.38530445112
-				tempExt = 319.422718555428
+				temp = 302.359309429611
+				tempExt = 312.158843907631
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4081,11 +4662,11 @@ GAME
 			{
 				name = probeStackSmall
 				cid = 4294340582
-				uid = 574453212
-				mid = 2505219364
-				launchID = 10
+				uid = 2296497055
+				mid = 4082277791
+				launchID = 11
 				parent = 3
-				position = 0,-5.18563032150269,6.18175249655906E-07
+				position = 0,-5.18569231033325,6.18182639300358E-07
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4099,8 +4680,8 @@ GAME
 				attN = bottom, 5
 				attN = top, 3
 				mass = 0.1
-				temp = 311.342606157019
-				tempExt = 309.443710620319
+				temp = 297.645241038773
+				tempExt = 304.439291693273
 				expt = 0
 				state = 1
 				connected = True
@@ -4224,7 +4805,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.01045895019286
+					amount = 14.9966666667412
 					maxAmount = 15
 					flowState = True
 					isTweakable = True
@@ -4236,11 +4817,11 @@ GAME
 			{
 				name = pointyNoseConeA
 				cid = 4294447370
-				uid = 2760289439
-				mid = 2505219364
-				launchID = 10
+				uid = 568007299
+				mid = 4082277791
+				launchID = 11
 				parent = 4
-				position = 0,-5.91063451766968,7.04602484802308E-07
+				position = 0,-5.91069650650024,7.0460987444676E-07
 				rotation = 0,0,-1,0
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4253,8 +4834,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 4
 				mass = 0.075
-				temp = 309.402432293878
-				tempExt = 308.41480712635
+				temp = 294.17866359187
+				tempExt = 298.797964503768
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4287,11 +4868,11 @@ GAME
 			{
 				name = R8winglet
 				cid = 4294338254
-				uid = 3173200966
-				mid = 2505219364
-				launchID = 10
+				uid = 175353718
+				mid = 4082277791
+				launchID = 11
 				parent = 5
-				position = 0.793522119522095,-6.42080879211426,0.21262152493
+				position = 0.793534517288208,-6.42094135284424,0.21262152493
 				rotation = 0.1102452,0.9852967,0.01451386,0.1297163
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4304,8 +4885,8 @@ GAME
 				sym = 7
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 308.34449190208
-				tempExt = 308.235613933147
+				temp = 289.883113362981
+				tempExt = 297.968504494042
 				expt = 0.1
 				state = 1
 				connected = True
@@ -4375,12 +4956,12 @@ GAME
 			{
 				name = R8winglet
 				cid = 4294332870
-				uid = 53168218
-				mid = 2505219364
-				launchID = 10
+				uid = 603651508
+				mid = 4082277791
+				launchID = 11
 				parent = 5
-				position = -0.793522238731384,-6.42080879211426,0.21262152493
-				rotation = -0.01451407,-0.1297163,-0.1102452,-0.9852967
+				position = -0.793534517288208,-6.42094135284424,0.21262152493
+				rotation = -0.01451407,-0.1297164,-0.1102452,-0.9852968
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -4392,8 +4973,8 @@ GAME
 				sym = 6
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 308.344496740024
-				tempExt = 308.23569872329
+				temp = 289.882362212454
+				tempExt = 297.968578428461
 				expt = 0.1
 				state = 1
 				connected = True
@@ -4463,12 +5044,12 @@ GAME
 			{
 				name = R8winglet
 				cid = 4294331778
-				uid = 2004270755
-				mid = 2505219364
-				launchID = 10
+				uid = 3589543209
+				mid = 4082277791
+				launchID = 11
 				parent = 5
-				position = 0.793861925601959,-6.42316913604736,-0.212710589170456
-				rotation = -0.1102452,-0.9852967,0.01451407,0.1297163
+				position = 0.793874263763428,-6.42329978942871,-0.212710589170456
+				rotation = -0.1102452,-0.9852968,0.01451407,0.1297164
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -4480,8 +5061,8 @@ GAME
 				sym = 9
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 308.344100246706
-				tempExt = 308.230542213657
+				temp = 289.880379909247
+				tempExt = 297.960059126301
 				expt = 0.1
 				state = 1
 				connected = True
@@ -4551,11 +5132,11 @@ GAME
 			{
 				name = R8winglet
 				cid = 4294331714
-				uid = 3275227495
-				mid = 2505219364
-				launchID = 10
+				uid = 4042072107
+				mid = 4082277791
+				launchID = 11
 				parent = 5
-				position = -0.79386180639267,-6.42316913604736,-0.212710589170456
+				position = -0.793874442577362,-6.42329978942871,-0.212710589170456
 				rotation = 0.01451407,0.1297163,-0.1102452,-0.9852968
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4568,8 +5149,8 @@ GAME
 				sym = 8
 				srfN = srfAttach, 5
 				mass = 0.1
-				temp = 308.343952780534
-				tempExt = 308.230034997849
+				temp = 289.880357735569
+				tempExt = 297.957248847854
 				expt = 0.1
 				state = 1
 				connected = True
@@ -4639,11 +5220,11 @@ GAME
 			{
 				name = delta.small
 				cid = 4294042754
-				uid = 1335379316
-				mid = 2505219364
-				launchID = 10
+				uid = 3318918564
+				mid = 4082277791
+				launchID = 11
 				parent = 3
-				position = 0.613050282001495,-3.3427414894104,3.98485781261115E-07
+				position = 0.613050282001495,-3.34280443191528,3.98493284592405E-07
 				rotation = -4.469872E-08,-4.214685E-08,0.9999997,-0.001033589
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4656,8 +5237,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = 322.785361145785
-				tempExt = 325.129842302915
+				temp = 311.161689890877
+				tempExt = 317.482797618903
 				expt = 0.1
 				state = 1
 				connected = True
@@ -4690,11 +5271,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294526116
-				uid = 2133747826
-				mid = 2505219364
-				launchID = 10
+				uid = 3335116102
+				mid = 4082277791
+				launchID = 11
 				parent = 10
-				position = 0.963134288787842,-3.20087027549744,-0.0937477201223373
+				position = 0.963134288787842,-3.2009334564209,-0.0937477201223373
 				rotation = 0.001033589,-0.9999997,-4.214685E-08,-2.582318E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4707,8 +5288,8 @@ GAME
 				sym = 16
 				srfN = srfAttach, 10
 				mass = 0.02
-				temp = 322.192718078627
-				tempExt = 323.785164208048
+				temp = 310.954734476008
+				tempExt = 316.382448305962
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4779,11 +5360,11 @@ GAME
 			{
 				name = KF.RepulsorRacer
 				cid = 4294688534
-				uid = 3108632684
-				mid = 2505219364
-				launchID = 10
+				uid = 736011239
+				mid = 4082277791
+				launchID = 11
 				parent = 10
-				position = 0.870817184448242,-4.03305816650391,0.061291228979826
+				position = 0.870817303657532,-4.03312349319458,0.117279544472694
 				rotation = 0.7071068,0.0007309107,-0.7071064,0.0007309107
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4797,8 +5378,8 @@ GAME
 				srfN = srfAttach, 10
 				attN = 001, -1
 				mass = 0.1
-				temp = 314.721804804781
-				tempExt = 323.440168611517
+				temp = 300.666470050754
+				tempExt = 315.851186089687
 				expt = 0.5
 				state = 1
 				connected = True
@@ -4821,8 +5402,8 @@ GAME
 					isEnabled = True
 					groupNumber = 1
 					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
+					SpringRate = 4
+					DamperRate = 0.3
 					groupNumber_UIFlight
 					{
 						controlEnabled = True
@@ -4877,16 +5458,38 @@ GAME
 						}
 					}
 				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
 				name = atmoPlasmaEngine
 				cid = 4294696842
-				uid = 807228118
-				mid = 2505219364
-				launchID = 10
+				uid = 2874872005
+				mid = 4082277791
+				launchID = 11
 				parent = 10
-				position = 1.64528799057007,-3.6007673740387,4.29244863653366E-07
+				position = 1.64528799057007,-3.6008312702179,-8.15381736174459E-06
 				rotation = -0.0007309529,0.7071065,-0.0007308475,-0.7071066
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -4901,8 +5504,8 @@ GAME
 				attN = top, 14
 				attN = bottom, -1
 				mass = 0.3
-				temp = 352.702817183686
-				tempExt = 337.311696895471
+				temp = 342.463858112096
+				tempExt = 329.110424007535
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5052,7 +5655,7 @@ GAME
 				RESOURCE
 				{
 					name = IntakeAir
-					amount = 0.0907501814886928
+					amount = 0.0913232363760471
 					maxAmount = 0.1
 					flowState = True
 					isTweakable = False
@@ -5064,11 +5667,11 @@ GAME
 			{
 				name = standardNoseCone
 				cid = 4294352250
-				uid = 727172938
-				mid = 2505219364
-				launchID = 10
+				uid = 66721666
+				mid = 4082277791
+				launchID = 11
 				parent = 13
-				position = 1.64414310455322,-3.04577016830444,3.63084041055117E-07
+				position = 1.64414310455322,-3.04583406448364,-8.21997855382506E-06
 				rotation = 8.429371E-08,-2.510701E-09,0.00103365,0.9999998
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5082,8 +5685,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 13
 				mass = 0.01
-				temp = 340.823130302565
-				tempExt = 327.484321120694
+				temp = 330.985149236941
+				tempExt = 321.112841876038
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5116,11 +5719,11 @@ GAME
 			{
 				name = delta.small
 				cid = 4294684220
-				uid = 713031432
-				mid = 2505219364
-				launchID = 10
+				uid = 636930761
+				mid = 4082277791
+				launchID = 11
 				parent = 3
-				position = -0.613050222396851,-3.3427414894104,3.98485781261115E-07
+				position = -0.613050222396851,-3.34280443191528,3.98493284592405E-07
 				rotation = 0.9999997,-0.001033589,-1.358248E-09,4.214685E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5133,8 +5736,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = 322.78325113887
-				tempExt = 325.116473666641
+				temp = 311.158432324774
+				tempExt = 317.482700496043
 				expt = 0.1
 				state = 1
 				connected = True
@@ -5167,11 +5770,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294684182
-				uid = 816898145
-				mid = 2505219364
-				launchID = 10
+				uid = 2441025426
+				mid = 4082277791
+				launchID = 11
 				parent = 15
-				position = -0.963134229183197,-3.20087027549744,-0.0937477201223373
+				position = -0.963134229183197,-3.2009334564209,-0.0937477201223373
 				rotation = 0.001033589,0.9999997,4.214685E-08,-2.581495E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5184,8 +5787,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 15
 				mass = 0.02
-				temp = 322.190281590273
-				tempExt = 323.773689927294
+				temp = 310.951966268806
+				tempExt = 316.382330328356
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5256,11 +5859,11 @@ GAME
 			{
 				name = KF.RepulsorRacer
 				cid = 4294683966
-				uid = 1579227278
-				mid = 2505219364
-				launchID = 10
+				uid = 3107915535
+				mid = 4082277791
+				launchID = 11
 				parent = 15
-				position = -0.870816648006439,-4.03305816650391,0.061291228979826
+				position = -0.870817124843597,-4.0331244468689,0.117279544472694
 				rotation = -0.7071065,0.0007308686,0.7071068,0.0007307422
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5274,8 +5877,8 @@ GAME
 				srfN = srfAttach, 15
 				attN = 001, -1
 				mass = 0.1
-				temp = 314.723648225967
-				tempExt = 323.428805451992
+				temp = 300.666131244623
+				tempExt = 315.851244103862
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5298,8 +5901,8 @@ GAME
 					isEnabled = True
 					groupNumber = 1
 					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
+					SpringRate = 4
+					DamperRate = 0.3
 					groupNumber_UIFlight
 					{
 						controlEnabled = True
@@ -5354,17 +5957,39 @@ GAME
 						}
 					}
 				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
 				name = atmoPlasmaEngine
 				cid = 4294696146
-				uid = 1082193997
-				mid = 2505219364
-				launchID = 10
+				uid = 2232774679
+				mid = 4082277791
+				launchID = 11
 				parent = 15
-				position = -1.64528810977936,-3.6007673740387,4.29244863653366E-07
-				rotation = 0.000730974,0.7071065,-0.0007307211,0.7071068
+				position = -1.64528810977936,-3.60083246231079,-8.15381736174459E-06
+				rotation = 0.0007311426,0.7071065,-0.0007308475,0.7071068
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -5378,8 +6003,8 @@ GAME
 				attN = top, 19
 				attN = bottom, -1
 				mass = 0.3
-				temp = 352.684970802885
-				tempExt = 337.197692160878
+				temp = 342.452393136694
+				tempExt = 329.039629508445
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5541,12 +6166,12 @@ GAME
 			{
 				name = standardNoseCone
 				cid = 4294696010
-				uid = 440423401
-				mid = 2505219364
-				launchID = 10
+				uid = 672415078
+				mid = 4082277791
+				launchID = 11
 				parent = 18
-				position = -1.6441410779953,-3.04576826095581,3.63083813681442E-07
-				rotation = 0,1.699045E-07,-0.001033562,0.9999998
+				position = -1.64414310455322,-3.04583549499512,-8.21997764433036E-06
+				rotation = 8.429371E-08,1.234771E-09,-0.00103371,0.9999998
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -5559,8 +6184,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 18
 				mass = 0.01
-				temp = 340.937159097125
-				tempExt = 328.212878406339
+				temp = 331.080028231361
+				tempExt = 321.602570382347
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5593,11 +6218,11 @@ GAME
 			{
 				name = wingConnector2
 				cid = 4294244644
-				uid = 3107380263
-				mid = 2505219364
-				launchID = 10
+				uid = 2758960601
+				mid = 4082277791
+				launchID = 11
 				parent = 2
-				position = 0.622569680213928,-1.78224670886993,2.12460335546893E-07
+				position = 0.622569680213928,-1.78224861621857,2.12460562920569E-07
 				rotation = -0.00104858,0.9999997,4.214685E-08,1.494073E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5610,8 +6235,8 @@ GAME
 				sym = 29
 				srfN = srfAttach, 2
 				mass = 0.2
-				temp = 308.012478600493
-				tempExt = 308.125104919237
+				temp = 293.794219115553
+				tempExt = 299.986808052314
 				expt = 0.1
 				state = 1
 				connected = True
@@ -5644,11 +6269,11 @@ GAME
 			{
 				name = delta.small
 				cid = 4294403418
-				uid = 2919297399
-				mid = 2505219364
-				launchID = 10
+				uid = 2491605291
+				mid = 4082277791
+				launchID = 11
 				parent = 20
-				position = 4.37343883514404,-2.07917666435242,2.47857144586305E-07
+				position = 4.37350177764893,-2.07917761802673,2.47857258273143E-07
 				rotation = -0.00104864,0.9999997,4.214685E-08,4.465756E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5661,8 +6286,8 @@ GAME
 				sym = 30
 				srfN = srfAttach, 20
 				mass = 0.05
-				temp = 307.882682519228
-				tempExt = 307.979945649687
+				temp = 293.612985577654
+				tempExt = 299.684040507126
 				expt = 0.1
 				state = 1
 				connected = True
@@ -5695,11 +6320,11 @@ GAME
 			{
 				name = StandardCtrlSrf
 				cid = 4294277028
-				uid = 4005094500
-				mid = 2505219364
-				launchID = 10
+				uid = 3300294001
+				mid = 4082277791
+				launchID = 11
 				parent = 21
-				position = 5.31742286682129,-2.70220184326172,3.22127533536332E-07
+				position = 5.31748676300049,-2.7022066116333,3.2212810197052E-07
 				rotation = -0.001048617,0.9999997,-4.214685E-08,-0.0001442314
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5712,8 +6337,8 @@ GAME
 				sym = 31
 				srfN = srfAttach, 21
 				mass = 0.05
-				temp = 308.038709524326
-				tempExt = 307.945757112722
+				temp = 290.329823050468
+				tempExt = 298.936318572026
 				expt = 0.1
 				state = 1
 				connected = True
@@ -5783,11 +6408,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294132238
-				uid = 3159233080
-				mid = 2505219364
-				launchID = 10
+				uid = 2656583269
+				mid = 4082277791
+				launchID = 11
 				parent = 21
-				position = 4.42771577835083,-2.2473156452179,-0.0937497466802597
+				position = 4.42777872085571,-2.24731659889221,-0.0937497466802597
 				rotation = -0.00104864,0.9999997,4.214685E-08,-1.692048E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5800,8 +6425,8 @@ GAME
 				sym = 32
 				srfN = srfAttach, 21
 				mass = 0.02
-				temp = 307.883799993825
-				tempExt = 307.945421867793
+				temp = 294.191970503285
+				tempExt = 299.900665821922
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5872,11 +6497,11 @@ GAME
 			{
 				name = solarPanels5x16
 				cid = 4294192282
-				uid = 3755204921
-				mid = 2505219364
-				launchID = 10
+				uid = 479797318
+				mid = 4082277791
+				launchID = 11
 				parent = 20
-				position = 1.29385304450989,-1.78196561336517,-0.0937497988343239
+				position = 1.29385304450989,-1.78196668624878,-0.0937497988343239
 				rotation = -0.9999997,-0.00104858,-1.461146E-08,4.214685E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5889,8 +6514,8 @@ GAME
 				sym = 33
 				srfN = srfAttach, 20
 				mass = 0.08
-				temp = 308.005342150983
-				tempExt = 308.097553020649
+				temp = 294.342786015243
+				tempExt = 300.173565715121
 				expt = 0.5
 				state = 1
 				connected = True
@@ -5961,11 +6586,11 @@ GAME
 			{
 				name = solarPanels5x16
 				cid = 4294191310
-				uid = 3039963419
-				mid = 2505219364
-				launchID = 10
+				uid = 3326123511
+				mid = 4082277791
+				launchID = 11
 				parent = 20
-				position = 2.68237209320068,-1.77991962432861,-0.0937497988343239
+				position = 2.682373046875,-1.77992165088654,-0.0937497988343239
 				rotation = -0.9999997,-0.00104858,-1.461146E-08,4.214685E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -5978,8 +6603,8 @@ GAME
 				sym = 34
 				srfN = srfAttach, 20
 				mass = 0.08
-				temp = 308.002692120405
-				tempExt = 308.077530360113
+				temp = 294.339074461465
+				tempExt = 300.142820338436
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6050,11 +6675,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294148062
-				uid = 1395927923
-				mid = 2505219364
-				launchID = 10
+				uid = 3761255657
+				mid = 4082277791
+				launchID = 11
 				parent = 20
-				position = 3.73817586898804,-2.24888467788696,-0.0937497466802597
+				position = 3.73823881149292,-2.24888563156128,-0.0937497466802597
 				rotation = -0.00104858,0.9999997,4.214685E-08,1.461146E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -6067,8 +6692,8 @@ GAME
 				sym = 35
 				srfN = srfAttach, 20
 				mass = 0.02
-				temp = 308.006703389721
-				tempExt = 308.109154818248
+				temp = 294.371081491868
+				tempExt = 300.15370509983
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6139,11 +6764,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294147666
-				uid = 4019803943
-				mid = 2505219364
-				launchID = 10
+				uid = 2004782383
+				mid = 4082277791
+				launchID = 11
 				parent = 20
-				position = 3.7384877204895,-1.31019330024719,-0.0937498584389687
+				position = 3.73855066299438,-1.31019330024719,-0.0937498584389687
 				rotation = -0.00104858,0.9999997,4.214685E-08,1.461146E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -6156,8 +6781,8 @@ GAME
 				sym = 36
 				srfN = srfAttach, 20
 				mass = 0.02
-				temp = 308.006702722666
-				tempExt = 308.109146292934
+				temp = 294.37109129916
+				tempExt = 300.153775251819
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6228,11 +6853,11 @@ GAME
 			{
 				name = KF.RepulsorRacer
 				cid = 4294687210
-				uid = 2911962315
-				mid = 2505219364
-				launchID = 10
+				uid = 2685866304
+				mid = 4082277791
+				launchID = 11
 				parent = 20
-				position = 4.09376382827759,-2.10799765586853,0.0604231543838978
+				position = 4.0938286781311,-2.10799956321716,0.116331368684769
 				rotation = -0.0007412789,0.7071066,0.0007416372,0.7071065
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -6246,8 +6871,8 @@ GAME
 				srfN = srfAttach, 20
 				attN = 001, -1
 				mass = 0.1
-				temp = 307.95242217335
-				tempExt = 308.105613513426
+				temp = 292.014314563917
+				tempExt = 299.986039428066
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6270,8 +6895,8 @@ GAME
 					isEnabled = True
 					groupNumber = 1
 					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
+					SpringRate = 4
+					DamperRate = 0.3
 					groupNumber_UIFlight
 					{
 						controlEnabled = True
@@ -6326,16 +6951,38 @@ GAME
 						}
 					}
 				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
 				name = wingConnector2
 				cid = 4294685568
-				uid = 3916439065
-				mid = 2505219364
-				launchID = 10
+				uid = 181174133
+				mid = 4082277791
+				launchID = 11
 				parent = 2
-				position = -0.622569620609283,-1.78224670886993,2.12460335546893E-07
+				position = -0.622569620609283,-1.78224861621857,2.12460562920569E-07
 				rotation = -2.107343E-07,-5.844583E-08,0.00104858,-0.9999997
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -6348,8 +6995,8 @@ GAME
 				sym = 20
 				srfN = srfAttach, 2
 				mass = 0.2
-				temp = 308.011779120749
-				tempExt = 308.123727627706
+				temp = 293.79328693732
+				tempExt = 299.984684956555
 				expt = 0.1
 				state = 1
 				connected = True
@@ -6382,11 +7029,11 @@ GAME
 			{
 				name = delta.small
 				cid = 4294685530
-				uid = 2855756331
-				mid = 2505219364
-				launchID = 10
+				uid = 3024665989
+				mid = 4082277791
+				launchID = 11
 				parent = 29
-				position = -4.37342023849487,-2.07917666435242,2.47857144586305E-07
+				position = -4.37342023849487,-2.07917761802673,2.47857258273143E-07
 				rotation = -2.107343E-07,-8.803918E-08,0.00104864,-0.9999997
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -6399,8 +7046,8 @@ GAME
 				sym = 21
 				srfN = srfAttach, 29
 				mass = 0.05
-				temp = 307.88205562767
-				tempExt = 307.979164908329
+				temp = 293.611865682391
+				tempExt = 299.67630030139
 				expt = 0.1
 				state = 1
 				connected = True
@@ -6433,11 +7080,11 @@ GAME
 			{
 				name = StandardCtrlSrf
 				cid = 4294685492
-				uid = 4195048589
-				mid = 2505219364
-				launchID = 10
+				uid = 735641508
+				mid = 4082277791
+				launchID = 11
 				parent = 30
-				position = -5.3174033164978,-2.70220160484314,3.22127505114622E-07
+				position = -5.3174033164978,-2.70220255851746,3.2212761880146E-07
 				rotation = -4.214685E-08,0.000144188,0.001048617,-0.9999997
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -6450,8 +7097,8 @@ GAME
 				sym = 22
 				srfN = srfAttach, 30
 				mass = 0.05
-				temp = 308.038429021838
-				tempExt = 307.945737566275
+				temp = 290.325467861454
+				tempExt = 298.820685892412
 				expt = 0.1
 				state = 1
 				connected = True
@@ -6521,12 +7168,12 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294685456
-				uid = 3220614982
-				mid = 2505219364
-				launchID = 10
+				uid = 1372508063
+				mid = 4082277791
+				launchID = 11
 				parent = 30
-				position = -4.42769622802734,-2.2473156452179,-0.0937497466802597
-				rotation = 0.001048638,0.9999998,0,1.690402E-07
+				position = -4.42769622802734,-2.24731659889221,-0.0937497466802597
+				rotation = 0.001048632,0.9999998,0,1.68999E-07
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -6538,8 +7185,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 30
 				mass = 0.02
-				temp = 307.883197591886
-				tempExt = 307.945090485291
+				temp = 294.190588977268
+				tempExt = 299.89472056154
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6610,12 +7257,12 @@ GAME
 			{
 				name = solarPanels5x16
 				cid = 4294685420
-				uid = 2062279221
-				mid = 2505219364
-				launchID = 10
+				uid = 2717655110
+				mid = 4082277791
+				launchID = 11
 				parent = 29
-				position = -1.29385209083557,-1.78196561336517,-0.0937497988343239
-				rotation = -0.9999998,0.001048577,1.469378E-08,0
+				position = -1.29385209083557,-1.78196668624878,-0.0937497988343239
+				rotation = -0.9999998,0.001048575,1.47761E-08,0
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -6627,8 +7274,8 @@ GAME
 				sym = 24
 				srfN = srfAttach, 29
 				mass = 0.08
-				temp = 308.004611557758
-				tempExt = 308.096413640395
+				temp = 294.341815562283
+				tempExt = 300.172062133976
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6699,12 +7346,12 @@ GAME
 			{
 				name = solarPanels5x16
 				cid = 4294685384
-				uid = 84883667
-				mid = 2505219364
-				launchID = 10
+				uid = 3624344050
+				mid = 4082277791
+				launchID = 11
 				parent = 29
-				position = -2.68237018585205,-1.77991962432861,-0.0937497988343239
-				rotation = -0.9999998,0.001048577,1.469378E-08,0
+				position = -2.68237018585205,-1.77992165088654,-0.0937497988343239
+				rotation = -0.9999998,0.001048575,1.47761E-08,0
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -6716,8 +7363,8 @@ GAME
 				sym = 25
 				srfN = srfAttach, 29
 				mass = 0.08
-				temp = 308.001949439104
-				tempExt = 308.076381660366
+				temp = 294.338103873674
+				tempExt = 300.141315554435
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6788,12 +7435,12 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294685348
-				uid = 2539481434
-				mid = 2505219364
-				launchID = 10
+				uid = 116487164
+				mid = 4082277791
+				launchID = 11
 				parent = 29
-				position = -3.7381579875946,-2.24888467788696,-0.0937497466802597
-				rotation = 0.001048577,0.9999998,0,-1.452914E-08
+				position = -3.7381579875946,-2.24888563156128,-0.0937497466802597
+				rotation = 0.001048572,0.9999998,0,-1.448798E-08
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -6805,8 +7452,8 @@ GAME
 				sym = 26
 				srfN = srfAttach, 29
 				mass = 0.02
-				temp = 308.005958559165
-				tempExt = 308.10791559098
+				temp = 294.370082336125
+				tempExt = 300.15197149386
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6877,12 +7524,12 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294685312
-				uid = 3444547327
-				mid = 2505219364
-				launchID = 10
+				uid = 1111621429
+				mid = 4082277791
+				launchID = 11
 				parent = 29
 				position = -3.73847007751465,-1.31019330024719,-0.0937498584389687
-				rotation = 0.001048577,0.9999998,0,-1.452914E-08
+				rotation = 0.001048572,0.9999998,0,-1.448798E-08
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -6894,8 +7541,8 @@ GAME
 				sym = 27
 				srfN = srfAttach, 29
 				mass = 0.02
-				temp = 308.005957916776
-				tempExt = 308.107907136608
+				temp = 294.370092216448
+				tempExt = 300.152042310203
 				expt = 0.5
 				state = 1
 				connected = True
@@ -6966,12 +7613,12 @@ GAME
 			{
 				name = KF.RepulsorRacer
 				cid = 4294695326
-				uid = 4161973455
-				mid = 2505219364
-				launchID = 10
+				uid = 2903535485
+				mid = 4082277791
+				launchID = 11
 				parent = 29
-				position = -4.09374809265137,-2.10799765586853,0.0604231543838978
-				rotation = 0.0007416583,0.7071065,-0.0007413421,0.7071066
+				position = -4.09380435943604,-2.10800266265869,0.116331368684769
+				rotation = 0.0007417215,0.7071066,-0.0007413421,0.7071066
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -6984,8 +7631,8 @@ GAME
 				srfN = srfAttach, 29
 				attN = 001, -1
 				mass = 0.1
-				temp = 307.951889931557
-				tempExt = 308.104380269916
+				temp = 292.01357920711
+				tempExt = 299.984141016575
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7008,8 +7655,8 @@ GAME
 					isEnabled = True
 					groupNumber = 1
 					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
+					SpringRate = 4
+					DamperRate = 0.3
 					groupNumber_UIFlight
 					{
 						controlEnabled = True
@@ -7064,14 +7711,36 @@ GAME
 						}
 					}
 				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
 				name = batteryBank
 				cid = 4294686712
-				uid = 1756173051
-				mid = 2505219364
-				launchID = 10
+				uid = 1478095788
+				mid = 4082277791
+				launchID = 11
 				parent = 0
 				position = 0,1.04835641384125,-1.24973809079165E-07
 				rotation = 0,0,0,1
@@ -7087,8 +7756,8 @@ GAME
 				attN = top, 39
 				attN = bottom, 0
 				mass = 0.05
-				temp = 308.027972339199
-				tempExt = 307.962959135641
+				temp = 292.673345726095
+				tempExt = 299.255268480023
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7108,7 +7777,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 985.612754589555
+					amount = 990.627103818697
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -7120,11 +7789,11 @@ GAME
 			{
 				name = pointyNoseConeA
 				cid = 4293206676
-				uid = 3803761258
-				mid = 2505219364
-				launchID = 10
+				uid = 2198776242
+				mid = 4082277791
+				launchID = 11
 				parent = 38
-				position = 0,1.78421473503113,-2.12694942547387E-07
+				position = 0,1.78421676158905,-2.12695184131917E-07
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7137,8 +7806,8 @@ GAME
 				srfN = srfAttach, -1
 				attN = bottom01, 38
 				mass = 0.075
-				temp = 307.929981192698
-				tempExt = 307.947518491852
+				temp = 292.46497338197
+				tempExt = 299.051220099431
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7171,11 +7840,11 @@ GAME
 			{
 				name = structuralWing2
 				cid = 4294390928
-				uid = 2673955282
-				mid = 2505219364
-				launchID = 10
+				uid = 2938613195
+				mid = 4082277791
+				launchID = 11
 				parent = 0
-				position = 0.619487583637238,-0.205536514520645,2.45018583200363E-08
+				position = 0.619487583637238,-0.205542713403702,2.45025972844815E-08
 				rotation = 2.980233E-08,1,8.429371E-08,2.980233E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7188,8 +7857,8 @@ GAME
 				sym = 45
 				srfN = srfAttach, 0
 				mass = 0.1
-				temp = 307.898229056631
-				tempExt = 307.933575769561
+				temp = 293.310864153687
+				tempExt = 299.454814584169
 				expt = 0.1
 				state = 1
 				connected = True
@@ -7222,11 +7891,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294147096
-				uid = 3664183772
-				mid = 2505219364
-				launchID = 10
+				uid = 1462230176
+				mid = 4082277791
+				launchID = 11
 				parent = 40
-				position = 0.942304372787476,-0.348695367574692,-0.0937471091747284
+				position = 0.942304372787476,-0.348697453737259,-0.0937471091747284
 				rotation = 2.980244E-08,1,-8.429371E-08,-1.210605E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7239,8 +7908,8 @@ GAME
 				sym = 46
 				srfN = srfAttach, 40
 				mass = 0.02
-				temp = 307.898320232436
-				tempExt = 307.93750762906
+				temp = 293.907770074713
+				tempExt = 299.685745573171
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7311,11 +7980,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294136548
-				uid = 3483004118
-				mid = 2505219364
-				launchID = 10
+				uid = 2571344997
+				mid = 4082277791
+				launchID = 11
 				parent = 40
-				position = 1.63781690597534,-0.350375264883041,-0.0937480628490448
+				position = 1.63781690597534,-0.350377827882767,-0.0937480628490448
 				rotation = 2.980244E-08,1,-8.429371E-08,-1.210605E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7328,8 +7997,8 @@ GAME
 				sym = 47
 				srfN = srfAttach, 40
 				mass = 0.02
-				temp = 307.898321624861
-				tempExt = 307.937516511239
+				temp = 293.907809436866
+				tempExt = 299.686030718435
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7400,11 +8069,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294136078
-				uid = 2093668378
-				mid = 2505219364
-				launchID = 10
+				uid = 746524528
+				mid = 4082277791
+				launchID = 11
 				parent = 40
-				position = 2.46046900749207,-0.466298550367355,-0.0937480479478836
+				position = 2.46046900749207,-0.466299027204514,-0.0937480479478836
 				rotation = -0.7071071,0.7071069,-2.107343E-07,-1.685874E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7417,8 +8086,8 @@ GAME
 				sym = 48
 				srfN = srfAttach, 40
 				mass = 0.02
-				temp = 307.897599006458
-				tempExt = 307.929649159475
+				temp = 293.92356362776
+				tempExt = 299.949096284787
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7489,12 +8158,12 @@ GAME
 			{
 				name = KF.RepulsorRacer
 				cid = 4294688088
-				uid = 205449465
-				mid = 2505219364
-				launchID = 10
+				uid = 1918513068
+				mid = 4082277791
+				launchID = 11
 				parent = 40
-				position = 0.87686675786972,0.686378359794617,0.0607213228940964
-				rotation = 1.053671E-07,0.7071071,-4.214685E-08,0.7071069
+				position = 0.87686675786972,0.68637877702713,0.116822175681591
+				rotation = 1.053671E-07,0.707107,-4.214685E-08,0.7071069
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -7507,8 +8176,8 @@ GAME
 				srfN = srfAttach, 40
 				attN = 001, -1
 				mass = 0.1
-				temp = 307.926611379924
-				tempExt = 307.937671140728
+				temp = 291.743693524653
+				tempExt = 299.500159488567
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7531,8 +8200,8 @@ GAME
 					isEnabled = True
 					groupNumber = 1
 					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
+					SpringRate = 4
+					DamperRate = 0.3
 					groupNumber_UIFlight
 					{
 						controlEnabled = True
@@ -7587,16 +8256,38 @@ GAME
 						}
 					}
 				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
 				name = structuralWing2
 				cid = 4294685868
-				uid = 338397172
-				mid = 2505219364
-				launchID = 10
+				uid = 3927795468
+				mid = 4082277791
+				launchID = 11
 				parent = 0
-				position = -0.619487524032593,-0.205536410212517,2.45018458855384E-08
+				position = -0.619487524032593,-0.205542609095573,2.45025848499836E-08
 				rotation = -3.371748E-07,-7.351371E-08,-2.980231E-08,-1
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7609,8 +8300,8 @@ GAME
 				sym = 40
 				srfN = srfAttach, 0
 				mass = 0.1
-				temp = 307.897927201708
-				tempExt = 307.933057807364
+				temp = 293.313464645712
+				tempExt = 299.471810775115
 				expt = 0.1
 				state = 1
 				connected = True
@@ -7643,11 +8334,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294685830
-				uid = 945987396
-				mid = 2505219364
-				launchID = 10
+				uid = 3791646980
+				mid = 4082277791
+				launchID = 11
 				parent = 45
-				position = -0.942304253578186,-0.348695129156113,-0.0937471091747284
+				position = -0.942304253578186,-0.348695427179337,-0.0937471091747284
 				rotation = -2.980235E-08,1,0,1.210604E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7660,8 +8351,8 @@ GAME
 				sym = 41
 				srfN = srfAttach, 45
 				mass = 0.02
-				temp = 307.898009602556
-				tempExt = 307.937068633102
+				temp = 293.910608815148
+				tempExt = 299.698291318742
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7732,11 +8423,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294685794
-				uid = 2644146003
-				mid = 2505219364
-				launchID = 10
+				uid = 3465790201
+				mid = 4082277791
+				launchID = 11
 				parent = 45
-				position = -1.63781702518463,-0.350374966859818,-0.0937480628490448
+				position = -1.63781702518463,-0.350377053022385,-0.0937480628490448
 				rotation = -2.980235E-08,1,0,1.210604E-07
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7749,8 +8440,8 @@ GAME
 				sym = 42
 				srfN = srfAttach, 45
 				mass = 0.02
-				temp = 307.898010286075
-				tempExt = 307.937077738236
+				temp = 293.910647477788
+				tempExt = 299.698565035881
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7821,11 +8512,11 @@ GAME
 			{
 				name = solarPanels5x4
 				cid = 4294685758
-				uid = 1888616047
-				mid = 2505219364
-				launchID = 10
+				uid = 675547088
+				mid = 4082277791
+				launchID = 11
 				parent = 45
-				position = -2.46046805381775,-0.466298252344131,-0.0937480479478836
+				position = -2.46046805381775,-0.466299027204514,-0.0937480479478836
 				rotation = 0.7071071,0.7071068,-1.896609E-07,-4.214685E-08
 				mirror = 1,1,1
 				symMethod = Mirror
@@ -7838,8 +8529,8 @@ GAME
 				sym = 43
 				srfN = srfAttach, 45
 				mass = 0.02
-				temp = 307.897294567676
-				tempExt = 307.929174400731
+				temp = 293.933981769215
+				tempExt = 300.049528023302
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7910,12 +8601,12 @@ GAME
 			{
 				name = KF.RepulsorRacer
 				cid = 4294685722
-				uid = 427467207
-				mid = 2505219364
-				launchID = 10
+				uid = 4158520549
+				mid = 4082277791
+				launchID = 11
 				parent = 45
-				position = -0.87686675786972,0.686378538608551,0.0607213228940964
-				rotation = 1.47514E-07,0.7071069,2.107343E-07,0.707107
+				position = -0.87686675786972,0.68637877702713,0.116822175681591
+				rotation = 0,-0.7071069,-2.107343E-07,-0.7071069
 				mirror = 1,1,1
 				symMethod = Mirror
 				istg = 0
@@ -7928,8 +8619,8 @@ GAME
 				srfN = srfAttach, 45
 				attN = 001, -1
 				mass = 0.1
-				temp = 307.926282954989
-				tempExt = 307.937224334462
+				temp = 291.745840247653
+				tempExt = 299.514767389323
 				expt = 0.5
 				state = 1
 				connected = True
@@ -7952,8 +8643,8 @@ GAME
 					isEnabled = True
 					groupNumber = 1
 					rideHeight = 100
-					SpringRate = 2.4
-					DamperRate = 0.1
+					SpringRate = 4
+					DamperRate = 0.3
 					groupNumber_UIFlight
 					{
 						controlEnabled = True
@@ -8008,14 +8699,36 @@ GAME
 						}
 					}
 				}
+				MODULE
+				{
+					name = TextureAnimateGeneric
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KFDustFX
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			ACTIONGROUPS
 			{
-				Stage = True, 571.25999999977
+				Stage = True, 2090.93383056598
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 2050.873830566
+				SAS = True, 2106.13383056596
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -8047,9 +8760,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.04216369
-				yaw = 0.004848871
-				roll = 0.00338846
+				pitch = 0.0416445
+				yaw = -0.03686614
+				roll = 0.002986177
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -8136,13 +8849,16 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 1
+				0 = Land,Kerbin
+				0 = Flight,Kerbin
+				0 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
-				0 = Land,Kerbin
-				0 = Flight,Kerbin
+				flight = 1
+				1 = Land,Kerbin
+				1 = Flight,Kerbin
 			}
 		}
 	}
